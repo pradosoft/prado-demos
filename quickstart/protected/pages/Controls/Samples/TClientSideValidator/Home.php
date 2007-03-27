@@ -2,22 +2,16 @@
 
 class Home extends TPage
 {
-	function validator2_onValidate($sender, $param)
+	function check_validate($sender, $params)
 	{
-		$sender->Enabled = $this->check1->Checked;
+		$sender->enabled = $this->check1->checked;
 	}
-	
-	function validate2_onPostValidate($sender, $param)
-	{
-		$sender->Enabled = true;
-	}
-	
+
 	function onPreRender($param)
 	{
-		parent::onPreRender($param);
-		$this->panel1->Style = 
-			$this->check1->Checked ? "display:block" : "display:none";		
-	}	
+		//always re-enable the validator2 so as to display the client-side validator
+		$this->validator2->enabled=true;
+	}
 }
 
 ?>
