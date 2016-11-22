@@ -1,0 +1,41 @@
+{
+	"name": "pradosoft/prado4-demos",
+	"description": "Prado4 demos",
+	"homepage": "https://github.com/pradosoft/prado4-demos",
+	"license" : "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Ciro Mattia Gonano",
+			"email": "ciromattia@gmail.com",
+			"role" : "Github/Packagist Maintainer"
+		},
+		{
+			"name": "Daniel Sampedro",
+			"email": "darthdaniel85@gmail.com",
+			"role" : "Developer"
+		},
+		{
+			"name": "David Otto",
+			"role" : "Developer"
+		},
+		{
+			"name": "Fabio Bas",
+			"email": "ctrlaltca@gmail.com",
+			"role" : "Developer"
+		},
+		{
+			"name": "Jens Klaer",
+			"role" : "Developer"
+		}
+	],
+    "repositories": [
+        {
+            "url": "https://github.com/pradosoft/prado4.git",
+            "type": "git"
+        }
+    ],
+	"minimum-stability" : "dev", 
+    "require": {
+        "pradosoft/prado4": "dev-master"
+    }
+}

@@ -1,0 +1,5 @@
+vendor
+
+time-tracker/protected/App_Data/SQLite/time-tracker.db
+
+chat/protected/App_Code/chat.db

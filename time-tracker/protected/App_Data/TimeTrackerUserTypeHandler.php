@@ -17,7 +17,7 @@
  * @package Demos
  * @since 3.1
  */
-class TimeTrackerUserTypeHandler extends TSqlMapTypeHandler
+class TimeTrackerUserTypeHandler extends Prado\Data\SqlMap\DataMapper\TSqlMapTypeHandler
 {
 	/**
 	 * Not implemented.

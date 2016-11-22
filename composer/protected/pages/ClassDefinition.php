@@ -1,5 +1,7 @@
 <?php
 
+use Prado\Collections\TList;
+
 class ClassDefinition extends TComponent
 {
 	private $_className='ClassName';

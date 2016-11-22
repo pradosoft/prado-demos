@@ -1,15 +1,12 @@
 <?php
 
 $basePath=dirname(__FILE__);
-$frameworkPath='../../framework/prado.php';
 $assetsPath=$basePath."/assets";
 $runtimePath=$basePath."/protected/runtime";
 
 $sqlite_dir = $basePath."/protected/App_Data/SQLite";
 $sqlite_db = $sqlite_dir.'/time-tracker.db';
 
-if(!is_file($frameworkPath))
-	die("Unable to find prado framework path $frameworkPath.");
 if(!is_writable($assetsPath))
 	die("Please make sure that the directory $assetsPath is writable by Web server process.");
 if(!is_writable($runtimePath))
@@ -19,8 +16,6 @@ if(!is_writable($sqlite_dir))
 if(!is_writable($sqlite_db))
 	die("Please make sure that the sqlite database file $sqlite_dir is writable by Web server process.");
 
-require_once($frameworkPath);
-
 function h($text)
 {
 	$app = Prado::getApplication()->getGlobalization();
@@ -28,5 +23,6 @@ function h($text)
 	return htmlentities($text, ENT_QUOTES, $charset);
 }
 
-$application=new TApplication;
-$application->run('protected',false,TApplication::CONFIG_TYPE_PHP);
+require '../vendor/autoload.php';
+$application = new \Prado\TApplication('protected', false, \Prado\TApplication::CONFIG_TYPE_PHP);
+$application->run();

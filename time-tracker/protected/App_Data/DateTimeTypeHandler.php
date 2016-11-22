@@ -1,6 +1,6 @@
 <?php
 
-class DateTimeTypeHandler extends TSqlMapTypeHandler
+class DateTimeTypeHandler extends Prado\Data\SqlMap\DataMapper\TSqlMapTypeHandler
 {
 	/**
 	 * Not implemented.

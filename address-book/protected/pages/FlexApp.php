@@ -3,6 +3,9 @@
  * @author Wei Zhuo <weizho[at]gmail[dot]com>
  * @since 3.1
  */
+
+use Prado\Collections\TAttributeCollection;
+
 class FlexApp extends TTemplateControl
 {
 	private $_parameters;

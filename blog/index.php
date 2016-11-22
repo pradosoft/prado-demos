@@ -1,7 +1,6 @@
 <?php
 
 $basePath=dirname(__FILE__);
-$frameworkPath=$basePath.'/../../framework/prado.php';
 $assetsPath=$basePath.'/assets';
 $runtimePath=$basePath.'/protected/runtime';
 $dataPath=$basePath.'/protected/Data';
@@ -13,8 +12,6 @@ if(!is_writable($runtimePath))
 if(!is_writable($dataPath))
 	die("Please make sure that the directory $dataPath is writable by Web server process.");
 
-require_once($frameworkPath);
-
-$application=new TApplication;
+require '../vendor/autoload.php';
+$application = new \Prado\TApplication;
 $application->run();
-

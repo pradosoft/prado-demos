@@ -1,5 +1,7 @@
 <?php
 
+use Prado\IO\TTextWriter;
+
 Prado::using('Application.pages.ClassDefinition');
 
 class Home extends TPage
@@ -109,7 +111,7 @@ class Home extends TPage
 
 	public function generateCode($sender,$param)
 	{
-		$writer=Prado::createComponent('TTextWriter');
+		$writer= new TTextWriter;
 		$this->ClassDefinition->render($writer);
 		$this->SourceCode->Text=$writer->flush();
 	}

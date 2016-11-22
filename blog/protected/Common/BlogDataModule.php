@@ -8,6 +8,8 @@
  * @license https://github.com/pradosoft/prado4/blob/master/LICENSE
  */
 
+use Prado\Data\TDbConnection;
+
 /**
  * BlogDataModule class
  *

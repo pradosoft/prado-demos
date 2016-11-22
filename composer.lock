@@ -1,0 +1,114 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "1ab6022db232076d159309cc23149c71",
+    "content-hash": "f9ca0c59acf7e159b9bee43300ec8426",
+    "packages": [
+        {
+            "name": "pradosoft/prado4",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pradosoft/prado4.git",
+                "reference": "d06add811f4f59c887117286c8e14950397ba1b7"
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-spl": "*",
+                "php": ">=5.3.3"
+            },
+            "provide": {
+                "pradosoft/prado4": "4.0"
+            },
+            "require-dev": {
+                "apigen/apigen": "dev-master",
+                "ext-xdebug": "*",
+                "phpunit/dbunit": "*",
+                "phpunit/php-invoker": "*",
+                "phpunit/phpunit": "5.*",
+                "phpunit/phpunit-selenium": "3.*",
+                "pradosoft/prado4-apigen-theme": "*"
+            },
+            "suggest": {
+                "ext-apc": "Enables the use of TAPCCache as a cache handler",
+                "ext-eaccelerator": "Enables the use of TEACache as a cache handler",
+                "ext-hash": "Enables use of hash functions other than md5 and sha1",
+                "ext-iconv": "Used by some internationaization components",
+                "ext-mbstring": "Prado can use the mbstring extension for locale-aware string operations",
+                "ext-mcrypt": "Enables encryption of sensitive data, eg. page viewstate",
+                "ext-memcache": "Enables the use of TMemCache as a cache handler",
+                "ext-pdo": "Used by all the Prado\\Data components, eg. TActiveRecord",
+                "ext-soap": "Used by TSoapService to provide a soap backend",
+                "ext-xcache": "Enables the use of TXCache as a cache handler",
+                "ext-xsl": "Used by the TXmlTransform component",
+                "ext-zlib": "Enables compression to reduce page size",
+                "pradosoft/prado4-demos": "Demo applications for Prado4"
+            },
+            "bin": [
+                "bin/prado-cli"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Prado\\": "framework"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ciro Mattia Gonano",
+                    "email": "ciromattia@gmail.com",
+                    "role": "Github/Packagist Maintainer"
+                },
+                {
+                    "name": "Daniel Sampedro",
+                    "email": "darthdaniel85@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "David Otto",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fabio Bas",
+                    "email": "ctrlaltca@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jens Klaer",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Component Framework for PHP",
+            "homepage": "https://github.com/pradosoft/prado4",
+            "keywords": [
+                "Component",
+                "Framework"
+            ],
+            "support": {
+                "issues": "https://github.com/pradosoft/prado4/issues",
+                "source": "https://github.com/pradosoft/prado4",
+                "docs": "http://www.pradoframework.net/site/documentation"
+            },
+            "time": "2016-11-21 17:28:16"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "pradosoft/prado4": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
