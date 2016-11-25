@@ -1,7 +1,7 @@
 {
-	"name": "pradosoft/prado4-demos",
-	"description": "Prado4 demos",
-	"homepage": "https://github.com/pradosoft/prado4-demos",
+	"name": "pradosoft/prado-demos",
+	"description": "Prado demos",
+	"homepage": "https://github.com/pradosoft/prado-demos",
 	"license" : "BSD-3-Clause",
 	"authors": [
 		{
@@ -30,12 +30,12 @@
 	],
     "repositories": [
         {
-            "url": "https://github.com/pradosoft/prado4.git",
+            "url": "https://github.com/pradosoft/prado.git",
             "type": "git"
         }
     ],
 	"minimum-stability" : "dev", 
     "require": {
-        "pradosoft/prado4": "dev-master"
+        "pradosoft/prado": "dev-master"
     }
 }

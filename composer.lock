@@ -4,23 +4,112 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1ab6022db232076d159309cc23149c71",
-    "content-hash": "f9ca0c59acf7e159b9bee43300ec8426",
+    "hash": "e4b077b8dc06418aafbd31b0304e7eac",
+    "content-hash": "ef2da6d2b936593c18d092bf5ecbfcff",
     "packages": [
         {
-            "name": "pradosoft/prado4",
+            "name": "erusev/parsedown",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pradosoft/prado4.git",
-                "reference": "d06add811f4f59c887117286c8e14950397ba1b7"
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "20ff8bbb57205368b4b42d094642a3e52dac85fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/20ff8bbb57205368b4b42d094642a3e52dac85fb",
+                "reference": "20ff8bbb57205368b4b42d094642a3e52dac85fb",
+                "shasum": ""
             },
             "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "time": "2016-11-02 15:56:58"
+        },
+        {
+            "name": "firephp/firephp-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firephp/firephp-core.git",
+                "reference": "b58e48ef2b6ab2d8fbe6d9aa585652d3e75486bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firephp/firephp-core/zipball/b58e48ef2b6ab2d8fbe6d9aa585652d3e75486bd",
+                "reference": "b58e48ef2b6ab2d8fbe6d9aa585652d3e75486bd",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/FirePHPCore/FirePHP.class.php",
+                    "lib/FirePHPCore/fb.php"
+                ],
+                "files": [
+                    "lib/FirePHPCore/fb.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christoph Dorn",
+                    "email": "christoph@christophdorn.com",
+                    "homepage": "http://christophdorn.com"
+                }
+            ],
+            "description": "Traditional FirePHPCore library for sending PHP variables to the browser.",
+            "homepage": "https://github.com/firephp/firephp-core",
+            "time": "2015-08-02 19:57:10"
+        },
+        {
+            "name": "pradosoft/prado",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pradosoft/prado.git",
+                "reference": "9c8cf929f551aebd8e2b353f0152bfc5bdef55bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pradosoft/prado/zipball/9c8cf929f551aebd8e2b353f0152bfc5bdef55bb",
+                "reference": "9c8cf929f551aebd8e2b353f0152bfc5bdef55bb",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "*",
                 "ext-ctype": "*",
                 "ext-dom": "*",
                 "ext-json": "*",
                 "ext-pcre": "*",
                 "ext-spl": "*",
+                "firephp/firephp-core": "*",
                 "php": ">=5.3.3"
             },
             "provide": {
@@ -59,53 +148,49 @@
                     "Prado\\": "framework"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
-                {
-                    "name": "Ciro Mattia Gonano",
-                    "email": "ciromattia@gmail.com",
-                    "role": "Github/Packagist Maintainer"
-                },
-                {
-                    "name": "Daniel Sampedro",
-                    "email": "darthdaniel85@gmail.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "David Otto",
-                    "role": "Developer"
-                },
                 {
                     "name": "Fabio Bas",
                     "email": "ctrlaltca@gmail.com",
                     "role": "Developer"
                 },
                 {
+                    "name": "Ciro Mattia Gonano",
+                    "email": "ciromattia@gmail.com",
+                    "role": "Github/Packagist Maintainer"
+                },
+                {
+                    "name": "David Otto",
+                    "role": "Developer"
+                },
+                {
                     "name": "Jens Klaer",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Daniel Sampedro",
+                    "email": "darthdaniel85@gmail.com",
                     "role": "Developer"
                 }
             ],
             "description": "Component Framework for PHP",
             "homepage": "https://github.com/pradosoft/prado4",
             "keywords": [
-                "Component",
-                "Framework"
+                "component",
+                "framework"
             ],
-            "support": {
-                "issues": "https://github.com/pradosoft/prado4/issues",
-                "source": "https://github.com/pradosoft/prado4",
-                "docs": "http://www.pradoframework.net/site/documentation"
-            },
-            "time": "2016-11-21 17:28:16"
+            "time": "2016-11-25 13:47:51"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "pradosoft/prado4": 20
+        "pradosoft/prado": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
