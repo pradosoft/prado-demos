@@ -94,13 +94,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pradosoft/prado.git",
-                "reference": "9c8cf929f551aebd8e2b353f0152bfc5bdef55bb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pradosoft/prado/zipball/9c8cf929f551aebd8e2b353f0152bfc5bdef55bb",
-                "reference": "9c8cf929f551aebd8e2b353f0152bfc5bdef55bb",
-                "shasum": ""
+                "reference": "9292c5dbcf422f713244d7554b00d2ca69954565"
             },
             "require": {
                 "erusev/parsedown": "*",
@@ -113,7 +107,7 @@
                 "php": ">=5.3.3"
             },
             "provide": {
-                "pradosoft/prado4": "4.0"
+                "pradosoft/prado": "4.0"
             },
             "require-dev": {
                 "apigen/apigen": "dev-master",
@@ -122,7 +116,7 @@
                 "phpunit/php-invoker": "*",
                 "phpunit/phpunit": "5.*",
                 "phpunit/phpunit-selenium": "3.*",
-                "pradosoft/prado4-apigen-theme": "*"
+                "pradosoft/prado-apigen-theme": "*"
             },
             "suggest": {
                 "ext-apc": "Enables the use of TAPCCache as a cache handler",
@@ -137,7 +131,7 @@
                 "ext-xcache": "Enables the use of TXCache as a cache handler",
                 "ext-xsl": "Used by the TXmlTransform component",
                 "ext-zlib": "Enables compression to reduce page size",
-                "pradosoft/prado4-demos": "Demo applications for Prado4"
+                "pradosoft/prado-demos": "Demo applications for Prado"
             },
             "bin": [
                 "bin/prado-cli"
@@ -148,42 +142,46 @@
                     "Prado\\": "framework"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
-                {
-                    "name": "Fabio Bas",
-                    "email": "ctrlaltca@gmail.com",
-                    "role": "Developer"
-                },
                 {
                     "name": "Ciro Mattia Gonano",
                     "email": "ciromattia@gmail.com",
                     "role": "Github/Packagist Maintainer"
                 },
                 {
+                    "name": "Daniel Sampedro",
+                    "email": "darthdaniel85@gmail.com",
+                    "role": "Developer"
+                },
+                {
                     "name": "David Otto",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fabio Bas",
+                    "email": "ctrlaltca@gmail.com",
                     "role": "Developer"
                 },
                 {
                     "name": "Jens Klaer",
                     "role": "Developer"
-                },
-                {
-                    "name": "Daniel Sampedro",
-                    "email": "darthdaniel85@gmail.com",
-                    "role": "Developer"
                 }
             ],
             "description": "Component Framework for PHP",
-            "homepage": "https://github.com/pradosoft/prado4",
+            "homepage": "https://github.com/pradosoft/prado",
             "keywords": [
-                "component",
-                "framework"
+                "Component",
+                "Framework"
             ],
-            "time": "2016-11-25 13:47:51"
+            "support": {
+                "issues": "https://github.com/pradosoft/prado/issues",
+                "source": "https://github.com/pradosoft/prado",
+                "docs": "http://www.pradoframework.net/site/documentation"
+            },
+            "time": "2016-11-25 14:24:29"
         }
     ],
     "packages-dev": [],
