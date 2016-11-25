@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e4b077b8dc06418aafbd31b0304e7eac",
-    "content-hash": "ef2da6d2b936593c18d092bf5ecbfcff",
+    "hash": "a6d928b8aa0479563399a593487e375e",
+    "content-hash": "d5ca43acaccc008e1f6c4fb8ec378e77",
     "packages": [
         {
             "name": "erusev/parsedown",
-            "version": "dev-master",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
@@ -51,25 +51,22 @@
         },
         {
             "name": "firephp/firephp-core",
-            "version": "dev-master",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firephp/firephp-core.git",
-                "reference": "b58e48ef2b6ab2d8fbe6d9aa585652d3e75486bd"
+                "reference": "fabad0f2503f9577fe8dd2cb1d1c7cd73ed2aacf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firephp/firephp-core/zipball/b58e48ef2b6ab2d8fbe6d9aa585652d3e75486bd",
-                "reference": "b58e48ef2b6ab2d8fbe6d9aa585652d3e75486bd",
+                "url": "https://api.github.com/repos/firephp/firephp-core/zipball/fabad0f2503f9577fe8dd2cb1d1c7cd73ed2aacf",
+                "reference": "fabad0f2503f9577fe8dd2cb1d1c7cd73ed2aacf",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
                 "classmap": [
                     "lib/FirePHPCore/FirePHP.class.php",
-                    "lib/FirePHPCore/fb.php"
-                ],
-                "files": [
                     "lib/FirePHPCore/fb.php"
                 ]
             },
@@ -86,7 +83,7 @@
             ],
             "description": "Traditional FirePHPCore library for sending PHP variables to the browser.",
             "homepage": "https://github.com/firephp/firephp-core",
-            "time": "2015-08-02 19:57:10"
+            "time": "2013-04-23 15:28:20"
         },
         {
             "name": "pradosoft/prado",
@@ -95,6 +92,12 @@
                 "type": "git",
                 "url": "https://github.com/pradosoft/prado.git",
                 "reference": "9292c5dbcf422f713244d7554b00d2ca69954565"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pradosoft/prado/zipball/9292c5dbcf422f713244d7554b00d2ca69954565",
+                "reference": "9292c5dbcf422f713244d7554b00d2ca69954565",
+                "shasum": ""
             },
             "require": {
                 "erusev/parsedown": "*",
@@ -142,51 +145,47 @@
                     "Prado\\": "framework"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
-                {
-                    "name": "Ciro Mattia Gonano",
-                    "email": "ciromattia@gmail.com",
-                    "role": "Github/Packagist Maintainer"
-                },
-                {
-                    "name": "Daniel Sampedro",
-                    "email": "darthdaniel85@gmail.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "David Otto",
-                    "role": "Developer"
-                },
                 {
                     "name": "Fabio Bas",
                     "email": "ctrlaltca@gmail.com",
                     "role": "Developer"
                 },
                 {
+                    "name": "Ciro Mattia Gonano",
+                    "email": "ciromattia@gmail.com",
+                    "role": "Github/Packagist Maintainer"
+                },
+                {
+                    "name": "David Otto",
+                    "role": "Developer"
+                },
+                {
                     "name": "Jens Klaer",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Daniel Sampedro",
+                    "email": "darthdaniel85@gmail.com",
                     "role": "Developer"
                 }
             ],
             "description": "Component Framework for PHP",
             "homepage": "https://github.com/pradosoft/prado",
             "keywords": [
-                "Component",
-                "Framework"
+                "component",
+                "framework"
             ],
-            "support": {
-                "issues": "https://github.com/pradosoft/prado/issues",
-                "source": "https://github.com/pradosoft/prado",
-                "docs": "http://www.pradoframework.net/site/documentation"
-            },
             "time": "2016-11-25 14:24:29"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "pradosoft/prado": 20
     },

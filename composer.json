@@ -28,13 +28,6 @@
 			"role" : "Developer"
 		}
 	],
-    "repositories": [
-        {
-            "url": "https://github.com/pradosoft/prado.git",
-            "type": "git"
-        }
-    ],
-	"minimum-stability" : "dev", 
     "require": {
         "pradosoft/prado": "dev-master"
     }
