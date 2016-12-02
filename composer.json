@@ -28,6 +28,12 @@
 			"role" : "Developer"
 		}
 	],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://asset-packagist.org"
+		}
+	],
     "require": {
         "pradosoft/prado": "dev-master"
     }

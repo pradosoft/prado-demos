@@ -4,9 +4,162 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a6d928b8aa0479563399a593487e375e",
-    "content-hash": "d5ca43acaccc008e1f6c4fb8ec378e77",
+    "hash": "b4a621f9494c03d2d0d57835c9366798",
+    "content-hash": "660c7bff2193d4fd9742593414146bb0",
     "packages": [
+        {
+            "name": "bower-asset/bootstrap",
+            "version": "3.3.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/0b9c4a4007c44201dce9a6cc1a38407005c26c86",
+                "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.9.1,<4.0"
+            },
+            "type": "library"
+        },
+        {
+            "name": "bower-asset/clipboard",
+            "version": "1.5.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zenorocha/clipboard.js.git",
+                "reference": "8ad16a2c6cae573eb1f36114317ccaf3f130ae1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zenorocha/clipboard.js/zipball/8ad16a2c6cae573eb1f36114317ccaf3f130ae1f",
+                "reference": "8ad16a2c6cae573eb1f36114317ccaf3f130ae1f",
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "bower-asset/highlightjs",
+            "version": "9.8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/highlightjs.git",
+                "reference": "9f84fba3626a35c1482653b3f339aa49feba4c8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/highlightjs/zipball/9f84fba3626a35c1482653b3f339aa49feba4c8a",
+                "reference": "9f84fba3626a35c1482653b3f339aa49feba4c8a",
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "bower-asset/highlightjs-line-numbers.js",
+            "version": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wcoder/highlightjs-line-numbers.js.git",
+                "reference": "2acd76fda5e72d4eee9031221bd340c7fcf9eb79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wcoder/highlightjs-line-numbers.js/zipball/2acd76fda5e72d4eee9031221bd340c7fcf9eb79",
+                "reference": "2acd76fda5e72d4eee9031221bd340c7fcf9eb79",
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "bower-asset/jquery",
+            "version": "3.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jquery/jquery-dist.git",
+                "reference": "1b30f3ad466ebf2714d47eda34dbd7fdf6849fe3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/1b30f3ad466ebf2714d47eda34dbd7fdf6849fe3",
+                "reference": "1b30f3ad466ebf2714d47eda34dbd7fdf6849fe3",
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "bower-asset/jquery-ui",
+            "version": "1.12.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/jqueryui.git",
+                "reference": "44ecf3794cc56b65954cc19737234a3119d036cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/jqueryui/zipball/44ecf3794cc56b65954cc19737234a3119d036cc",
+                "reference": "44ecf3794cc56b65954cc19737234a3119d036cc",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.6"
+            },
+            "type": "library"
+        },
+        {
+            "name": "bower-asset/prototypejs-bower",
+            "version": "1.7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/plynchnlm/prototypejs-bower.git",
+                "reference": "880a287e8cbdc08bd731ab3f013a1af486633f79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/plynchnlm/prototypejs-bower/zipball/880a287e8cbdc08bd731ab3f013a1af486633f79",
+                "reference": "880a287e8cbdc08bd731ab3f013a1af486633f79",
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "bower-asset/scriptaculous-bower",
+            "version": "1.9.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/plynchnlm/scriptaculous-bower.git",
+                "reference": "cd5b0f19ef8c777e9dbf8a1f9389d1a5091ff34d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/plynchnlm/scriptaculous-bower/zipball/cd5b0f19ef8c777e9dbf8a1f9389d1a5091ff34d",
+                "reference": "cd5b0f19ef8c777e9dbf8a1f9389d1a5091ff34d",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/prototypejs-bower": "1.7.0"
+            },
+            "type": "library"
+        },
+        {
+            "name": "bower-asset/tinymce",
+            "version": "4.5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tinymce/tinymce-dist.git",
+                "reference": "9d2f73868b5b576cc01f7508ba3dec605c863830"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tinymce/tinymce-dist/zipball/9d2f73868b5b576cc01f7508ba3dec605c863830",
+                "reference": "9d2f73868b5b576cc01f7508ba3dec605c863830",
+                "shasum": null
+            },
+            "type": "library"
+        },
         {
             "name": "erusev/parsedown",
             "version": "1.6.1",
@@ -50,6 +203,50 @@
             "time": "2016-11-02 15:56:58"
         },
         {
+            "name": "ezyang/htmlpurifier",
+            "version": "v4.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezyang/htmlpurifier.git",
+                "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
+                "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
+                "files": [
+                    "library/HTMLPurifier.composer.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Edward Z. Yang",
+                    "email": "admin@htmlpurifier.org",
+                    "homepage": "http://ezyang.com"
+                }
+            ],
+            "description": "Standards compliant HTML filter written in PHP",
+            "homepage": "http://htmlpurifier.org/",
+            "keywords": [
+                "html"
+            ],
+            "time": "2016-07-16 12:58:58"
+        },
+        {
             "name": "firephp/firephp-core",
             "version": "v0.4.0",
             "source": {
@@ -91,23 +288,35 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pradosoft/prado.git",
-                "reference": "9292c5dbcf422f713244d7554b00d2ca69954565"
+                "reference": "9d31a772ae61ccf01edd8b4d15fa33b4be51dc2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pradosoft/prado/zipball/9292c5dbcf422f713244d7554b00d2ca69954565",
-                "reference": "9292c5dbcf422f713244d7554b00d2ca69954565",
+                "url": "https://api.github.com/repos/pradosoft/prado/zipball/9d31a772ae61ccf01edd8b4d15fa33b4be51dc2f",
+                "reference": "9d31a772ae61ccf01edd8b4d15fa33b4be51dc2f",
                 "shasum": ""
             },
             "require": {
+                "bower-asset/bootstrap": "^3.3",
+                "bower-asset/clipboard": "*",
+                "bower-asset/highlightjs": "^9",
+                "bower-asset/highlightjs-line-numbers.js": "*",
+                "bower-asset/jquery": "^3.1",
+                "bower-asset/jquery-ui": "^1.12",
+                "bower-asset/prototypejs-bower": "^1.7",
+                "bower-asset/scriptaculous-bower": "^1.9",
+                "bower-asset/tinymce": "^4",
                 "erusev/parsedown": "*",
                 "ext-ctype": "*",
                 "ext-dom": "*",
                 "ext-json": "*",
                 "ext-pcre": "*",
                 "ext-spl": "*",
+                "ezyang/htmlpurifier": "*",
                 "firephp/firephp-core": "*",
-                "php": ">=5.3.3"
+                "php": ">=5.3.3",
+                "pradosoft/prado-tinymce3": "*",
+                "pradosoft/prado-wsdlgenerator": "*"
             },
             "provide": {
                 "pradosoft/prado": "4.0"
@@ -180,7 +389,87 @@
                 "component",
                 "framework"
             ],
-            "time": "2016-11-25 14:24:29"
+            "time": "2016-12-02 15:35:10"
+        },
+        {
+            "name": "pradosoft/prado-tinymce3",
+            "version": "3.5.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pradosoft/prado-tinymce3.git",
+                "reference": "3b09ccdf0fb0dca11b22e3af9d0496d5a0766e27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pradosoft/prado-tinymce3/zipball/3b09ccdf0fb0dca11b22e3af9d0496d5a0766e27",
+                "reference": "3b09ccdf0fb0dca11b22e3af9d0496d5a0766e27",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Fabio Bas",
+                    "email": "ctrlaltca@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Packaged tinyMCE 3 in Prado",
+            "homepage": "https://github.com/pradosoft/prado-tinymce3",
+            "time": "2016-11-29 08:52:28"
+        },
+        {
+            "name": "pradosoft/prado-wsdlgenerator",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pradosoft/prado-wsdlgenerator.git",
+                "reference": "a8194b43e7566dfded39849ce81ed556b595a6e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pradosoft/prado-wsdlgenerator/zipball/a8194b43e7566dfded39849ce81ed556b595a6e3",
+                "reference": "a8194b43e7566dfded39849ce81ed556b595a6e3",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Prado\\Wsdl\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabio Bas",
+                    "email": "ctrlaltca@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Cristian Losada",
+                    "email": "cristian@teaxul.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "tanus@users.sourceforge.net",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Wei Zhuo",
+                    "email": "weizhuo@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Wsdl generator used in Prado",
+            "homepage": "https://github.com/pradosoft/prado-wsdlgenerator",
+            "time": "2016-11-27 17:08:08"
         }
     ],
     "packages-dev": [],
