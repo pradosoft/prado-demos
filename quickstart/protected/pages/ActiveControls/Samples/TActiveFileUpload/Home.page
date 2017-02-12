@@ -12,4 +12,16 @@ Please choose a file to upload:
 
 <com:TActiveLabel ID="Result" />
 
+<h1>TActiveFileUpload Sample (HTML5 multiple file upload)</h1>
+
+<p>
+Please choose one or more files to upload (keep CTRL pressed to select additional files):
+</p>
+
+<com:TActiveFileUpload OnFileUpload="fileUploadedMulti" Multiple="true"/>
+
+<br/>
+
+<com:TActiveLabel ID="ResultMulti" />
+
 </com:TContent>

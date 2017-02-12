@@ -6,12 +6,26 @@
 Please choose a file to upload:
 </p>
 
-<com:TFileUpload OnFileUpload="fileUploaded" />
+<com:TFileUpload OnFileUpload="fileUploaded"/>
 
 <com:TButton Text="Upload" />
 
 <br/>
 
 <com:TLabel ID="Result" />
+
+<h1>TFileUpload Sample (HTML5 multiple file upload)</h1>
+
+<p>
+Please choose one or more files to upload (keep CTRL pressed to select additional files):
+</p>
+
+<com:TFileUpload OnFileUpload="fileUploadedMulti" Multiple="true"/>
+
+<com:TButton Text="Upload" />
+
+<br/>
+
+<com:TLabel ID="ResultMulti" />
 
 </com:TContent>
