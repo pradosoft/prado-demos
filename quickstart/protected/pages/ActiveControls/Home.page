@@ -39,6 +39,17 @@ TActiveButton</a> control. See also the later part of the <a href="?page=Tutoria
   </li>
 
   <li>
+  <a href="?page=ActiveControls.ActiveHtmlArea">TActiveHtmlArea</a>
+  represents a WYSIWYG text input field taking user input that are in HTML format allowing
+  to change the content during callback.
+  </li>
+
+  <li>
+  <a href="?page=ActiveControls.ActiveHtmlArea4">TActiveHtmlArea4</a>
+  is the active counterpart of THtmlArea4 based on TinyMCE4.
+  </li>
+
+  <li>
   <a href="?page=ActiveControls.ActiveHiddenField">TActiveHiddenField</a>
   displays a hidden input field that can be changed upon callback.
   </li>

@@ -1,0 +1,53 @@
+<com:TContent ID="body">
+
+<h1>TActiveHtmlArea4 Samples</h1>
+
+<table class="sampletable">
+
+<tr><td class="samplenote">
+TActiveHtmlArea4 with default settings:
+</td><td class="sampleaction">
+<com:TActiveHtmlArea4 ID="HtmlArea1" />
+<div><com:TActiveButton Text="Submit" OnClick="button1Clicked" /> Submit your input an show it below.</div>
+<div><com:TActiveButton Text="Insert" OnClick="button1bClicked" /> Insert some sample HTML into the editor.</div>
+<br/>
+<com:TActiveLabel ID="Result1" />
+</td></tr>
+
+<tr><td class="samplenote">
+TActiveHtmlArea4 with manually set options
+</td><td class="sampleaction">
+<com:TActiveHtmlArea4 ID="HtmlArea2" Width="670px" Height="300px">
+  <prop:Options>
+    resize: false
+    plugins: "charmap code wordcount"
+    toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | code charmap | ",
+  </prop:Options>
+</com:TActiveHtmlArea4>
+<div><com:TActiveButton Text="Submit" OnClick="button2Clicked" /> Submit your input an show it below.</div>
+<div><com:TActiveButton Text="Insert" OnClick="button2bClicked" /> Insert some sample HTML into the editor.</div>
+<br/>
+<com:TActiveLabel ID="Result2" />
+</td></tr>
+
+<tr><td class="samplenote">
+TActiveHtmlArea4 with visual editing disabled:
+</td><td class="sampleaction">
+<com:TActiveHtmlArea4 ID="HtmlArea3" EnableVisualEdit="false" />
+<br/>
+<div><com:TActiveButton Text="Submit" OnClick="button3Clicked" /> Submit your input an show it below.</div>
+<div><com:TActiveButton Text="Insert" OnClick="button3bClicked" /> Insert some sample HTML into the editor.</div>
+<br/>
+<com:TActiveLabel ID="Result3" />
+</td></tr>
+
+<tr><td class="samplenote">
+Read-only TActiveHtmlArea4:
+</td><td class="sampleaction">
+<com:TActiveHtmlArea4 ID="HtmlArea4" ReadOnly="true" Text="Sample html text: <b>bold</b> <i>italic</i>" />
+<div><com:TActiveButton Text="Insert" OnClick="button4bClicked" /> Insert some sample HTML into the editor.</div>
+</td></tr>
+
+</table>
+
+</com:TContent>
