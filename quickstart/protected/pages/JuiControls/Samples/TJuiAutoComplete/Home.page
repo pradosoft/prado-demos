@@ -15,7 +15,7 @@ Simple Autocompleter:
     Suggestions.DataKeyField="id" >
 
     <prop:Suggestions.ItemTemplate>
-    <li><%# $this->Data['name'] %></li>
+    <%# $this->Data['name'] %>
     </prop:Suggestions.ItemTemplate>
 </com:TJuiAutoComplete>
 <com:TActiveLabel ID="Selection1" />
@@ -33,7 +33,7 @@ Autocompleter with multiple selection:
     Suggestions.DataKeyField="id" >
 
     <prop:Suggestions.ItemTemplate>
-    <li><%# $this->Data['name'] %></li>
+    <%# $this->Data['name'] %>
     </prop:Suggestions.ItemTemplate>
 </com:TJuiAutoComplete>
 (Use ',' to separate the selected suggestions)
