@@ -22,8 +22,8 @@
 </div>
 <div id="sourceView">
 <h3 style="text-align:center"><%= $this->FilePath %></h3>
-<com:TTextHighlighter ID="Highlighter" ShowLineNumbers=<%= $this->showNumbers->Checked %> CssClass="source">
-<com:TLiteral ID="SourceView" />
+<com:TTextHighlighter ID="Highlighter" ShowLineNumbers="<%= $this->showNumbers->Checked %>">
+<com:TLiteral ID="SourceView" Encode="true"/>
 </com:TTextHighlighter>
 </div>
 </com:TForm>

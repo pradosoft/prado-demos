@@ -96,7 +96,7 @@ class ViewSource extends TPage
 		{
 			case 'page' :
 			case 'tpl' :
-				return 'prado';
+				return 'html';
 			case 'php' :
 				return 'php';
 				break;
