@@ -546,16 +546,18 @@ dd
 	padding: 20px;
 }
 
-pre code
+pre code, pre code.hljs
 {
 	display: block;
-	padding: 0.5em;
-	border-style:solid;
-	border-width:1px;
-	border-color:#eeeeee;
+	padding: 0em;
+	margin: 0em;
+	border-style:none;
 	background-color:#ffffee;
 	font-family: "Courier New", Courier, mono;
-	margin: 0.2em;
+}
+
+pre code.hljs-line-numbers {
+	margin-right:.5em;
 }
 
 div.tip, div.info, div.note
