@@ -5,7 +5,7 @@
 		<ul class="list">
 			<li class="one"><a href="<%= $this->Service->constructUrl('Demos') %>">Try PRADO</a></li>
 			<li class="two"><a href="<%= $this->Service->constructUrl('Documentation') %>">Learn PRADO</a></li>
-      <li class="three"><a href="http://github.com/pradosoft/prado4">Develop with PRADO</a></li>
+      <li class="three"><a href="http://github.com/pradosoft/prado">Develop with PRADO</a></li>
 		</ul>
 	</div>
 </div>
