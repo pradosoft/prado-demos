@@ -5,7 +5,7 @@
 Application configurations are used to specify the global behavior of an application. They include specification of path aliases, namespace usages, module and service configurations, and parameters.
 </p>
 <p id="210214" class="block-content">
-Configuration for an application is stored in an XML file named <tt>application.xml</tt>, which should be located under the application base path. Its format is shown in the following. Complete specification of application configurations can be found in the <a href="<%~../../../../../docs/specs/application.dtd%>">DTD</a> and <a href="<%~../../../../../docs/specs/application.xsd%>">XSD</a> files.
+Configuration for an application is stored in an XML file named <tt>application.xml</tt>, which should be located under the application base path. Its format is shown in the following. Complete specification of application configurations can be found in the <a href="https://github.com/pradosoft/prado/blob/master/docs/specs/application.dtd">DTD</a> and <a href="https://github.com/pradosoft/prado/blob/master/docs/specs/application.xsd">XSD</a> files.
 </p>
 <com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_210095">
 <application PropertyName="PropertyValue" ...>
