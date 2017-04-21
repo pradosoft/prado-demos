@@ -461,12 +461,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pradosoft/prado.git",
-                "reference": "fe58cd7efbd4ee894bcbe24824debb27275e9979"
+                "reference": "d71f5d6d43516f269d0ed270674e7cd8a9944016"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pradosoft/prado/zipball/fe58cd7efbd4ee894bcbe24824debb27275e9979",
-                "reference": "fe58cd7efbd4ee894bcbe24824debb27275e9979",
+                "url": "https://api.github.com/repos/pradosoft/prado/zipball/d71f5d6d43516f269d0ed270674e7cd8a9944016",
+                "reference": "d71f5d6d43516f269d0ed270674e7cd8a9944016",
                 "shasum": ""
             },
             "require": {
@@ -564,7 +564,7 @@
                 "component",
                 "framework"
             ],
-            "time": "2017-04-19 15:11:37"
+            "time": "2017-04-21 13:38:58"
         },
         {
             "name": "pradosoft/prado-tinymce3",
