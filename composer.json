@@ -40,14 +40,14 @@
 	"scripts": {
 		"post-install-cmd": [
 			"chmod 777 */assets",
-			"chmod 777 */protected/runtime"
-			"chmod -R 777 chat/protected/App_Code"
+			"chmod 777 */protected/runtime",
+			"chmod -R 777 chat/protected/App_Code",
 			"chmod -R 777 time-tracker/protected/App_Data/SQLite"
 		],
 		"post-update-cmd": [
 			"chmod 777 */assets",
-			"chmod 777 */protected/runtime"
-			"chmod -R 777 chat/protected/App_Code"
+			"chmod 777 */protected/runtime",
+			"chmod -R 777 chat/protected/App_Code",
 			"chmod -R 777 time-tracker/protected/App_Data/SQLite"
 		]
 	}
