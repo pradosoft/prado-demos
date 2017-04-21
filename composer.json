@@ -36,5 +36,15 @@
 	],
     "require": {
         "pradosoft/prado": "dev-master"
-    }
+    },
+	"scripts": {
+		"post-install-cmd": [
+			"chmod 777 */assets",
+			"chmod 777 */protected/runtime"
+		],
+		"post-update-cmd": [
+			"chmod 777 */assets",
+			"chmod 777 */protected/runtime"
+		]
+	}
 }
