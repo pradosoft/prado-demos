@@ -35,7 +35,8 @@
 		}
 	],
     "require": {
-        "pradosoft/prado": "dev-master"
+        "pradosoft/prado": "dev-master",
+        "zf1/zend-search-lucene": "~1.12"
     },
 	"scripts": {
 		"post-install-cmd": [
