@@ -1,6 +1,6 @@
 <com:TContent ID="body" >
 
-<h1 id="5001">Data Controls</h1>
+<h1>Data Controls</h1>
 
 <p class="block-content">
 Data controls are used to display a repeated content like a list or a table. The content is generated from a collection of items containing the data, called the <tt>DataSource</tt>, and a template describing the appearance, called <tt>Renderer</tt>.

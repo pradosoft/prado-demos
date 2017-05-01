@@ -1,21 +1,21 @@
 <com:TContent ID="body" >
-<h1 id="401">My First PRADO Application</h1>
+<h1>My First PRADO Application</h1>
 <div id="hello1"  class="block-content">
-<p id="50034">
+<p>
 In this section, we guide you through creating your first PRADO application, the famous "Hello World" application.
 </p>
-<p id="50035">
+<p>
 "Hello World" perhaps is the simplest <i>interactive</i> PRADO application that you can create. It displays to end-users a page with a submit button whose caption is <tt>Click Me</tt>. After the user clicks on the button, its caption is changed to <tt>Hello World</tt>.
 </p>
-<p id="50036">
+<p>
 There are many approaches that can achieve the above goal. One can submit the page to the server, examine the POST variable, and generate a new page with the button caption updated. Or one can simply use JavaScript to update the button caption upon its <tt>onclick</tt> client event.
 </p>
 </div>
-<p id="50037" class="block-content">
+<p class="block-content">
 PRADO promotes component-based and event-driven Web programming. The button is represented by a <tt>TButton</tt> object. It encapsulates the button caption as the <tt>Text</tt> property and associates the user button click action with a server-side <tt>OnClick</tt> event. To respond to the user clicking on the button, one simply needs to attach a function to the button's <tt>OnClick</tt> event. Within the function, the button's <tt>Text</tt> property is modified as "Hello World". The following diagram shows the above sequence,
 <img src="<%~sequence.gif%>" class="figure"/>
 </p>
-<p id="50038" class="block-content">
+<p class="block-content">
 Our PRADO application consists of three files, <tt>index.php</tt>, <tt>Home.page</tt> and <tt>Home.php</tt>, which are organized as follows,
 <img src="<%~directory.gif%>" class="figure"/>
 
@@ -36,7 +36,7 @@ to create the Prado project directory structure. For example, type the command
 where you want to create the <tt>helloworld</tt> project.
 </div>
 
-<p id="50040">
+<p>
 The three files that we need are explained as follows.
 </p>
 <ul id="file-list" class="block-content">
@@ -73,10 +73,10 @@ class Home extends TPage
 </li>
 </ul>
 <div id="hello-end" class="block-content">
-<p id="50041">
+<p>
 The application is now ready and can be accessed via: <tt>http://Web-server-address/helloworld/index.php</tt>, assuming <tt>helloworld</tt> is directly under the Web <tt>DocumentRoot</tt>. Try to change <tt>TButton</tt> in <tt>Home.page</tt> to <tt>TLinkButton</tt> and see what happens.
 </p>
-<p id="50042">
+<p>
 Complete source code of this demo can be found in the PRADO release. You can also try the <a href="http://www.pradoframework.net/site/demos/helloworld/">online demo</a>.
 </p>
 </div>

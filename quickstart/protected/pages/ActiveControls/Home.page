@@ -1,15 +1,15 @@
 <com:TContent ID="body" >
-<h1 id="128031">Active Controls (AJAX enabled Controls)</h1>
-<p id="640423" class="block-content">
+<h1>Active Controls (AJAX enabled Controls)</h1>
+<p class="block-content">
 Active controls extends standard PRADO controls adding the ability to automatically update themselves on callbacks without the need of ad-hoc javascript calls. See the <a href="?page=ActiveControls.Introduction">Introduction</a>
 for a quick overview of the concept behind active controls (AJAX enabled controls).
 </p>
 
-<p id="640424" class="block-content">For a quick demo of active controls, try the <a href="?page=ActiveControls.ActiveButton">
+<p class="block-content">For a quick demo of active controls, try the <a href="?page=ActiveControls.ActiveButton">
 TActiveButton</a> control. See also the later part of the <a href="?page=Tutorial.CurrencyConverter">Currency Converter</a> tutorial for a more in depth example.
 </p>
 
-<h2 id="128032">Standard Active Controls</h2>
+<h2>Standard Active Controls</h2>
 <ul id="u1" class="block-content">
   <li>
   <a href="?page=ActiveControls.ActiveButton">TActiveButton</a>
@@ -116,7 +116,7 @@ TActiveButton</a> control. See also the later part of the <a href="?page=Tutoria
 
 </ul>
 
-<h2 id="128033">Active List Controls</h2>
+<h2>Active List Controls</h2>
 <ul id="u2" class="block-content">
   <li>
   <a href="?page=ActiveControls.ActiveCheckBoxList">TActiveCheckBoxList</a>
@@ -150,7 +150,7 @@ TActiveButton</a> control. See also the later part of the <a href="?page=Tutoria
   </li>
 </ul>
 
-<h2 id="134001">Active Data Controls</h2>
+<h2>Active Data Controls</h2>
 <ul id="u2" class="block-content">
   <li>
   <a href="?page=ActiveControls.ActiveDataList">TActiveDataList</a>
@@ -171,7 +171,7 @@ TActiveButton</a> control. See also the later part of the <a href="?page=Tutoria
   </li>
 </ul>
 
-<h2 id="128034">Extended Active Controls</h2>
+<h2>Extended Active Controls</h2>
 
 
 <ul id="u3" class="block-content">
@@ -214,8 +214,8 @@ TActiveButton</a> control. See also the later part of the <a href="?page=Tutoria
 
 </ul>
 
-<h2 id="128035">Active Control Abilities</h2>
-<p id="640426" class="block-content">The following table shows the Active Controls that can trigger a
+<h2>Active Control Abilities</h2>
+<p class="block-content">The following table shows the Active Controls that can trigger a
 callback event and whether the control will raise a PostBack event
 if Javascript was disabled on the client's browser.</p>
 <!-- tabular: align=|l|l|l|, width=(0.35 0.25 0.25) -->

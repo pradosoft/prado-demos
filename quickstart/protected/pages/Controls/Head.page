@@ -1,9 +1,9 @@
 <com:TContent ID="body" >
 
-<h1 id="2601">THead</h1>
+<h1>THead</h1>
 <com:DocLink ClassPath="System.Web.UI.WebControls.THead" />
 
-<p id="310261" class="block-content">
+<p class="block-content">
 <tt>THead</tt> displays a head element on a page. It displays the content
 enclosed in its body and the page title set by the <tt>Title</tt> property.
 </p>
