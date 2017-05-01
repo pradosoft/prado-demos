@@ -10,7 +10,7 @@ Master and content only apply to template controls (controls extending <tt>TTemp
 <p class="block-content">
 For example, assume a template control has the following template:
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_750192">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;%@ MasterClass="MasterControl" %&gt;
 &lt;com:TContent ID="A" &gt;
 content A
@@ -25,7 +25,7 @@ content B
 <p class="block-content">
 which uses <tt>MasterControl</tt> as its master control. The master control has the following template,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_750193">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 other stuff
 &lt;com:TContentPlaceHolder ID="A" /&gt;
 other stuff

@@ -7,7 +7,7 @@ A component is an instance of <tt>TComponent</tt> or its child class. The base c
 <h2>Component Properties</h2>
 <p class="block-content">
 A component property can be viewed as a public variable describing a specific aspect of the component, such as the background color, the font size, etc. A property is defined by the existence of a getter and/or a setter method in the component class. For example, in <tt>TControl</tt>, we define its <tt>ID</tt> property using the following getter and setter methods,
-<com:TTextHighlighter CssClass="source block-content" id="code_110056">
+<com:TTextHighlighter CssClass="source block-content">
 class TControl extends TComponent {
     public function getID() {
         ...
@@ -20,12 +20,12 @@ class TControl extends TComponent {
 </p>
 <p class="block-content">
 To get or set the <tt>ID</tt> property, do as follows, just like working with a variable,
-<com:TTextHighlighter CssClass="source block-content" id="code_110057">
+<com:TTextHighlighter CssClass="source block-content">
 $id = $component->ID;
 $component->ID = $id;
 </com:TTextHighlighter>
 This is equivalent to the following,
-<com:TTextHighlighter CssClass="source block-content" id="code_110058">
+<com:TTextHighlighter CssClass="source block-content">
 $id = $component->getID();
 $component->setID( $id );
 </com:TTextHighlighter>
@@ -40,12 +40,12 @@ A subproperty is a property of some object-typed property. For example, <tt>TWeb
 </p>
 <p class="block-content">
 To get or set the <tt>Name</tt> subproperty, use the following method,
-<com:TTextHighlighter CssClass="source block-content" id="code_110059">
+<com:TTextHighlighter CssClass="source block-content">
 $name = $component-&gt;getSubProperty('Font.Name');
 $component->setSubProperty('Font.Name', $name);
 </com:TTextHighlighter>
 This is equivalent to the following,
-<com:TTextHighlighter CssClass="source block-content" id="code_110060">
+<com:TTextHighlighter CssClass="source block-content">
 $name = $component->getFont()->getName();
 $component-&gt;getFont()-&gt;setName( $name );
 </com:TTextHighlighter>
@@ -82,7 +82,7 @@ Component events are special properties that take method names as their values. 
 </p>
 <p class="block-content">
 A component event is defined by the existence of a method whose name starts with the word <tt>on</tt>. The event name is the method name and is thus case-insensitve. For example, in <tt>TButton</tt>, we have
-<com:TTextHighlighter CssClass="source block-content" id="code_110061">
+<com:TTextHighlighter CssClass="source block-content">
 class TButton extends TWebControl {
     public function onClick( $param ) {
         ...
@@ -90,7 +90,7 @@ class TButton extends TWebControl {
 }
 </com:TTextHighlighter>
 This defines an event named <tt>OnClick</tt>, and a handler can be attached to the event using one of the following ways,
-<com:TTextHighlighter CssClass="source block-content" id="code_110062">
+<com:TTextHighlighter CssClass="source block-content">
 $button->OnClick = $callback;
 $button->OnClick->add( $callback );
 $button->OnClick[] = $callback;
@@ -118,11 +118,11 @@ where <tt>PathAlias</tt> is an alias of some directory, while <tt>Dir1</tt> and 
 </p>
 <p class="block-content">
 To use a namespace in code, do as follows,
-<com:TTextHighlighter CssClass="source block-content" id="code_110063">
+<com:TTextHighlighter CssClass="source block-content">
 Prado::using('PathAlias.Dir1.Dir2.*');
 </com:TTextHighlighter>
 which appends the directory referred to by <tt>PathAlias.Dir1.Dir2</tt> into PHP include path so that classes defined under that directory may be instantiated without the namespace prefix. You may also include an individual class definition by
-<com:TTextHighlighter CssClass="source block-content" id="code_110064">
+<com:TTextHighlighter CssClass="source block-content">
 Prado::using('PathAlias.Dir1.Dir2.MyClass');
 </com:TTextHighlighter>
 which will include the class file if <tt>MyClass</tt> is not defined.
@@ -139,7 +139,7 @@ Component instantiation means creating instances of component classes. There are
 <h3>Dynamic Component Instantiation</h3>
 <p class="block-content">
 Dynamic component instantiation means creating component instances in PHP code. It is the same as the commonly referred object creation in PHP. A component can be dynamically created using one of the following two methods in PHP,
-<com:TTextHighlighter CssClass="source block-content" id="code_110065">
+<com:TTextHighlighter CssClass="source block-content">
 $component = new ComponentClassName;
 $component = Prado::createComponent('ComponentType');
 </com:TTextHighlighter>
@@ -149,7 +149,7 @@ where <tt>ComponentType</tt> refers to a class name or a type name in namespace 
 <h3>Static Component Instantiation</h3>
 <p class="block-content">
 Static component instantiation is about creating components via <a href="?page=Configurations.Overview">configurations</a>. The actual creation work is done by the PRADO framework. For example, in an <a href="?page=Configurations.AppConfig">application configuration</a>, one can configure a module to be loaded when the application runs. The module is thus a static component created by the framework. Static component instantiation is more commonly used in <a href="?page=Configurations.Templates1">templates</a>. Every component tag in a template specifies a component that will be automatically created by the framework when the template is loaded. For example, in a page template, the following tag will lead to the creation of a <tt>TButton</tt> component on the page,
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_110066">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TButton Text="Register" /&gt;
 </com:TTextHighlighter>
 </p>

@@ -9,7 +9,7 @@
 <p class="block-content">
 To add a view to <tt>TMultiView</tt>, manipulate the <tt>Views</tt> collection or add it in template as follows,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_430109">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TMultiView&gt;
    &lt;com:TView&gt;
       view 1 content

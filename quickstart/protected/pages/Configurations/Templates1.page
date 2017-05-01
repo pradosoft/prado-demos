@@ -13,7 +13,7 @@ A component tag specifies a component as part of the body content of the templat
 </p>
 <p class="block-content">
 The format of a component tag is as follows,
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_180072">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:ComponentType PropertyName="PropertyValue" ... EventName="EventHandler" ...&gt;
 body content
 &lt;/com:ComponentType&gt;
@@ -25,7 +25,7 @@ It is required that component tags nest properly with each other and an opening 
 </p>
 <p class="block-content">
 The following template shows a component tag specifying the <tt>Text</tt> property and <tt>OnClick</tt> event of a button control,
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_180073">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TButton Text="Register" OnClick="registerUser" />
 </com:TTextHighlighter>
 Note, property names and event names are all case-insensitive, while component type names are case-sensitive. Event names always begin with <tt>On</tt>.
@@ -36,7 +36,7 @@ Also note, initial values for properties whose name ends with <tt>Template</tt> 
 <p class="block-content">
 To facilitate initializing properties with big trunk of data, the following property initialization tag is introduced. It is equivalent to <tt>...PropertyName="PropertyValue"...</tt> in every aspect. Property initialization tags must be directly enclosed between the corresponding opening and closing component tag.
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_180074">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;prop:PropertyName&gt;
 PropertyValue
 &lt;/prop:PropertyName&gt;
@@ -44,14 +44,14 @@ PropertyValue
 <p class="block-content">
 Since version 3.1.0, the property initialization tag can also be used to initialize a set of subproperties who share the same parent property. For example, the following is equivalent to <tt>HeaderStyle.BackColor="black"</tt> and <tt>HeaderStyle.ForeColor="red"</tt>.
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_180075">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;prop:HeaderStyle BackColor="black" ForeColor="red" />
 </com:TTextHighlighter>
 
 <h3>Component IDs</h3>
 <p class="block-content">
 When specified in templates, component <tt>ID</tt> property has special meaning in addition to its normal property definition. A component tag specified with an ID value in template will register the corresponding component to the template owner control. The component can thus be directly accessed from the template control with its ID value. For example, in <tt>Home</tt> page's template, the following component tag
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_180076">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TTextBox ID="TextBox" Text="First Name" />
 </com:TTextHighlighter>
 makes it possible to get the textbox object in code using <tt>$page->TextBox</tt>.
@@ -60,7 +60,7 @@ makes it possible to get the textbox object in code using <tt>$page->TextBox</tt
 <a name="tct"></a>
 <h2>Template Control Tags</h2>
 A template control tag is used to configure the initial property values of the control owning the template. Its format is as follows,
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_180077">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;%@ PropertyName="PropertyValue" ... %&gt;
 </com:TTextHighlighter>
 Like in component tags, <tt>PropertyName</tt> is case-insensitive and can be a property or subproperty name.
@@ -77,7 +77,7 @@ Template control tag is optional in a template. Each template can contain at mos
 <p class="block-content">
 Comment tags are used to put in a template developer comments that will not display to end-users. Contents enclosed within a comment tag will be treated as raw text strings and PRADO will not attempt to parse them. Comment tags cannot be used within property values. The format of comment tags is as follows,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_180078">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;!---
 Comments INVISIBLE to end-users
 ---&gt;
@@ -89,7 +89,7 @@ The new comment tag <tt>&lt;!--- ... ---&gt;</tt> has been introduced since PRAD
 <p class="block-content">
 Since version 3.0.5, PRADO starts to support external template inclusion. This is accomplished via include tags, where external template files are specified in namespace format and their file name must be terminated as <tt>.tpl</tt>.
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_180079">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;%include path.to.templateFile %&gt;
 </com:TTextHighlighter>
 

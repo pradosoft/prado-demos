@@ -10,7 +10,7 @@ The format of the date string displayed in the text box is determined by
 the <tt>DateFormat</tt> property. Valid formats are the combination of the
 following tokens:
 
-<com:TTextHighlighter Language="text" CssClass="source block-content" id="code_280103">
+<com:TTextHighlighter Language="text" CssClass="source block-content">
 Character      Format Pattern (en-US)
 ---------------------------------------------------------------------
  d              day digit

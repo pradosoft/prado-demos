@@ -6,7 +6,7 @@ List controls covered in this section all inherit directly or indirectly from <t
 </p>
 <ul id="u1" class="block-content">
 <li><tt>Items</tt> - list of items in the control. The items are of type <tt>TListItem</tt>. The item list can be populated via databinding or specified in templates like the following:
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_550115">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TListBox&gt;
   &lt;com:TListItem Text="text 1" Value="value 1" /&gt;
   &lt;com:TListItem Text="text 2" Value="value 2" Selected="true" /&gt;
@@ -27,7 +27,7 @@ Since <tt>TListControl</tt> inherits from <tt>TDataBoundControl</tt>, these list
 </p>
 <ul id="u2" class="block-content">
   <li>one-dimensional array or objects implementing <tt>ITraversable</tt> :  array keys will be used as list item values, and array values will be used as list item texts. For example
-<com:TTextHighlighter CssClass="source block-content" id="code_550116">
+<com:TTextHighlighter CssClass="source block-content">
 $listbox->DataSource=array(
 	'key 1'=>'item 1',
 	'key 2'=>'item 2',
@@ -36,7 +36,7 @@ $listbox->dataBind();
 </com:TTextHighlighter>
 </li>
   <li>tabular (two-dimensional) data : each row of data populates a single list item. The list item value is specified by the data member indexed with <tt>DataValueField</tt>, and the list item text by <tt>DataTextField</tt>. For example,
-<com:TTextHighlighter CssClass="source block-content" id="code_550117">
+<com:TTextHighlighter CssClass="source block-content">
 $listbox->DataTextField='name';
 $listbox->DataValueField='id';
 $listbox->DataSource=array(

@@ -21,7 +21,7 @@ Wizard steps are represented by <tt>TWizardStep</tt> and are maintained in <tt>T
 Wizard steps are typically added to a wizard through template as follows,
 </p>
 
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_540114">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TWizard&gt;
 	&lt;com:TWizardStep Title="step 1" StepType="Start"&gt;
 	content in step 1, may contain other controls

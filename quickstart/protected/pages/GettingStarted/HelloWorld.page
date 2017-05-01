@@ -41,7 +41,7 @@ The three files that we need are explained as follows.
 </p>
 <ul id="file-list" class="block-content">
 <li><tt>index.php</tt> - entry script of the PRADO application. This file is required by all PRADO applications and is the only script file that is directly accessible by end-users. Content in <tt>index.php</tt> mainly consists of the following three lines,
-<com:TTextHighlighter CssClass="source block-content" id="code_50003">
+<com:TTextHighlighter CssClass="source block-content">
 // load composer autoloader
 require 'protected/vendor/autoload.php';
 // create a PRADO application instance
@@ -51,7 +51,7 @@ $application->run();
 </com:TTextHighlighter>
 </li>
 <li><tt>Home.page</tt> - template for the default page returned when users do not explicitly specify the page requested. A template specifies the presentational layout of components. In this example, we use two components, <tt>TForm</tt> and <tt>TButton</tt>, which correspond to the &lt;form&gt; and &lt;input&gt; HTML tags, respectively. The template contains the following content,
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_50004">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 <html>
   <body>
     &lt;com:TForm&gt;
@@ -62,7 +62,7 @@ $application->run();
 </com:TTextHighlighter>
 </li>
 <li><tt>Home.php</tt> - page class for the <tt>Home</tt> page. It mainly contains the method responding to the <tt>OnClick</tt> event of the button.
-<com:TTextHighlighter CssClass="source block-content" id="code_50005">
+<com:TTextHighlighter CssClass="source block-content">
 <?php
 class Home extends TPage
 {

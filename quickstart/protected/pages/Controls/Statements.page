@@ -6,7 +6,7 @@
 <p class="block-content">
 <tt>TStatements</tt> evaluates a sequence of PHP statements and displays the content rendered by the statements. To specify the PHP statements to be evaluated, set the <tt>Statements</tt> property. For example, the following component tag displays the current time on the Web page,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_500111">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TStatements&gt;
   &lt;prop:Statements&gt;
   setlocale(LC_ALL, 'nl_NL');
@@ -22,7 +22,7 @@ Note, <tt>TStatements</tt> evaluates the PHP statements during the rendering con
 <p class="block-content">
 The context of the statements in a <tt>TStatements</tt> control is the control itself. That is, <tt>$this</tt> represents the control object if it is present in the statements. For example, the following statement tag will display the title of the page containing the <tt>TStatements</tt> control.
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_500112">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TStatements&gt;
   &lt;prop:Statements&gt;
   $page=$this->Page;

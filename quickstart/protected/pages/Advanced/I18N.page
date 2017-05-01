@@ -29,14 +29,14 @@
 <p class="block-content">To enable the localization features in PRADO, you need to add a few configuration options in your <a href="?page=Configurations.AppConfig">application configuration</a>.
 First you need to include the <tt>System.I18N.*</tt> namespace to your paths.
 </p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_790203">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <paths>
     <using namespace="System.I18N.*" />
 </paths>
 </com:TTextHighlighter>
 
 <p class="block-content">Then, if you wish to translate some text in your application, you need to add one translation message data source.</p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_790204">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <module id="globalization" class="TGlobalization">
     <translation type="XLIFF"
         source="MyApp.messages"
@@ -57,7 +57,7 @@ The <tt>marker</tt> value is used to surround any untranslated text.
 <h2>What to do with <tt>messages.xml</tt>?</h2>
 <p class="block-content">The translation message catalogue file, if using <tt>type="XLIFF"</tt>, is a standardized translation message interchange XML format. You can edit the XML file using any UTF-8 aware editor. The format of the XML is something like the following.</p>
 
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_790205">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <?xml version="1.0"?>
 <xliff version="1.0">
     <file original="I18N Example IndexPage"
@@ -101,14 +101,14 @@ Each translation message is wrapped within a <tt>trans-unit</tt> tag, where <tt>
 
 <h2>Setting and Changing Culture</h2>
 <p class="block-content">Once globalization is enabled, you can access the globalization settings, such as, <tt>Culture</tt>, <tt>Charset</tt>, etc, using </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_790206">
+<com:TTextHighlighter CssClass="source block-content">
 $globalization = $this->getApplication()->getGlobalization();
 echo $globalization->Culture;
 $globalization->Charset= "GB-2312"; //change the charset
 </com:TTextHighlighter>
 
 <p class="block-content">You also change the way the culture is determined by changing the <tt>class</tt> attribute in the module configuration. For example, to set the culture that depends on the browser settings, you can use the <tt>TGlobalizationAutoDetect</tt> class.
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_790207">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <module id="globalization" class="TGlobalizationAutoDetect">
    ...
 </module>
@@ -116,7 +116,7 @@ $globalization->Charset= "GB-2312"; //change the charset
 
 <p class="block-content">You may also provide your own globalization class to change how the application culture is set.
 Lastly, you can change the globalization settings on page by page basis using <a href="?page=Configurations.Templates1#tct">template control tags</a>. For example, changing the <tt>Culture</tt> to "zh".</p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_790208">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;%@ Application.Globalization.Culture="zh" %&gt;
 </com:TTextHighlighter>
 
@@ -125,7 +125,7 @@ There are two areas in your application that may need message or string localiza
 <h2>Using <tt>localize</tt> function to translate text within PHP</h2>
 
 <p class="block-content">The <tt>localize</tt> function searches for a translated string that matches original from your translation source. First, you need to locate all the hard coded text in PHP that are displayed or sent to the end user. The following example localizes the text of the <tt>$sender</tt> (assuming, say, the sender is a button). The original code before localization is as follows.
-<com:TTextHighlighter CssClass="source block-content" id="code_790209">
+<com:TTextHighlighter CssClass="source block-content">
 function clickMe($sender,$param)
 {
   $sender->Text="Hello, world!";
@@ -133,7 +133,7 @@ function clickMe($sender,$param)
 </com:TTextHighlighter>
 
 <p class="block-content">The hard coded message "Hello, world!" is to be localized using the <tt>localize</tt> function. </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_790210">
+<com:TTextHighlighter CssClass="source block-content">
 function clickMe($sender,$param)
 {
   $sender->Text=Prado::localize("Hello, world!");
@@ -143,13 +143,13 @@ function clickMe($sender,$param)
 <h2>Compound Messages</h2>
 
 <p class="block-content">Compound messages can contain variable data. For example, in the message "There are 12 users online.", the integer 12 may change depending on some data in your application. This is difficult to translate because the position of the variable data may be difference for different languages. In addition, different languages have their own rules for plurals (if any) and/or quantifiers. The following example can not be easily translated, because the sentence structure is fixed by hard coding the variable data within message.</p>
-<com:TTextHighlighter CssClass="source block-content" id="code_790211">
+<com:TTextHighlighter CssClass="source block-content">
 $num_users = 12;
 $message = "There are " . $num_users . " users online.";
 </com:TTextHighlighter>
 
 This problem can be solved using the <tt>localize</tt> function with string substitution. For example, the <tt>$message</tt> string above can be constructed as follows.
-<com:TTextHighlighter CssClass="source block-content" id="code_790212">
+<com:TTextHighlighter CssClass="source block-content">
 $num_users = 12;
 $message = Prado::localize("There are {num_users} users online.", array('num_users'=>$num_users));
 </com:TTextHighlighter>
@@ -165,7 +165,7 @@ The <tt>localize</tt> function does not solve the problem of localizing language
 <p class="block-content">Messages and strings can be localized in PHP or in templates.
 To translate a message or string in the template, use <tt>TTranslate</tt>.</p>
 
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_790213">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TTranslate&gt;Hello World&lt;/com:TTranslate&gt;
 &lt;com:TTranslate Text="Goodbye" /&gt;
 </com:TTextHighlighter>
@@ -173,24 +173,24 @@ To translate a message or string in the template, use <tt>TTranslate</tt>.</p>
 <p class="block-content"><tt>TTranslate</tt> can also perform string substitution.
 The <tt>Parameters</tt> property can be use to add name values pairs for substitution. Substrings in the translation enclosed with "{" and "}" are consider as the
  parameter names during substitution lookup. The following example will substitute the substring "{time}" with the value of the parameter attribute "<tt>Parameters.time=&lt;%= time() %&gt;</tt>".
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_790214">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TTranslate Parameters.time=&lt;%= time() %&gt; &gt;
 The time is {time}.
 &lt;/com:TTranslate&gt;
 </com:TTextHighlighter>
 
 <p class="block-content">A short for <tt>TTranslate</tt> is also provided using the following syntax.</p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_790215">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;%[string]%&gt;
 </com:TTextHighlighter>
 <p class="block-content">where string will be translated to different languages according to the end-user's language preference. This syntax can be used with attribute values as well.</p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_790216">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TLabel Text="&lt;%[ Hello World! ]%&gt;" /&gt;
 </com:TTextHighlighter>
 
 <h2>TDateFormat</h2>
 <p class="block-content">Formatting localized date and time is straight forward.</p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_790217">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TDateFormat Value="12/01/2005" /&gt;
 </com:TTextHighlighter>
 
@@ -212,13 +212,13 @@ For example, full date pattern with short time pattern. The actual ordering of t
 date-time and the actual pattern will be determine automatically from locale data specified
 by the <tt>Culture</tt> property.</p>
 
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_790218">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TDateFormat Pattern="fulldate shorttime" /&gt;
 </com:TTextHighlighter>
 
 <p class="block-content">You can also specify a custom pattern using the following sub-patterns.
 The date/time format is specified by means of a string time pattern. In this pattern, all ASCII letters are reserved as pattern letters, which are defined as the following:
-<com:TTextHighlighter Language="text" CssClass="source block-content" id="code_790219">
+<com:TTextHighlighter Language="text" CssClass="source block-content">
  Symbol   Meaning                 Presentation        Example
  ------   -------                 ------------        -------
  G        era designator          (Text)              AD
@@ -265,7 +265,7 @@ even they are not embraced within single quotes.</p>
 
 <p class="block-content">Examples using the US locale:
 
-<com:TTextHighlighter Language="text" CssClass="source block-content" id="code_790220">
+<com:TTextHighlighter Language="text" CssClass="source block-content">
 Format Pattern                         Result
 --------------                         -------
 "yyyy.MM.dd G 'at' HH:mm:ss"      -&gt;&gt;  1996.07.10 AD at 15:08:56
@@ -291,7 +291,7 @@ numbers by specifying the <tt>Type</tt> attribute. The valid types are:</p>
 	<li><tt>scientific</tt></li>
 </ul>
 
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_790221">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TNumberFormat Type="currency" Value="100" /&gt;
 </com:TTextHighlighter>
 
@@ -304,7 +304,7 @@ the currency right, e.g. 100,00$. The decimal and grouping separator is
 then also from the <tt>de_DE</tt> locale. This may lead to some confusion because
 people from US uses the "," (comma) as thousand separator. Therefore a <tt>Currency</tt>
 attribute is available, so that the output from the following example results in $100.00
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_790222">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TNumberFormat Type="currency"
           Culture="en_US" Currency="EUR" Value="100" /&gt;
 </com:TTextHighlighter>
@@ -325,7 +325,7 @@ and will change automatically according to the <tt>Culture</tt> property. The va
 For example, consider the <tt>Value="1234567.12345"</tt> and
 with <tt>Culture="en_US"</tt> (which uses "," for thousand point separator and "." for decimal separators).
 </p>
-<com:TTextHighlighter Language="text" CssClass="source block-content" id="code_790223">
+<com:TTextHighlighter Language="text" CssClass="source block-content">
 Pattern                      Output
 -------                      ------
 ##,###.00               -&gt;&gt;  1,234,567.12
@@ -341,7 +341,7 @@ Pattern                      Output
 In the following example, the strings "{greeting}" and "{name}" will be replace
 with the values of "Hello" and "World", respectively.The substitution string must be enclose with "{" and "}". The parameters can be further translated by using <tt>TTranslate</tt>.
 
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_790224">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TTranslate&gt;
   {greeting} {name}!
   &lt;com:TTranslateParameter Key="name">World&lt;/com:TTranslateParameter&gt;
@@ -357,7 +357,7 @@ with the values of "Hello" and "World", respectively.The substitution string mus
 
 <p class="block-content">The <tt>TChoiceFormat</tt> component performs message/string choice translation. The following example demonstrated a simple 2 choice message translation.</p>
 
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_790225">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TChoiceFormat Value="1"/&gt;[1] One Apple. |[2] Two Apples&lt;/com:TChoiceFormat&gt;
 </com:TTextHighlighter>
 

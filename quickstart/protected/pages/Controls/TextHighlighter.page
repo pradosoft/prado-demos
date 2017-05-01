@@ -12,7 +12,7 @@ If line numbers are desired in front of each line, set <tt>ShowLineNumbers</tt> 
 <p class="block-content">
 To use <tt>TTextHighlighter</tt>, simply enclose the contents to be syntax highlighted within the body of a <tt>TTextHighlighter</tt> control. The following example highlights a piece of PHP code,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_530113">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TTextHighlighter ShowLineNumbers="true"&gt;
 <?php
 $str = 'one|two|three|four';

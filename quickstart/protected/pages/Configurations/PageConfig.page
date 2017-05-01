@@ -10,7 +10,7 @@ When a user requests a page stored under <tt>&lt;BasePath&gt;/dir1/dir2</tt>, th
 <p class="block-content">
 The format of a page configuration file is as follows,
 </p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_220097">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <configuration>
   <paths>
     <alias id="AliasID" path="AliasPath" />

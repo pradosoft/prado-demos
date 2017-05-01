@@ -26,14 +26,14 @@ We need two files: a control class file named <tt>LabeledTextBox.php</tt> and a 
 <p class="block-content">
 Like creating a PRADO page, we can easily write down the content in the control template file.
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_660129">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TLabel ID="Label" ForControl="TextBox" /&gt;
 &lt;com:TTextBox ID="TextBox" /&gt;
 </com:TTextHighlighter>
 <p class="block-content">
 The above template specifies a <tt>TLabel</tt> control named <tt>Label</tt> and a <tt>TTextBox</tt> control named <tt>TextBox</tt>. We would to expose these two controls. This can be done by defining a property for each control in the <tt>LabeledTextBox</tt> class file. For example, we can define a <tt>Label</tt> property as follows,
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_660130">
+<com:TTextHighlighter CssClass="source block-content">
 class LabeledTextBox extends TTemplateControl {
     public function getLabel() {
         $this->ensureChildControls();
@@ -53,7 +53,7 @@ For a composite control as simple as <tt>LabeledTextBox</tt>, it is better to cr
 <p class="block-content">
 Complete code for <tt>LabeledTextBox</tt> is shown as follows,
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_660131">
+<com:TTextHighlighter CssClass="source block-content">
 class LabeledTextBox extends TCompositeControl {
     private $_label;
     private $_textbox;
@@ -84,7 +84,7 @@ class LabeledTextBox extends TCompositeControl {
 <p class="block-content">
 To use <tt>LabeledTextBox</tt> control, first we need to include the corresponding class file. Then in a page template, we can write lines like the following,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_660132">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:LabeledTextBox ID="Input" Label.Text="Username" /&gt;
 </com:TTextHighlighter>
 <p class="block-content">

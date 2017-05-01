@@ -12,13 +12,13 @@ View state lies at the heart of PRADO. With view state, Web pages become statefu
 <p class="block-content">
 View state is only available to controls. View state of a control can be disabled by setting its <tt>EnableViewState</tt> property to false. To store a variable in view state, call the following,
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_770197">
+<com:TTextHighlighter CssClass="source block-content">
 $this->setViewState('Caption',$caption);
 </com:TTextHighlighter>
 <p class="block-content">
 where <tt>$this</tt> refers to the control object, <tt>Caption</tt> is a unique key identifying the <tt>$caption</tt> variable stored in viewstate. To retrieve the variable back from view state, call the following,
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_770198">
+<com:TTextHighlighter CssClass="source block-content">
 $caption = $this->getViewState('Caption');
 </com:TTextHighlighter>
 
@@ -29,7 +29,7 @@ Control state is like view state in every aspect except that control state canno
 <p class="block-content">
 To store and retrieve a variable in control state, use the following commands,
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_770199">
+<com:TTextHighlighter CssClass="source block-content">
 $this->setControlState('Caption',$caption);
 $caption = $this->getControlState('Caption');
 </com:TTextHighlighter>
@@ -41,7 +41,7 @@ Application state refers to data that is persistent across user sessions and pag
 <p class="block-content">
 To store and retrieve a variable in application state, use the following commands,
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_770200">
+<com:TTextHighlighter CssClass="source block-content">
 $application->setGlobalState('Caption',$caption);
 $caption = $application->getGlobalState('Caption');
 </com:TTextHighlighter>

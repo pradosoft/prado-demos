@@ -15,7 +15,7 @@ To prevent viewstate from being tampered, PRADO enforces viewstate HMAC (Keyed-H
 <p class="block-content">
 HMAC check requires a private key that should be secret to end users. Developers can either manually specify a key or let PRADO automatically generate a key. Manually specified key is useful when the application runs on a server farm. To do so, configure <tt>TSecurityManager</tt> in application configuration,
 </p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_730186">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 &lt;modules&gt;
     &lt;module id="security"
         class="TSecurityManager"
@@ -66,7 +66,7 @@ PRADO implements a cookie validation scheme that prevents cookies from being mod
 <p class="block-content">
 Cookie validation is disabled by default. To enable it, configure the <tt>THttpRequest</tt> module as follows,
 </p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_730187">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <modules>
   <module id="request" class="THttpRequest" EnableCookieValidation="true" />
 </modules>
@@ -74,14 +74,14 @@ Cookie validation is disabled by default. To enable it, configure the <tt>THttpR
 <p class="block-content">
 To make use of cookie validation scheme provided by PRADO, you also need to retrieve cookies through the <tt>Cookies</tt> collection of <tt>THttpRequest</tt> by using the following PHP statements,
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_730188">
+<com:TTextHighlighter CssClass="source block-content">
 foreach($this->Request->Cookies as $cookie)
     // $cookie is of type THttpCookie
 </com:TTextHighlighter>
 <p class="block-content">
 To send cookie data encoded with validation information, create new <tt>THttpCookie</tt> objects and add them to the <tt>Cookies</tt> collection of <tt>THttpResponse</tt>,
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_730189">
+<com:TTextHighlighter CssClass="source block-content">
 $cookie=new THttpCookie($name,$value);
 $this->Response->Cookies[]=$cookie;
 </com:TTextHighlighter>

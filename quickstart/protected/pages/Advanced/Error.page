@@ -47,7 +47,7 @@ Exceptions raised during the runtime of PRADO applications are captured by <tt>S
 <p class="block-content">
 Developers can customize the presentation of exception messages. By default, all error output templates are stored under <tt>framework/Exceptions/templates</tt>. The location can be changed by configuring <tt>TErrorHandler</tt> in application configuration,
 </p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_800226">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 &lt;module id="error"
     class="TErrorHandler"
     ErrorTemplatePath="Application.ErrorTemplates" /&gt;
@@ -55,7 +55,7 @@ Developers can customize the presentation of exception messages. By default, all
 <p class="block-content">
 <tt>THttpException</tt> uses a set of templates that are differentiated according to different <tt>StatusCode</tt> property value of <tt>THttpException</tt>. <tt>StatusCode</tt> has the same meaning as the status code in HTTP protocol. For example, a status code equal to 404 means the requested URL is not found on the server. The <tt>StatusCode</tt> value is used to select which output template to use. The output template files use the following naming convention:
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_800227">
+<com:TTextHighlighter CssClass="source block-content">
     error<status code>-<language code>.html
 </com:TTextHighlighter>
 <p class="block-content">
@@ -64,7 +64,7 @@ where <tt>status code</tt> refers to the <tt>StatusCode</tt> property value of <
 <p class="block-content">
 The naming convention for the template files used for all other exceptions is as follows,
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_800228">
+<com:TTextHighlighter CssClass="source block-content">
     exception-<language code>.html
 </com:TTextHighlighter>
 <p class="block-content">

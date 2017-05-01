@@ -12,7 +12,7 @@ PRADO provides a generic caching technique used by in several core parts of the 
 <p class="block-content">
 Enabling caching is very easy. Simply add the cache module in the application configuration, and PRADO takes care of the rest.
 </p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_810229">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 &lt;modules&gt;
     &lt;module id="cache" class="System.Caching.TSqliteCache" /&gt;
 &lt;/modules&gt;
@@ -21,7 +21,7 @@ Enabling caching is very easy. Simply add the cache module in the application co
 <p class="block-content">
 Developers can also take advantage of the caching technique in their applications. The <tt>Cache</tt> property of <tt>TApplication</tt> returns the plugged-in cache module when it is available. To save and retrieve a data item in cache, use the following commands,
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_810230">
+<com:TTextHighlighter CssClass="source block-content">
 if($application->Cache) {
     // saves data item in cache
     $application->Cache->set($keyName,$dataItem);
@@ -47,7 +47,7 @@ The difference between <tt>Debug</tt>, <tt>Normal</tt> and <tt>Performance</tt> 
 <p class="block-content">
 To switch application mode, configure it in application configuration:
 </p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_810231">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 &lt;application Mode="Performance" &gt;
     ......
 &lt;/application &gt;
@@ -63,7 +63,7 @@ First, you may disable viewstate by setting <tt>EnableViewState</tt> to false fo
 <p class="block-content">
 Second, you may use a different page state storage. For example, page state may be stored in session, which essentially stores page state on the server side and thus saves the network transmission time. The <tt>StatePersisterClass</tt> property of the page determines which state persistence class to use. By default, it uses <tt>System.Web.UI.TPageStatePersister</tt> to store persistent state in hidden fields. You may modify this property to a persister class of your own, as long as the new persister class implements the <tt>IPageStatePersister</tt> interface. You may configure this property in several places, such as application configuration or page configuration using &lt;pages&gt; or &lt;page&gt; tags,
 </p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_810232">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 &lt;pages StatePersisterClass="MyPersister1" ... &gt;
     &lt;page ID="SpecialPage" StatePersisterClass="MyPersister2" ... /&gt;
 &lt;/pages&gt;

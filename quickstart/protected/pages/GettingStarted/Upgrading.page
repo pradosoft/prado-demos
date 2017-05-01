@@ -49,7 +49,7 @@ Version 3.0 redefines the relationships between controls. In particular, the par
 <p>
 The syntax of control templates in v3.0 remains similar to those in earlier versions, with many enhancements. A major change is about the databinding expression. In v3.0, this is done by the following,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_40002">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:MyComponent PropertyName=&lt;%# PHP expression %&gt; .../&gt;
 </com:TTextHighlighter>
 <p>

@@ -147,7 +147,7 @@ To create a server-side validation function, provide a handler for the <tt>OnSer
 <p class="block-content">
 To create a client-side validation function, add the client-side validation javascript function to the page template and assign its name to the <tt>ClientValidationFunction</tt> property. The function should have the following signature:
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_560118">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 <script type="text/javascript">
 function ValidationFunctionName(sender, parameter)
 {
@@ -210,7 +210,7 @@ For Prado versions earlier than 3.1 the property names were <tt>OnError</tt> and
 </div>
 
 <p class="block-content">The following example pop-up a message saying "hello" when the validator fails on the client-side.
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_560119">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TRequiredFieldValidator ... &gt;
 	&lt;prop:ClientSide.OnValidationError&gt;
 		alert("hello");
@@ -218,7 +218,7 @@ For Prado versions earlier than 3.1 the property names were <tt>OnError</tt> and
 &lt;/com:TRequiredFieldValidator&gt;
 </com:TTextHighlighter>
 The resulting client-side event callback function is of the following form.
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_560120">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 function onErrorHandler(sender, parameter)
 {
 	alert("hello");

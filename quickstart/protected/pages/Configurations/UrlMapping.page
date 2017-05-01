@@ -20,7 +20,7 @@ pattern will be replaced with the corresponding GET variable values.
 
 <p class="block-content">
 To use <tt>TUrlMapping</tt>, one must set the <tt>UrlManager</tt> property of the <tt>THttpRequest</tt> module as the <tt>TUrlMapping</tt> module ID. See following for an example,
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_230098">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <modules>
 		<module id="request" class="THttpRequest" UrlManager="friendly-url" />
 		<module id="friendly-url" class="System.Web.TUrlMapping">
@@ -67,13 +67,13 @@ a regular expression with parameter names enclosed between a left brace '<tt>{</
 and a right brace '<tt>}</tt>'. The patterns for each parameter can be set
 using <tt>Parameters</tt> attribute collection.
 For example,
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_230099">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <url ServiceParameter="ArticleView" pattern="articles/{year}/{month}/{day}"
 	parameters.year="\d{4}" parameters.month="\d{2}" parameters.day="\d+" />
 </com:TTextHighlighter>
 </p>
 The example is equivalent to the following regular expression (it uses the "named group" feature in regular expressions available in PHP):
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_230100">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <url ServiceParameter="ArticleView"><![CDATA[
 	#articles/(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d+)#u
 ]]></url>

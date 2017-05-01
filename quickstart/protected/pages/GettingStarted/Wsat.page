@@ -17,7 +17,7 @@
         To use WSAT, you need to add in your project configuration file: <tt>application.xml</tt>, 
         in the services section the wsat service like follows:
 
-<com:TTextHighlighter CssClass="source block-content" id="code_100018" Language="xml">
+<com:TTextHighlighter CssClass="source block-content" Language="xml">
 <services> 
     ...
     <service id="wsat" class="System.Wsat.TWsatService" Password="my_secret_password" />

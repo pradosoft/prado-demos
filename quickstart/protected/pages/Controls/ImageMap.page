@@ -12,7 +12,7 @@ Each hotspot is described using a <tt>THotSpot</tt> object and is maintained in 
 <p class="block-content">
 Hotspots can be added to <tt>TImageMap</tt> via its <tt>HotSpots</tt> property or in a template like the following,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_360106">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TImageMap ... &gt;
   &lt;com:TCircleHotSpot ... /&gt;
   &lt;com:TRectangleHotSpot ... /&gt;

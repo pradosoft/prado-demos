@@ -27,7 +27,7 @@ In the following, we introduce the usage of PRADO DAO in different scenarios.
 <p class="block-content">
 To establish a database connection, one creates a <tt>TDbConnection</tt> instance and activate it. A data source name (DSN) is needed to specify the information required to connect to the database. The database username and password may need to be supplied to establish the connection.
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_680140">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $connection=new TDbConnection($dsn,$username,$password);
 // call setAttribute() to pass in additional connection parameters
 // $connection->Persistent=true;  // use persistent connection
@@ -52,7 +52,7 @@ In case any error occurs when establishing the connection (such as bad DSN or us
 <p class="block-content">
 Once a database connection is established, SQL statements can be executed through <tt>TDbCommand</tt>. One creates a <tt>TDbCommand</tt> by calling <tt>TDbConnection.createCommand()</tt> with the specified SQL statement:
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_680141">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $command=$connection->createCommand($sqlStatement);
 // if needed, the SQL statement may be updated as follows:
 $command->Text=$newSqlStatement;
@@ -66,7 +66,7 @@ An SQL statement is executed via <tt>TDbCommand</tt> in one of the following two
 <li><tt>query()</tt> - performs an SQL statement that returns rows of data, such as <tt>SELECT</tt>. If successful, it returns a <tt>TDbDataReader</tt> instance from which one can fetch the resulting rows of data.
 </li>
 </ul>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_680142">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $affectedRowCount=$command->execute();  // execute the non-query SQL
 $dataReader=$command->query();          // execute a query SQL
 $row=$command->queryRow();              // execute a query SQL and return the first row of result
@@ -80,7 +80,7 @@ In case an error occurs during the execution of SQL statements, a <tt>TDbExcepti
 <p class="block-content">
 After <tt>TDbCommand.query()</tt> generates the <tt>TDbDataReader</tt> instance, one can retrieve rows of resulting data by calling <tt>TDbDataReader.read()</tt> repeatedly. One can also use <tt>TDbDataReader</tt> in PHP's <tt>foreach</tt> language construct to retrieve row by row.
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_680143">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 // calling read() repeatedly until it returns false
 while(($row=$dataReader->read())!==false) { ... }
 // using foreach to traverse through every row of data
@@ -99,7 +99,7 @@ When an application executes a few queries, each reading and/or writing informat
 <li>Commit the transaction. Updates become visible if the transaction is successful.</li>
 <li>If one of the queries fails, the entire transaction is rolled back.</li>
 </ul>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_680144">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $transaction=$connection->beginTransaction();
 try
 {
@@ -122,7 +122,7 @@ To avoid <a href="http://en.wikipedia.org/wiki/SQL_injection">SQL injection atta
 <p class="block-content">
 The parameter placeholders can be either named (represented as unique tokens) or unnamed (represented as question marks). Call <tt>TDbCommand.bindParameter()</tt> or <tt>TDbCommand.bindValue()</tt> to replace these placeholders with the actual parameters. The parameters do not need to be quoted: the underlying database driver does it for you. Parameter binding must be done before the SQL statement is executed.
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_680145">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 // an SQL with two placeholders ":username" and ":email"
 $sql="INSERT INTO users(username, email) VALUES(:username,:email)";
 $command=$connection->createCommand($sql);
@@ -148,7 +148,7 @@ For more details about binding parameters, see the <a href="http://www.php.net/m
 <p class="block-content">
 When fetching query results, one can also bind columns with PHP variables so that they are automatically populated with the latest data each time a row is fetched.
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_680146">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $sql="SELECT username, email FROM users";
 $dataReader=$connection->createCommand($sql)->query();
 // bind the 1st column (username) with the $username variable

@@ -37,7 +37,7 @@ The following properties are used to specify different types of template and ren
 <p class="block-content">
 To populate data into the repeater items, set <tt>DataSource</tt> to a valid data object, such as array, <tt>TList</tt>, <tt>TMap</tt>, or a database table, and then call <tt>dataBind()</tt> for the repeater. That is,
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_600125">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 class MyPage extends TPage {
     public function onLoad($param) {
         parent::onLoad($param);

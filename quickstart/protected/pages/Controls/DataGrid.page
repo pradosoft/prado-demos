@@ -69,7 +69,7 @@ TDataGrid by default will create a list of columns based on the structure of the
 <p class="block-content">
 The following example displays a list of computer product information using a TDataGrid. Columns are automatically generated. Pay attention to how item styles are specified and inherited. The data are populated into the datagrid using the following code, which is common among most datagrid applications,
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_590121">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 public function onLoad($param) {
     parent::onLoad($param);
     if(!$this->IsPostBack) {
@@ -87,7 +87,7 @@ Using automatically generated columns gives a quick way of browsing tabular data
 <p class="block-content">
 To manually specify columns, set <tt>AutoGenerateColumns</tt> to false, and specify the columns in a template like the following,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_590122">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TDataGrid ...&gt;
   &lt;com:TBoundColumn DataField="name" .../&gt;
   &lt;com:TBoundColumn DataField="price" .../&gt;
@@ -138,7 +138,7 @@ When dealing with large datasets, paging is helpful in reducing the page size an
 <p class="block-content">
 To enable paging, set <tt>AllowPaging</tt> to true. The number of rows of data displayed in a page is specified by <tt>PageSize</tt>, while the index (zero-based) of the page currently showing to users is by <tt>CurrentPageIndex</tt>. When users click on a pager button, TDataGrid raises <tt>OnPageIndexChanged</tt> event. Typically, the event handler is written as follows,
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_590123">
+<com:TTextHighlighter CssClass="source block-content">
 public function pageIndexChanged($sender,$param) {
     $this->DataGrid->CurrentPageIndex=$param->NewPageIndex;
     $this->DataGrid->DataSource=$this->Data;
@@ -166,7 +166,7 @@ Besides traditional class inheritance, extensibility of TDataGrid is mainly thro
 <p class="block-content">
 All datagrid column components must inherit from <tt>TDataGridColumn</tt>. The main method that needs to be overridden is <tt>initializeCell()</tt> which creates content for cells in the corresponding column. Since each cell is also in an item (row) and the item can have different types (such as <tt>Header</tt>, <tt>AltneratingItem</tt>, etc.), different content may be created according to the item type. For the image column example, one may want to create a <tt>TImage</tt> control within cells residing in items of <tt>Item</tt> and <tt>AlterantingItem</tt> types.
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_590124">
+<com:TTextHighlighter CssClass="source block-content">
 class ImageColumn extends TDataGridColumn {
     ...
     public function initializeCell($cell,$columnIndex,$itemType) {

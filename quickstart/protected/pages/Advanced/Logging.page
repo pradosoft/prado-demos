@@ -10,7 +10,7 @@ PRADO provides a highly flexible and extensible logging functionality. Messages 
 <p class="block-content">
 The following two methods are provided for logging messages in PRADO,
 </p>
-<com:TTextHighlighter CssClass="source block-content" id="code_780201">
+<com:TTextHighlighter CssClass="source block-content">
 Prado::log($message, $logLevel, $category, $control);
 Prado::trace($message, $category, $control);
 </com:TTextHighlighter>
@@ -31,7 +31,7 @@ Messages logged using the above two functions are kept in memory. To make use of
 <p class="block-content">
 To enable message routing, plug in and configure the <tt>TLogRouter</tt> module in application configuration,
 </p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_780202">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 &lt;module id="log" class="System.Util.TLogRouter"&gt;
   &lt;route class="TBrowserLogRoute"
       Levels="Info"

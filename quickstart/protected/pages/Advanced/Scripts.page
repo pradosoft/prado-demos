@@ -55,7 +55,7 @@ Quick guide to somewhat advanced JavaScript tour of some OO features</a> by Serg
     declaring an object in Javascript. Let's see an example right away and note
     how simple it is.
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820233">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 var myPet = { color: 'black', leg_count: 4, communicate: function(repeatCount){
 for(i=0;i&lt;repeatCount;i++) alert('Woof!');} };
 </com:TTextHighlighter>
@@ -63,7 +63,7 @@ for(i=0;i&lt;repeatCount;i++) alert('Woof!');} };
 <p class="block-content">
     Let's just add little bit of formatting so it looks more like how we usually find out there:
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820234">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 var myPet =
 {
     color: 'black',
@@ -87,7 +87,7 @@ var myPet =
     we can use it like this:
 </p>
 
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820235">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 alert('my pet is ' + myPet.color);
 alert('my pet has ' + myPet.legCount + ' legs');
 //if you are a dog, bark three times:
@@ -108,7 +108,7 @@ myPet.communicate(3);
 <p class="block-content">
     Take a look at this example. We will pass functions to another function that will use them.
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820236">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 var myDog =
 {
     bark: function()
@@ -146,7 +146,7 @@ annoyThePet(myCat.meow);
 <p class="block-content">
     If you want to make my lazy cat start barking, you can easily do this:
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820237">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 myCat.meow = myDog.bark;
 myCat.meow(); //alerts 'Woof!'
 </com:TTextHighlighter>
@@ -156,7 +156,7 @@ myCat.meow(); //alerts 'Woof!'
     The following two lines in JS do the same thing.
 </p>
 
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820238">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 var a = new Array();
 var b = [];
 </com:TTextHighlighter>
@@ -164,7 +164,7 @@ var b = [];
     As I'm sure you already know, you can access individual items in an array
     by using the square brackets:
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820239">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 var a = ['first', 'second', 'third'];
 var v1 = a[0];
 var v2 = a[1];
@@ -176,7 +176,7 @@ var v3 = a[2];
     object by using its name, in a string. The following example creates an empty
     object, and adds some members by name.
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820240">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 var obj = {}; //new, empty object
 obj['member_1'] = 'this is the member value';
 obj['flag_2'] = false;
@@ -185,7 +185,7 @@ obj['some_function'] = function(){ /* do something */};
 <p class="block-content">
     The above code has identical effect as the following:
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820241">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 var obj =
 {
     member_1:'this is the member value',
@@ -198,7 +198,7 @@ var obj =
     In many ways, the idea of objects and associative arrays (hashes) in JS are not
     distiguishable. The following two lines do the same thing too.
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820242">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 obj.some_function();
 obj['some_function']();
 </com:TTextHighlighter>
@@ -211,7 +211,7 @@ obj['some_function']();
     of classes. I don't think I would have guessed how classes are defined in JS
     using only my previous experience with other languages. Judge for yourself.
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820243">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 //defining a new class called Pet
 var Pet = function(petName, age)
 {
@@ -232,7 +232,7 @@ alert('This pet is called ' + famousDog.name);
     can add methods and properties to and make any object of that class automatically gain this new member.
 </p>
 
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820244">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 Pet.prototype.communicate = function()
 {
     alert('I do not know what I should say, but my name is ' + this.name);
@@ -242,7 +242,7 @@ Pet.prototype.communicate = function()
     That's when a library like <a href="http://www.sergiopereira.com/articles/prototype.js.html">prototype.js</a> comes in
     handy. If we are using prototype.js, we can make our code look cleaner (at least in my opinion.)
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820245">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 var Pet = Class.create();
 Pet.prototype =
 {
@@ -265,7 +265,7 @@ Pet.prototype =
     If you have never worked with languages that support closures
      you may find the following idiom too funky.
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820246">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 var myArray = ['first', 'second', 'third'];
 myArray.each( function(item, index)
 {
@@ -285,7 +285,7 @@ myArray.each( function(item, index)
     for the current item. Let's call this function our iterator function.
     We could have also written the code like this.
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820247">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 function myIterator(item, index)
 {
     alert('The item in the position #' + index + ' is:' + item);
@@ -317,7 +317,7 @@ myArray.each( myIterator );
 <p class="block-content">
     Take this code snippet as an example.
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820248">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 function buttonClicked()
 {
     alert('button ' + this.id + ' was clicked');
@@ -341,7 +341,7 @@ myButton2.onclick = buttonClicked;
     <tt>buttonClicked</tt> object reference, replacing whatever was there before. Now
     whenever the button is clicked, the browser will execute something similar to the following line.
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820249">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 myButton.onclick();
 </com:TTextHighlighter>
 <p class="block-content">
@@ -349,7 +349,7 @@ myButton.onclick();
     That isn't so confusing afterall, is it? But see what happens you start having other
     objects to deal with and you want to act on these object upon events like the button's click.
 </p>
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820250">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 var myHelper =
 {
     formFields: [ ],
@@ -384,7 +384,7 @@ clearButton.onclick = myHelper.emptyAllFields;
     precisely what's happening. One quick solution would be to rewrite our last line of code.
 </p>
 
-<com:TTextHighlighter Language="javascript" CssClass="source block-content" id="code_820251">
+<com:TTextHighlighter Language="javascript" CssClass="source block-content">
 clearButton.onclick = function()
 {
     myHelper.emptyAllFields();

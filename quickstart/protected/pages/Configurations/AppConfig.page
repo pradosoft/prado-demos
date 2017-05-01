@@ -7,7 +7,7 @@ Application configurations are used to specify the global behavior of an applica
 <p class="block-content">
 Configuration for an application is stored in an XML file named <tt>application.xml</tt>, which should be located under the application base path. Its format is shown in the following. Complete specification of application configurations can be found in the <a href="https://github.com/pradosoft/prado/blob/master/docs/specs/application.dtd">DTD</a> and <a href="https://github.com/pradosoft/prado/blob/master/docs/specs/application.xsd">XSD</a> files.
 </p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_210095">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <application PropertyName="PropertyValue" ...>
   <paths>
     <alias id="AliasID" path="AliasPath" />
@@ -35,7 +35,7 @@ Configuration for an application is stored in an XML file named <tt>application.
 <li>The <tt>&lt;modules&gt;</tt> element contains the configurations for a list of modules. Each module is specified by a <tt>&lt;module&gt;</tt> element. Each module is uniquely identified by the <tt>id</tt> attribute and is of type <tt>class</tt>. The <tt>PropertyName="PropertyValue"</tt> pairs specify the initial values for the properties of the module.</li>
 
 <li>The <tt>&lt;parameters&gt;</tt> element contains a list of application-level parameters that are accessible from anywhere in the application. You may specify component-typed parameters like specifying modules, or you may specify string-typed parameters which take a simpler format as follows,
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_210096">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <parameter id="ParameterID" value="ParameterValue" />
 </com:TTextHighlighter>
 Note, if the <tt>value</tt> attribute is not specified, the whole parameter XML node (of type <tt>TXmlElement</tt>) will be returned as the parameter value. In addition, the <tt>System.Util.TParameterModule</tt> module provides a way to load parameters from an external XML file. See more details in its API documentation.

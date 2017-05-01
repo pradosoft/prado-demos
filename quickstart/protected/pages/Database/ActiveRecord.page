@@ -87,7 +87,7 @@ The current Active Record implementation supports the following database.
 <p class="block-content">Let us
     consider the following "<tt>users</tt>" table that contains two columns named "<tt>username</tt>" and "<tt>email</tt>",
     where "<tt>username</tt>" is also the primary key.
-<com:TTextHighlighter Language="sql" CssClass="source block-content" id="code_690147">
+<com:TTextHighlighter Language="sql" CssClass="source block-content">
 CREATE TABLE users
 (
     username VARCHAR( 20 ) NOT NULL ,
@@ -97,7 +97,7 @@ CREATE TABLE users
 </com:TTextHighlighter>
 </p>
 <p class="block-content">Next we define our Active Record class that corresponds to the "<tt>users</tt>" table.
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690148">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 class UserRecord extends TActiveRecord
 {
     const TABLE='users'; //table name
@@ -146,7 +146,7 @@ class TeamRecord extends TActiveRecord
     getter methods can be defined to allow control over how variables
     are set and returned. For example, adding a <tt>$level</tt> property to the UserRecord class:
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690149">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 class UserRecord extends TActiveRecord {
     ... //existing definitions as above
 
@@ -183,7 +183,7 @@ will raise an exception.
     See <a href="?page=Database.DAO">Establishing Database Connection</a> for
     further details regarding creation of database connection in general.
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690150">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 //create a connection and give it to the Active Record manager.
 $dsn = 'pgsql:host=localhost;dbname=test'; //Postgres SQL
 $conn = new TDbConnection($dsn, 'dbuser','dbpass');
@@ -225,7 +225,7 @@ class MyDb2Record extends TActiveRecord
     The default database connection can also be configured using a <tt>&lt;module&gt;</tt>
     tag in the <a href="?page=Configurations.AppConfig">application.xml</a>
     or <a href="?page=Configurations.PageConfig">config.xml</a> as follows.
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_690151">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <modules>
   <module class="System.Data.ActiveRecord.TActiveRecordConfig" EnableCache="true">
     <database ConnectionString="pgsql:host=localhost;dbname=test"
@@ -245,7 +245,7 @@ class MyDb2Record extends TActiveRecord
 <p class="block-content">A <tt>ConnectionID</tt> property can be specified with value corresponding
     to another <tt>TDataSourceConfig</tt> module configuration's ID value. This allows
     the same database connection to be used in other modules such as <a href="?page=Database.SqlMap">SqlMap</a>.
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_690152">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 <modules>
   <module class="System.Data.TDataSourceConfig" id="db1">
     <database ConnectionString="pgsql:host=localhost;dbname=test"
@@ -279,7 +279,7 @@ matching data is found.
 
 	<h3><tt>findByPk()</tt></h3>
     <p class="block-content">Finds one record using only a primary key or a composite key.
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690153">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $finder = UserRecord::finder();
 $user = $finder->findByPk($primaryKey);
 
@@ -293,13 +293,13 @@ $record = $finder->findByPk(array($key1, $key2,...));
     <p class="block-content">Finds multiple records using a list of primary keys or composite keys.
 The following are equivalent for primary keys (primary key consisting of only one column/field).
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690154">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $finder = UserRecord::finder();
 $users = $finder->findAllByPks($key1, $key2, ...);
 $users = $finder->findAllByPks(array($key1, $key2, ...));
 </com:TTextHighlighter>
 The following are equivalent for composite keys.
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690155">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 //when the table uses composite keys
 $record = $finder->findAllByPks(array($key1, $key2), array($key3, $key4), ...);
 
@@ -311,7 +311,7 @@ $record = $finder->findAllByPks($keys);
 <h3><tt>find()</tt></h3>
 <p class="block-content">Finds <b>one single record</b> that matches the criteria. The criteria
     can be a partial SQL string or a <tt>TActiveRecordCriteria</tt> object.</p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690156">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $finder = UserRecord::finder();
 
 //:name and :pass are place holders for specific values of $name and $pass
@@ -337,7 +337,7 @@ $finder->find($criteria); //the 2nd parameter for find() is ignored.
         <li><tt>Offset</tt> -- record offset in the table.</li>
     </ul>
 
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690157">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $criteria = new TActiveRecordCriteria;
 $criteria->Condition = 'username = :name AND password = :pass';
 $criteria->Parameters[':name'] = 'admin';
@@ -370,18 +370,18 @@ The condition is taken as part of the method name after <tt>findBy</tt> or <tt>f
 
 The following blocks of code are equivalent:
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690158">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $finder->findByName($name)
 $finder->find('Name = ?', $name);
 </com:TTextHighlighter>
 
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690159">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $finder->findByUsernameAndPassword($name,$pass);
 $finder->findBy_Username_And_Password($name,$pass);
 $finder->find('Username = ? AND Password = ?', $name, $pass);
 </com:TTextHighlighter>
 
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690160">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $finder->findAllByAge($age);
 $finder->findAll('Age = ?', $age);
 </com:TTextHighlighter>
@@ -412,7 +412,7 @@ $users = TActiveRecord::finder('UserRecord2')->findAllBySql($sql);
 Add a new record using TActiveRecord is very simple, just create a new Active
 Record object and call the <tt>save()</tt> method. E.g.
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690161">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $user1 = new UserRecord();
 $user1->username = "admin";
 $user1->email = "admin@example.com";
@@ -432,7 +432,7 @@ To update a record in the database, just change one or more properties of
 the Active Record object that has been loaded from the database and then
 call the <tt>save()</tt> method.
 
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690162">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $user = UserRecord::finder()->findByName('admin');
 $user->email="test@example.com"; //change property
 $user->save(); //update it.
@@ -462,7 +462,7 @@ ends the object life-cycle, no further actions can be performed on the object.
     loading any records using the <tt>deleteByPk()</tt> method (and equivalently the <tt>deleteAllByPks()</tt> method).
     For example, to delete one or several records with tables using one or more primary keys.
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690163">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $finder->deleteByPk($primaryKey); //delete 1 record
 $finder->deleteAllByPks($key1,$key2,...); //delete multiple records
 $finder->deleteAllByPks(array($key1,$key2,...)); //delete multiple records
@@ -471,7 +471,7 @@ $finder->deleteAllByPks(array($key1,$key2,...)); //delete multiple records
 <p class="block-content">
 For composite keys (determined automatically from the table definitions):
 </p>
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690164">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $finder->deleteByPk(array($key1,$key2)); //delete 1 record
 
 //delete multiple records
@@ -499,7 +499,7 @@ $finder->deleteBy_Username_And_Password($name,$pass);
 <h2>Transactions</h2>
 <p class="block-content">All Active Record objects contain the property <tt>DbConnection</tt>
     that can be used to obtain a transaction object.
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_690165">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 $finder = UserRecord::finder();
 $finder->DbConnection->Active=true; //open if necessary
 $transaction = $finder->DbConnection->beginTransaction();

@@ -37,7 +37,7 @@ Active Record class that corresponds to the <tt>users</tt>
 table as defined in the <a href="?page=Database.ActiveRecord">Active Record</a> quickstart page.
 </p>
 
-<com:TTextHighlighter Language="php" CssClass="source block-content" id="code_720188">
+<com:TTextHighlighter Language="php" CssClass="source block-content">
 class UserRecord extends TActiveRecord
 {
     const TABLE='users';
@@ -58,7 +58,7 @@ simply set the <tt>RecordClass</tt> property value equal to an Active Record
 class name.
 </p>
 
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_720189">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TScaffoldView RecordClass="UserRecord" /&gt;
 </com:TTextHighlighter>
 
@@ -105,7 +105,7 @@ An "edit" command will push the record data to be edited by a
 The following example lists the usernames only with bold formatting.
 </p>
 
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_720190">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TScaffoldListView RecordClass="UserRecord" &gt;
     &lt;prop:List.ItemTemplate&gt;
         &lt;strong>&lt;%# $this->Data->username %>&lt;/strong&gt;
@@ -127,19 +127,19 @@ and the <tt>SearchParameters</tt> property corresponds to
 <tt>Parameters</tt> property of <tt>TActiveRecordCriteria</tt>.</p>
 
 <h2>TScaffoldEditView</h2>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_720191">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TScaffoldEditView RecordPk="user1" RecordClass="UserRecord" /&gt;
 </com:TTextHighlighter>
 
 <h2>Combining list + edit views</h2>
 
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_720192">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TScaffoldEditView ID="edit_view" RecordClass="UserRecord" /&gt;
 &lt;com:TScaffoldListView EditViewID="edit_view" RecordClass="UserRecord" /&gt;
 </com:TTextHighlighter>
 
 <h2>Customizing the TScaffoldView</h2>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_720193">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TScaffoldView RecordClass="UserRecord" &gt;
     &lt;prop:ListView.List.ItemTemplate&gt;
         &lt;%# $this->DataItem->username %&gt;

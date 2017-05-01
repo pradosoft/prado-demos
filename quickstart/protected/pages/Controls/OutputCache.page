@@ -10,7 +10,7 @@
 <p class="block-content">
 To use <tt>TOutputCache</tt>, simply enclose the content to be cached within the <tt>TOutputCache</tt> component tag on a template (either page or non-page control template), e.g.,
 </p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_440110">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 &lt;com:TOutputCache&gt;
    content to be cached
 &lt;/com:TOutputCache&gt;

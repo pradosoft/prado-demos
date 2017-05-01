@@ -19,7 +19,7 @@ To use a theme, you need to set the <tt>Theme</tt> property of the page with the
 <p class="block-content">
 To use a particular skin in the theme for a control, set <tt>SkinID</tt> property of the control in template like following,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_760194">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TButton SkinID="Blue" ... /&gt;
 </com:TTextHighlighter>
 <p class="block-content">
@@ -36,7 +36,7 @@ It is possible to specify media types of CSS files contained in a theme. By defa
 <p class="block-content">
 All themes by default must be placed under the <tt>[AppEntryPath]/themes</tt> directory, where <tt>AppEntryPath</tt> refers to the directory containing the application entry script. If you want to use a different directory, configure the <tt>BasePath</tt> and <tt>BaseUrl</tt> properties of the <tt>System.Web.UI.TThemeManager</tt> module in application configuration,
 </p>
-<com:TTextHighlighter Language="xml" CssClass="source block-content" id="code_760195">
+<com:TTextHighlighter Language="xml" CssClass="source block-content">
 &lt;service id="page" class="TPageService"&gt;
     &lt;modules&gt;
         &lt;module id="theme"
@@ -51,7 +51,7 @@ All themes by default must be placed under the <tt>[AppEntryPath]/themes</tt> di
 <p class="block-content">
 Creating a theme involves creating the theme directory and writing skin files (and possibly Javascript and CSS files). The name of skin files must be terminated with <tt>.skin</tt>. The format of skin files are the same as that of control template files. Since skin files do not define parent-child presentational relationship among controls, you cannot place a component tag within another. And any static texts between component tags are discarded. To define the aforementioned 'Blue' skin for <tt>TButton</tt>, write the following in a skin file,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_760196">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TButton SkinID="Blue" BackColor="blue" /&gt;
 </com:TTextHighlighter>
 <p class="block-content">

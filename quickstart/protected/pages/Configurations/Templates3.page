@@ -6,7 +6,7 @@
 <p class="block-content">
 Dynamic property tags are very similar to dynamic content tags, except that they are applied to component properties. The purpose of dynamic property tags is to allow more versatile component property configuration. Note, you are not required to use dynamic property tags because what can be done using dynamic property tags can also be done in PHP code. However, using dynamic property tags bring you much more convenience at accomplishing the same tasks. The basic usage of dynamic property tags is as follows,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_200087">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:ComponentType PropertyName=DynamicPropertyTag ...&gt;
 body content
 &lt;/com:ComponentType&gt;
@@ -23,13 +23,13 @@ Like dynamic content tags, we have <a href="#et">expression tags</a>, <a href="#
 <p class="block-content">
 An expression tag represents a PHP expression that is evaluated when the control is in <tt>PreRender</tt> stage. The expression evaluation result is assigned to the corresponding component property. The format of expression tags is as follows,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_200088">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;%= PhpExpression %&gt;
 </com:TTextHighlighter>
 <p class="block-content">
 In the expression, <tt>$this</tt> refers to the control owning the template. The following example specifies a <tt>TLabel</tt> control whose <tt>Text</tt> property is initialized as the current page title when the <tt>TLabel</tt> control is being constructed,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_200089">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TLabel Text=&lt;%= $this-&gt;Page-&gt;Title %&gt; /&gt;
 </com:TTextHighlighter>
 
@@ -41,13 +41,13 @@ Databind tags are similar to expression tags, except that they can only be used 
 <p class="block-content">
 The format of databind tags is as follows,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_200090">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;%# PhpExpression %&gt;
 </com:TTextHighlighter>
 <p class="block-content">
 Since v3.0.2, expression tags and databind tags can be embedded within static strings. For example, you can write the following in a template,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_200091">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TLabel&gt;
   &lt;prop:Text&gt;
   Today is &lt;%= date('F d, Y',time()) %&gt;.
@@ -64,7 +64,7 @@ Previously, you would have to use a single expression with string concatenations
 <p class="block-content">
 Parameter tags are used to assign application parameter values to the corresponding component properties. The format of parameter tags is as follows,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_200092">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;%$ ParameterName %&gt;
 </com:TTextHighlighter>
 <p class="block-content">
@@ -79,7 +79,7 @@ Asset tags are used to publish private files and assign the corresponding the UR
 <p class="block-content">
 The format of asset tags is as follows,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_200093">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;%~ LocalFileName %&gt;
 </com:TTextHighlighter>
 <p class="block-content">
@@ -94,7 +94,7 @@ BE VERY CAUTIOUS when you are using asset tags as it may expose to end-users fil
 <p class="block-content">
 Localization tags represent localized texts. They are in the following format,
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_200094">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;%[string]%&gt;
 </com:TTextHighlighter>
 <p class="block-content">

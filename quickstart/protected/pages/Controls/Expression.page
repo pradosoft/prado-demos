@@ -10,7 +10,7 @@
 <p class="block-content">
 The context of the expression in a <tt>TExpression</tt> control is the control itself. That is, <tt>$this</tt> represents the control object if it is present in the expression. For example, the following template tag will display the title of the page containing the <tt>TExpression</tt> control.
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_290104">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TExpression Expression="$this->Page->Title" /&gt;
 </com:TTextHighlighter>
 

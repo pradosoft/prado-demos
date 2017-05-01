@@ -12,7 +12,7 @@ Javascript libraries can be linked to the current page template using the
 can be specified using comma delimited string of the name of Javascript library
 to include on the page. For following example will include the "ajax" and "effects" library.
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_260101">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TClientScript PradoScripts="ajax, effects" /&gt;
 </com:TTextHighlighter>
 
@@ -44,7 +44,7 @@ The following example includes the Javascript file "test.js" to the page. In thi
 <a href="?page=Configurations.Templates3">dynamic asset tag</a>, the file "test.js" will be published
 automatically, that is, the file will be copied to the assets directory if necessary.
 </p>
-<com:TTextHighlighter Language="prado" CssClass="source block-content" id="code_260102">
+<com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TClientScript ScriptUrl=&lt;%~ test.js %&gt; /&gt;
 </com:TTextHighlighter>
 <p class="block-content">You can include Javascript files from other servers by specifying the full URL string in
