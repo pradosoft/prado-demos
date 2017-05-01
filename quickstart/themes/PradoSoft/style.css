@@ -186,27 +186,6 @@ a
 	color:#2A480A;
 }
 
-.source {
-	padding: 0.5em;
-	border-style:solid;
-	border-width:1px;
-	border-color:#eeeeee;
-	background-color:#ffffee;
-	font-family: "Courier New", Courier, mono;
-	margin: 0.2em;
-}
-
-.cli
-{
-	color: white;
-	background-color: #555;
-}
-
-.source pre {
-	font-family: "Courier New", Courier, mono;
-	margin: 0;
-}
-
 .runbar
 {
 	margin: 1em 0 1em 0;
@@ -239,22 +218,8 @@ a
 	border-right: 1px solid white;
 }
 
-#sourceList {
-	background-color:#E2E2E2;
-	margin:10px 10px 0px 10px;
-	padding:10px;
-	border:1px solid silver;
-}
-
 #sourceView {
-	font-family: "Courier New", Courier, mono;
-	background-color:#ffffee;
 	margin:5px 10px 10px 10px;
-	border:1px solid silver;
-}
-
-code {
-	font-family: "Courier New", Courier, mono;
 }
 
 tt {
@@ -544,20 +509,6 @@ dd
 {
 	background-color: #ffffcc;
 	padding: 20px;
-}
-
-pre code, pre code.hljs
-{
-	display: block;
-	padding: 0em;
-	margin: 0em;
-	border-style:none;
-	background-color:#ffffee;
-	font-family: "Courier New", Courier, mono;
-}
-
-pre code.hljs-line-numbers {
-	margin-right:.5em;
 }
 
 div.tip, div.info, div.note
