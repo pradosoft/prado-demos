@@ -1,0 +1,143 @@
+<com:TContent ID="body" >
+
+<h1>Upgrading from v3.3</h1>
+
+<div class="block-content">
+<p class="block-content">
+Since version 4.0, PRADO classes make use of <a href="http://php.net/manual/language.namespaces.php">PHP namespaces</a> in its internal classes, enabling the autoloading of PHP class files using a <a href="http://www.php-fig.org/psr/psr-4/">PSR-4</a> autoloader.
+<br/>Proper changes have been made to ensure that code running on PRADO 3.x will work on 4.x requiring only minor changes.
+</p>
+<p class="block-content">
+<a href="https://getcomposer.org/">Composer</a> support has been added. Composer is used both to manage library dependencies and classes autoloading.
+<br/>Previous PRADO versions used to bundle external php and javascript libraries, making it hard for users to update them. All these libraries have been removed and will be installed by Composer.
+<br>PRADO's autoloader used to error out every time a PHP class could not be found, making it hard to include external libraries that used their own autoloaders. The <a href="http://www.php-fig.org/psr/psr-4/">PSR-4</a> standard was created to define a common autoloading pattern, and letting Composer handle autoloading solves this problem.
+</p>
+
+<p class="block-content">
+External PHP libraries will be obtained from <a href="https://packagist.org/">Packagist</a>, the default package repo for Composer.
+Javascript libraries will be obtained from <a href="https://asset-packagist.org">Asset Packagist</a>, a project that collects libraries from two popular Javascript package managers <a href="https://bower.io/">Bower</a> and <a href="https://www.npmjs.com/">NPM</a> and presents them in a Composer-compatible fashion.
+</p>
+
+<h2>Porting an application</h2>
+
+<p class="block-content">
+In order to port a PRADO 3.3 application to 4.0, the first step is to install composer.
+</p>
+
+<com:TTextHighlighter CssClass="source block-content">
+$ curl -s http://getcomposer.org/installer | php
+$ php composer.phar install
+</com:TTextHighlighter>
+
+<p class="block-content">
+Then create a composer.json file for your project. An example <tt>composer.json</tt> file is published on the <a href="https://github.com/pradosoft/prado-app">PRADO demo app</a> repository. If your project already uses Composer, just add the following library requirement:
+</p>
+
+<com:TTextHighlighter CssClass="source block-content">
+{
+    "require": {
+        "pradosoft/prado": "~4.0"
+    }
+}
+</com:TTextHighlighter>
+
+<p class="block-content">
+Now run the actual installation:
+</p>
+
+<com:TTextHighlighter CssClass="source block-content">
+$ composer install
+</com:TTextHighlighter>
+
+Composer will download and install PRADO and all the required dependencies inside the <tt>protected/vendor</tt> subfolder. The default path can be changed modifying the <tt>vendor-dir</tt> option.
+<com:TTextHighlighter CssClass="source block-content json">
+	"config": {
+		"vendor-dir": "protected/vendor"
+	}
+</com:TTextHighlighter>
+
+<p class="block-content">
+The next step is to make your project use the composer autoloader. Open the <tt>index.php</tt> entry script of your project, find the lines where PRADO gets loaded and the application started:
+</p>
+
+<com:TTextHighlighter CssClass="source block-content php">
+// Old, PRADO 3.x
+
+// load PRADO framework
+require_once("path/to/prado.php");
+
+// instanciate TApplication
+$application=new TApplication;
+
+// Run the application
+$application->run();
+</com:TTextHighlighter>
+
+<p class="block-content">
+and replace these lines with their equivalent for PRADO 4.x:
+</p>
+
+<com:TTextHighlighter CssClass="source block-content php">
+// New, PRADO 4.x
+
+// load composer autoloader
+require 'protected/vendor/autoload.php';
+
+// instanciate the namespaced TApplication
+$application = new \Prado\TApplication;
+
+// Run the application
+$application->run();
+</com:TTextHighlighter>
+
+<p class="block-content">
+Now, try to access your application and it will hopefully run just mostly fine.
+</p>
+
+<h2>Advanced porting: bundling libraries</h2>
+
+<p class="block-content">
+If your project uses third party libraries, you can let Composer install and handle them.
+<br/>In the following example a class is using <a href="https://github.com/PHPOffice/PHPExcel">PHPExcel</a> including it directly:
+</p>
+
+<com:TTextHighlighter CssClass="source block-content php">
+require_once("phpexcel/Classes/PHPExcel.php");
+
+public function createSpreadsheet()
+{
+	$obj = new PHPExcel;
+	$obj->...
+}
+</com:TTextHighlighter>
+
+<p class="block-content">
+First, in your <tt>composer.json</tt> add the dependency on the PHPExcel library:
+</p>
+
+<com:TTextHighlighter CssClass="source block-content json">
+    "require": {
+    	"pradosoft/prado": "~4.0"
+        "phpoffice/phpexcel": "~1"
+    }
+</com:TTextHighlighter>
+
+<p class="block-content">
+Then run <tt>composer update</tt> to get Composer download the library and its dependecies, install them and recreate the autoloader with the new library informations.
+</p>
+
+<p class="block-content">
+Last, modify the class to make use of the namespace of the library:
+</p>
+
+<com:TTextHighlighter CssClass="source block-content php">
+use PHPExcel;
+
+public function createSpreadsheet()
+{
+	$obj = new PHPExcel;
+	$obj->...
+}
+</com:TTextHighlighter>
+
+</com:TContent>

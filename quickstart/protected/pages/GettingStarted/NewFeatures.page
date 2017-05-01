@@ -6,6 +6,32 @@
 This page summarizes the main new features that are introduced in each PRADO release.
 </p>
 
+<h2>Version 4.0.0</h2>
+<ul>
+<li>Add native php namespace support on all classes</li>
+<li>Add native composer autoloader support</li>
+<li>Drop bundled dependencies and use composer instead</li>
+<li>Added two new cache modules based on key-value stores: Redis and etcd</li>
+</ul>
+
+<h2>Version 3.3.2</h2>
+<ul>
+<li>Allow TStyle behaviors</a></li>
+</ul>
+
+<h2>Version 3.3.1</h2>
+<ul>
+<li>Added <a href="?page=Controls.ReCaptcha2">TReCaptcha2 / TReCaptcha2Validator</a></li>
+</ul>
+
+<h2>Version 3.3.0</h2>
+<ul>
+<li>Added jQuery and rebased PRADO's effect and controls on it</li>
+<li>Added jQueryUI and created <a href="?page=JuiControls.Home">new controls</a></li>
+<li>Added the ability to set a priority (order) to event handlers</li>
+<li>Added Bootstrap3</li>
+</ul>
+
 <h2>Version 3.2.3</h2>
 <ul>
 <li>Added <a href="?page=Controls.HtmlArea4">THtmlArea4 control</a> based on TinyMCE4</li>

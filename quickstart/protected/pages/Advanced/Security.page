@@ -34,7 +34,7 @@ Cross site scripting (also known as XSS) occurs when a web application gathers m
 One of the most important measures to prevent XSS attacks is to check user input before displaying them. One can do HTML-encoding with the user input to achieve this goal. However, in some situations, HTML-encoding may not be preferable because it disables all HTML tags.
 </p>
 <p class="block-content">
-PRADO incorporates the work of <a href="http://pixel-apes.com/safehtml/">SafeHTML</a> and provides developers with a useful component called <tt>TSafeHtml</tt>. By enclosing content within a <tt>TSafeHtml</tt> component tag, the enclosed content are ensured to be safe to end users. In addition, the commonly used <tt>TTextBox</tt> has a <tt>SafeText</tt> property which contains user input that are ensured to be safe if displayed directly to end users.
+PRADO incorporates the work of <a href="http://htmlpurifier.org/">HTMLPurifier</a> and provides developers with a useful component called <tt>TSafeHtml</tt>. By enclosing content within a <tt>TSafeHtml</tt> component tag, the enclosed content are ensured to be safe to end users. In addition, the commonly used <tt>TTextBox</tt> has a <tt>SafeText</tt> property which contains user input that are ensured to be safe if displayed directly to end users.
 </p>
 <p class="block-content">
 With the broad use of active controls and more generally of AJAX-enabled controls using Javascript to transfer data between the server and the client, it's common to see attackers target javascript itself as a vector to inject malicious code.

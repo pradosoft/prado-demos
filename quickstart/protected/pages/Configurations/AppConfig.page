@@ -108,8 +108,8 @@ return array(
 
 The use of a PHP application configuration must be defined in the <tt>TApplication</tt> constructor, tipically located in the <tt>index.php</tt> entry script:
 
-<com:TTextHighlighter Language="php" CssClass="source block-content">
-$application=new TApplication('protected',false,TApplication::CONFIG_TYPE_PHP);
+<com:TTextHighlighter Language="php" CssClass="source block-content php">
+$application = new \Prado\TApplication('protected', false, TApplication::CONFIG_TYPE_PHP);
 $application->run();
 </com:TTextHighlighter>
 

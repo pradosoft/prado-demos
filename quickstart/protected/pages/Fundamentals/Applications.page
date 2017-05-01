@@ -7,12 +7,9 @@ An application is an instance of <tt>TApplication</tt> or its derived class. It 
 <p class="block-content">
 Applications are configured via <a href="?page=Configurations.AppConfig">application configurations</a>. They are usually created in entry scripts like the following,
 <com:TTextHighlighter CssClass="source block-content" id="code_160071">
-// load the prado entry script
-require_once('/path/to/prado.php');
-// or, if using composer:
-require_once('vendor/autoload.php');
+require 'protected/vendor/autoload.php';
 
-$application = new TApplication;
+$application = new \Prado\TApplication;
 $application->run();
 </com:TTextHighlighter>
 where the method <tt>run()</tt> starts the application to handle user requests.
@@ -43,7 +40,7 @@ Deploying a PRADO application mainly involves copying directories. For example, 
 </p>
 <ol>
 <li>Copy the content under <tt>wwwroot</tt> to a Web-accessible directory on the new server.</li>
-<li>Modify the entry script file <tt>index.php</tt> so that it includes correctly the <tt>prado.php</tt> file.</li>
+<li>If needed, run <tt>composer install</tt> to install dependencies.</li>
 <li>Remove all content under <tt>assets</tt> and <tt>runtime</tt> directories and make sure both directories are writable by the Web server process.</li>
 </ol>
 

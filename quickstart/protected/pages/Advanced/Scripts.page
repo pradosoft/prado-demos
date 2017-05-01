@@ -30,11 +30,10 @@ Quick guide to somewhat advanced JavaScript tour of some OO features</a> by Serg
     a heck lot more proficiency to write applications for the new Web and we need to improve
     our Javascript skills to get there.
     If you try to use many of the existing javascript libraries out there, like
-    <a href="http://prototype.conio.net/">Prototype.js</a>,
+    <a href="http://prototypejs.org/">Prototype.js</a>,
     <a href="http://script.aculo.us/">Scriptaculous</a>,
-    <a href="http://moofx.mad4milk.net/">moo.fx</a>,
-    <a href="http://bennolan.com/behaviour/">Behaviour</a>,
-    <a href="http://developer.yahoo.net/yui/">YUI</a>,
+    <a href="https://yuilibrary.com/">YUI</a>,
+    <a href="https://jquery.com/">jQuery</a>
     etc you'll eventually find yourself reading the JS code. Maybe because you want
     to learn how they do it, or because you're curious, or more often because that's the
     only way to figure out how to use it, since documentation does not seem to be highly
