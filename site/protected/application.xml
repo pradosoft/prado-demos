@@ -25,16 +25,6 @@
 			<url ServiceParameter="License" pattern="license" />
 			<!-- <url ServiceParameter="Forum" pattern="/forum" /> -->
 		</module>
-
-	<!--
-		<module id="log" class="System.Util.TLogRouter">
-			<route class="TFileLogRoute" Categories="OffInfApplication" />
-		</module>
-		<module id="globalization" class="System.I18N.TGlobalization" charset="UTF-8"/>
-		
-		<module id="data" class="Application.Common.OffInfDataModule" />
-		<module id="users" class="Application.Common.OffInfUserManager" />
-	-->
 	</modules>
 	<services>
 		<service id="page" class="TPageService" BasePath="Application.Pages" DefaultPage="Home">
