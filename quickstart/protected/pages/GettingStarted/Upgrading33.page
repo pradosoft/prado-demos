@@ -94,6 +94,21 @@ $application->run();
 Now, try to access your application and it will hopefully run just mostly fine.
 </p>
 
+<h2>Advanced porting: hiding composer</h2>
+<p class="block-content">
+By default in PRADO 3.x the application directory lives inside the web root, so all the files inside it are accessible from a web browser. Access to the <tt>protected</tt> directory is forbidden, and you may want to forbid access to composer and its files, too.
+<br/>The example <tt>composer.json</tt> shown above places the <tt>vendor</tt> folder inside the <tt>protected</tt> directory, so direct access to the libraries downloaded by composer is already forbidden.
+<br/>Instead, both <tt>composer.json</tt> and <tt>composer.lock</tt> (created by composer when first run) are placed on the main directory, so you may want to forbid access to them, too.
+This can be accomplished on the <tt>Apache</tt> web server using a <tt>.htaccess</tt> file, or an equivalent method for other webserver software you may be using. Following is an example <tt>.htaccess</tt> snippet:
+</p>
+
+<com:TTextHighlighter CssClass="source block-content">
+# Prevent direct access to certain files
+&lt;FilesMatch ^(composer\.(json|lock)$)$>
+    Deny from all
+&lt;/FilesMatch> 
+</com:TTextHighlighter>
+
 <h2>Advanced porting: bundling libraries</h2>
 
 <p class="block-content">
