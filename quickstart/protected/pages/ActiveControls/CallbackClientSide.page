@@ -20,8 +20,8 @@ The following example demonstrates the toggling of a "loading" indicator when th
 	OnCallback="button_callback"
 	ActiveControl.CallbackParameter="value" &gt;
 	&lt;prop:ClientSide
-		OnLoading="Element.show('callback_status')"
-		OnComplete="Element.hide('callback_status')" /&gt;
+		OnLoading="jQuery('#callback_status').show()"
+		OnComplete="jQuery('#callback_status').hide()" /&gt;
 &lt;/com:TActiveButton&gt;
 </com:TTextHighlighter>
 
