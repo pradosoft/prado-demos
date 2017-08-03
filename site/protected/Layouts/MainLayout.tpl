@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <com:THead Title="PRADO PHP Framework" >
-	<com:TMetaTag HttpEquiv="Content-Language" Content="en" />
+	<meta charset="utf-8" />
 	<com:TMetaTag HttpEquiv="Content-Type" Content="text/html; charset=utf-8" />
 	<com:TMetaTag Name="Keywords" Content="PHP framework, PRADO" />
 	<com:TMetaTag Name="Description" Content="PRADO is a component-based and event-driven framework for Web application development in PHP 5." />

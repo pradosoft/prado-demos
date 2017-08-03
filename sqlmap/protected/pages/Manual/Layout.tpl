@@ -1,9 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
-
+<!DOCTYPE html>
+<html lang="en">
 <com:THead Title="SQLMap for PHP Manual">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta http-equiv="content-language" content="en"/>
+	<meta charset="utf-8" />
 </com:THead>
 
 <body>
@@ -34,10 +32,8 @@
 </table>
 
 <div id="footer">
-Copyright &copy; 2005-2015 <a href="https://github.com/pradosoft">The PRADO Group</a>.
+Copyright &copy; 2005-<%= date('Y') %> <a href="https://github.com/pradosoft">The PRADO Group</a>.
 <br/><br/>
-
-<a href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Transitional</a>
 </div>
 
 </com:TForm>

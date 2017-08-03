@@ -1,5 +1,9 @@
-<html>
-<com:THead Title="Northwind Database" />
+<!DOCTYPE html>
+<html lang="en">
+<com:THead Title="Northwind Database">
+	<meta charset="utf-8" />
+</com:THead>
+
 <body>
 <h1>Northwind Database</h1>
 <com:TForm>

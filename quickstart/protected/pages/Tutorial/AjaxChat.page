@@ -61,10 +61,10 @@ class Login extends TPage
 }
 </com:TTextHighlighter>
 <com:TTextHighlighter Language="prado" CssClass="source block-content">
-<!doctype html public "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8" />
     <title>Prado Chat Demo Login</title>
 </head>
 <body>
@@ -370,10 +370,10 @@ layout that consist of one panel holding the chat messages, one panel
 to hold the users list, a textarea for the user to enter the text message
 and a button to send the message.
 <com:TTextHighlighter Language="prado" CssClass="source block-content">
-<!doctype html public "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8" />
     <title>Prado Chat Demo</title>
 <style>
 .messages

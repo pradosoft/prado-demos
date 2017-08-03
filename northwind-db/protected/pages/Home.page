@@ -1,8 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <com:THead Title="Northwind Database Sample">
-<style>
-body{ font-family: cambria, "New Times Roman" }
-</style>
+	<meta charset="utf-8" />
+	<style>
+		body{ font-family: cambria, "New Times Roman" }
+	</style>
 </com:THead>
 <body>
 <h1>Northwind Database Sample</h1>
