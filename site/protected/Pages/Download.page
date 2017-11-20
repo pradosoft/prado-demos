@@ -49,8 +49,14 @@ $(document).ready(function () {
 		<th nowrap="nowrap">Release date</th>
 	</tr>
 	<tr>
+		<td><a href="https://github.com/pradosoft/prado/releases/download/3.3.2/prado-3.3.2.r8978869.zip">Version 3.3.2</a></td>
+		<td>Latest release for the 3.3 branch</td>
+		<td nowrap="nowrap">Aug 23, 2016</td>
+	</tr>
+
+	<tr>
 		<td><a href="https://github.com/pradosoft/prado/releases/download/3.2.4/prado-3.2.4.re2e58b8.zip">Version 3.2.4</a></td>
-		<td>Latest release for the 3.2 branch</td>
+		<td>Last release for the 3.2 branch (unsupported)</td>
 		<td nowrap="nowrap">Aug 26, 2014</td>
 	</tr>
 	<tr>

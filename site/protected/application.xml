@@ -7,11 +7,10 @@
 	<modules>
 		<module id="parameter" class="System.Util.TParameterModule">
 			<!-- the site lives in the demos directory -->
-			<parameter id="DemoUrl" value=".." />
-			<parameter id="DocsUrl" value="../docs" />
-<!--
-			<parameter id="DemoUrl" value="../demos" />
 			<parameter id="DocsUrl" value="http://pradosoft.github.io/docs" />
+			<parameter id="DemoUrl" value=".." />
+<!--
+			<parameter id="DemoUrl" value="../demos" />			
 -->
 		</module>
 		<module id="request" class="THttpRequest" UrlFormat="HiddenPath" UrlManager="friendly-url" />
