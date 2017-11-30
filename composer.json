@@ -44,13 +44,15 @@
 			"chmod 777 */assets",
 			"chmod 777 */protected/runtime",
 			"chmod -R 777 chat/protected/App_Code",
-			"chmod -R 777 time-tracker/protected/App_Data/SQLite"
+			"chmod -R 777 time-tracker/protected/App_Data/SQLite",
+			"chmod -R 777 vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Serializer"
 		],
 		"post-update-cmd": [
 			"chmod 777 */assets",
 			"chmod 777 */protected/runtime",
 			"chmod -R 777 chat/protected/App_Code",
-			"chmod -R 777 time-tracker/protected/App_Data/SQLite"
+			"chmod -R 777 time-tracker/protected/App_Data/SQLite",
+			"chmod -R 777 vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Serializer"
 		]
 	}
 }
