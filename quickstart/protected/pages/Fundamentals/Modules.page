@@ -38,7 +38,7 @@ Error handler module is used to capture and process all error conditions in an a
 <a name="custom"></a>
 <h2>Custom Modules</h2>
 <p class="block-content">
-PRADO is released with a few more modules besides the core ones. They include caching modules (<tt>TSqliteCache</tt> and <tt>TMemCache</tt>), user management module (<tt>TUserManager</tt>), authentication and authorization module (<tt>TAuthManager</tt>), etc.
+PRADO is released with a few more modules besides the core ones. They include caching modules (<tt>TDbCache</tt> and <tt>TMemCache</tt>), user management module (<tt>TUserManager</tt>), authentication and authorization module (<tt>TAuthManager</tt>), etc.
 </p>
 <p class="block-content">
 When <tt>TPageService</tt> is requested, it also loads modules specific for page service, including asset manager (<tt>TAssetManager</tt>), template manager (<tt>TTemplateManager</tt>), theme/skin manager (<tt>TThemeManager</tt>).

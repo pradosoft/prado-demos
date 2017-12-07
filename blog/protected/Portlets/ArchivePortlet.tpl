@@ -6,7 +6,7 @@
 <ul>
 <com:TRepeater ID="MonthList" EnableViewState="false">
 	<prop:ItemTemplate>
-	<li><a href="<%# $this->Service->constructUrl('Posts.ListPost',array('time'=>date('Ym',$this->DataItem))) %>"><%# date('F Y',$this->DataItem) %></a></li>
+	<li><a href="<%# $this->Service->constructUrl('Posts.ListPost',array('time'=>date('Ym',$this->Data))) %>"><%# date('F Y',$this->Data) %></a></li>
 	</prop:ItemTemplate>
 </com:TRepeater>
 </ul>

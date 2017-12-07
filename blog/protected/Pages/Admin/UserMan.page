@@ -37,10 +37,10 @@
 		ItemStyle.Wrap="false"
 		ItemStyle.Width="50px" >
 		<prop:ItemTemplate>
-		<%#	$this->Parent->DataItem->Role===0 ?	'User' : 'Admin' %>
+		<%#	$this->Parent->Data->Role===0 ?	'User' : 'Admin' %>
 		</prop:ItemTemplate>
 		<prop:EditItemTemplate>
-		<com:TDropDownList ID="UserRole" SelectedValue=<%# $this->Parent->DataItem->Role %> >
+		<com:TDropDownList ID="UserRole" SelectedValue=<%# $this->Parent->Data->Role %> >
 			<com:TListItem Value="0" Text="User" />
 			<com:TListItem Value="1" Text="Admin" />
 		</com:TDropDownList>
@@ -53,13 +53,13 @@
 		ItemStyle.Width="70px" >
 		<prop:ItemTemplate>
 		<%#
-			$this->Parent->DataItem->Status===0 ?
+			$this->Parent->Data->Status===0 ?
 				'Normal' :
-				($this->Parent->DataItem->Status===1 ? 'Disabled' : 'Pending')
+				($this->Parent->Data->Status===1 ? 'Disabled' : 'Pending')
 		%>
 		</prop:ItemTemplate>
 		<prop:EditItemTemplate>
-		<com:TDropDownList ID="UserStatus" SelectedValue=<%# $this->Parent->DataItem->Status %> >
+		<com:TDropDownList ID="UserStatus" SelectedValue=<%# $this->Parent->Data->Status %> >
 			<com:TListItem Value="0" Text="Normal" />
 			<com:TListItem Value="1" Text="Disabled" />
 			<com:TListItem Value="2" Text="Pending" />

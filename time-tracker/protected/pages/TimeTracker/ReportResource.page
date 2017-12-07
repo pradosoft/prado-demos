@@ -76,9 +76,9 @@
 		 	<prop:ItemTemplate>
 		 	<div class="resource">
 		 	<strong class="name">Consultant:</strong> 
-		 	<span class="name"><%# h($this->DataItem->Username) %></span>
+		 	<span class="name"><%# h($this->Data->Username) %></span>
 		 	<strong class="hours">Total Hours:</strong>
-		 	<span class="hours"><%# h($this->DataItem->TotalHours) %></span>
+		 	<span class="hours"><%# h($this->Data->TotalHours) %></span>
 		 	
 		 	<com:TRepeater ID="time_entries">
 			 	<prop:HeaderTemplate>
@@ -98,12 +98,12 @@
 			 	<tr>
 			 		<td class="date"><com:System.I18N.TDateFormat 
 								Pattern="dd/MM/yyyy"
-								Value=<%# $this->DataItem->ReportDate %> />
+								Value=<%# $this->Data->ReportDate %> />
 					</td>
-			 		<td class="project"><%# h($this->DataItem->ProjectName) %></td>
-			 		<td class="category"><%# h($this->DataItem->CategoryName) %></td>
-			 		<td class="hours"><%# h($this->DataItem->Duration) %></td>
-			 		<td class="description"><%# h($this->DataItem->Description) %></td>
+			 		<td class="project"><%# h($this->Data->ProjectName) %></td>
+			 		<td class="category"><%# h($this->Data->CategoryName) %></td>
+			 		<td class="hours"><%# h($this->Data->Duration) %></td>
+			 		<td class="description"><%# h($this->Data->Description) %></td>
 			 	</tr>
 			 	</prop:ItemTemplate>
 			 	</com:TRepeater>

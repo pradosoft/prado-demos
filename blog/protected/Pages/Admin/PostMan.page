@@ -43,15 +43,15 @@
 		ItemStyle.Width="90px" >
 		<prop:ItemTemplate>
 		<%#
-			$this->Parent->DataItem->Status===0 ?
+			$this->Parent->Data->Status===0 ?
 				'Published' :
-				($this->Parent->DataItem->Status===1 ?
+				($this->Parent->Data->Status===1 ?
 					'Draft' :
-					($this->Parent->DataItem->Status===2 ? 'Pending' : 'Sticky'))
+					($this->Parent->Data->Status===2 ? 'Pending' : 'Sticky'))
 		%>
 		</prop:ItemTemplate>
 		<prop:EditItemTemplate>
-		<com:TDropDownList ID="PostStatus" SelectedValue=<%# $this->Parent->DataItem->Status %> >
+		<com:TDropDownList ID="PostStatus" SelectedValue=<%# $this->Parent->Data->Status %> >
 			<com:TListItem Value="0" Text="Published" />
 			<com:TListItem Value="1" Text="Draft" />
 			<com:TListItem Value="2" Text="Pending" />

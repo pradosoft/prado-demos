@@ -39,14 +39,14 @@ class ReportProject extends TPage
 	{
 		$item = $param->Item;
 		if($item->ItemType==='Item' || $item->ItemType==='AlternatingItem')
-			$item->category->DataSource = $item->DataItem->Categories;
+			$item->category->DataSource = $item->Data->Categories;
 	}
 	
 	public function category_itemCreated($sender, $param)
 	{
 		$item = $param->Item;
 		if($item->ItemType==='Item' || $item->ItemType==='AlternatingItem')
-			$item->members->DataSource = $item->DataItem->members;
+			$item->members->DataSource = $item->Data->members;
 	}
 }
 

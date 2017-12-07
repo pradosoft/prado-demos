@@ -47,7 +47,7 @@ class Sample2 extends TPage
 		$item=$param->Item;
 		if($item->ItemType==='Item' || $item->ItemType==='AlternatingItem')
 		{
-			$item->Repeater2->DataSource=$this->getDetailData($item->DataItem);
+			$item->Repeater2->DataSource=$this->getDetailData($item->Data);
 			$item->Repeater2->dataBind();
 		}
 	}

@@ -16,7 +16,7 @@
 <div id="comment-list">
 	<com:TRepeater ID="comments">
 		<prop:ItemTemplate>
-		<%# $this->parent->parent->format_message($this->DataItem) %>
+		<%# $this->parent->parent->format_message($this->Data) %>
 		</prop:ItemTemplate>
 	</com:TRepeater>
 </div>

@@ -67,9 +67,6 @@ The following properties can be used to change the way the callback request is p
 <ul>
   <li><tt>PostState</tt>: true to collect the form inputs and post them during callback (default: true);</li>
   <li><tt>RequestTimeOut</tt> The request timeout in milliseconds (default: 30000, i.e. 30 seconds);</li>
-  <li><tt>HasPriority</tt> true to ensure that the callback request will be sent
-  immediately and will abort existing prioritized requests. It does not affect
-  callbacks that are not prioritized (default: true);</li>
   <li><tt>EnablePageStateUpdate</tt> enable the callback response to enable the
   viewstate update. This will automatically set HasPriority to true when enabled. (default: true).</li>
 </ul>

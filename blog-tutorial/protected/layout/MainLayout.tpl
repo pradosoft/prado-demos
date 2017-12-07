@@ -28,7 +28,7 @@
 		<div class="languages">Available Languages: <ul>
 	</prop:HeaderTemplate>
 	<prop:ItemTemplate>
-		<li><com:THyperLink ID="link" Text=<%# $this->DataItem %> /></li>
+		<li><com:THyperLink ID="link" Text=<%# $this->Data %> /></li>
 	</prop:ItemTemplate>
 	<prop:FooterTemplate>
 		</ul></div>

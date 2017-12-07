@@ -47,7 +47,7 @@
 		/>
 	<com:TActiveTemplateColumn HeaderText="Rating" SortExpression="rating">
 		<prop:ItemTemplate>
-		<img src="images/star<%#$this->NamingContainer->DataItem['rating']%>.gif" alt="" />
+		<img src="images/star<%#$this->NamingContainer->Data['rating']%>.gif" alt="" />
 		</prop:ItemTemplate>
 	</com:TActiveTemplateColumn>
 </com:TActiveDataGrid>

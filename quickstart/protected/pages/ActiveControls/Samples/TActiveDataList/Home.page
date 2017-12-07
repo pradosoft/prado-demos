@@ -26,10 +26,10 @@
 <tr>
   <td>
   <com:TActiveLinkButton
-       Text=<%#$this->DataItem['id']%>
+       Text=<%#$this->Data['id']%>
        CommandName="select"
        />
-  <%#$this->DataItem['name']%>
+  <%#$this->Data['name']%>
   </td>
   <td align="right">
   <com:TActiveLinkButton
@@ -52,10 +52,10 @@
   <th>ID</th><th>Name</th><th>Quantity</th><th>Price</th>
 </tr>
 <tr>
-  <td align="right"><%#$this->DataItem['id'] %></td>
-  <td align="right"><%#$this->DataItem['name'] %></td>
-  <td align="right"><%#$this->DataItem['quantity'] %></td>
-  <td align="right">$<%#$this->DataItem['price'] %></td>
+  <td align="right"><%#$this->Data['id'] %></td>
+  <td align="right"><%#$this->Data['name'] %></td>
+  <td align="right"><%#$this->Data['quantity'] %></td>
+  <td align="right">$<%#$this->Data['price'] %></td>
 </tr>
 <tr>
   <td colspan="4" align="right">
@@ -77,13 +77,13 @@
 <table border="0" width="100%">
 <tr>
   <td align="right">ID</td>
-  <td><b><%#$this->DataItem['id']%></b></td>
+  <td><b><%#$this->Data['id']%></b></td>
 </tr>
 <tr>
   <td align="right">Name</td>
   <td><com:TTextBox
            ID="ProductName"
-           Text=<%#$this->DataItem['name'] %>
+           Text=<%#$this->Data['name'] %>
            />
   </td>
 </tr>
@@ -91,7 +91,7 @@
   <td align="right">Quantity</td>
   <td><com:TTextBox
            ID="ProductQuantity"
-           Text=<%#$this->DataItem['quantity'] %>
+           Text=<%#$this->Data['quantity'] %>
            />
   </td>
 </tr>
@@ -99,7 +99,7 @@
   <td align="right">Price</td>
   <td><com:TTextBox
            ID="ProductPrice"
-           Text=<%#$this->DataItem['price'] %>
+           Text=<%#$this->Data['price'] %>
            />
   </td>
 </tr>
@@ -107,7 +107,7 @@
   <td align="right">Imported</td>
   <td><com:TCheckBox
            ID="ProductImported"
-           Checked=<%#$this->DataItem['imported'] %>
+           Checked=<%#$this->Data['imported'] %>
            />
   </td>
 </tr>

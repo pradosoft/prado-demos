@@ -19,6 +19,7 @@ $this->getPage()->getClientScript()->registerPradoScript("effects");
 The available packaged libraries included in Prado are
 <ul id="u2" class="block-content">
     <li><tt>jquery</tt> : <a href="https://jquery.com/">jQuery</a> javascript framework</li>
+    <li><tt>jqueryui</tt> : <a href="https://jqueryui.com/">jQueryUI</a> user interface javascript framework</li>
     <li><tt>prado</tt> : basic PRADO javascript framework based on jQuery</li>
     <li><tt>bootstrap</tt> : <a href="http://getbootstrap.com/">Bootstrap</a> front-end framework</li>
     <li><tt>effects</tt> : visual effects based on <a href="https://jqueryui.com/">jQueryUI</a></li>
@@ -27,8 +28,6 @@ The available packaged libraries included in Prado are
     <li><tt>logger</tt> : javascript logger and object browser</li>
     <li><tt>datepicker</tt> : TDatepicker control</li>
     <li><tt>colorpicker</tt> : TColorPicker control</li>
-    <li><tt>dragdrop</tt> : basic support for "drag and drop" control</li>
-    <li><tt>dragdropextra</tt> : extra support for "drag and drop" controls</li>
     <li><tt>slider</tt> : TSlider control</li>
     <li><tt>keyboard</tt> : software keyboard control</li>
     <li><tt>tabpanel</tt> : TTabPanel control</li>
@@ -39,10 +38,7 @@ The available packaged libraries included in Prado are
     <li><tt>ratings</tt> : TRatingList control</li>
     <li><tt>htmlarea</tt> : <a href="http://www.tinymce.com/">tinyMCE</a> version 3 editor</li>
     <li><tt>htmlarea4</tt> : <a href="http://www.tinymce.com/">tinyMCE</a> version 4 editor</li>
-    <li><tt>prototype</tt> : <a href="http://prototypejs.org/">prototype</a> javascript framework (only for compatibility with old custom controls)</li>
-    <li><tt>dragdrop</tt> : compatibility package for old, prototype-based drag&drop controls</li>
-    <li><tt>dragdropextra</tt> : compatiblity package for old, prototype-based drag&drop controls</li>
-    <li><tt>autocomplete</tt> : compatibility package for prototype-based TAutoComplete control</li>
+    <li><tt>texthighlight</tt> : TTextHighlighter javascript helpers for row numbering and clipboard access</li>
 </ul>
 
 <p class="block-content">The dependencies for each library are automatically resolved. Components

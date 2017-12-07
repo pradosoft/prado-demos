@@ -55,10 +55,10 @@ Total <%# $this->Parent->PageCount %> pages.
   <th>ID</th><th>Name</th><th>Quantity</th><th>Price</th>
 </tr>
 <tr>
-  <td align="right"><com:TLiteral Text=<%#$this->DataItem['id'] %> /></td>
-  <td align="right"><com:TLiteral Text=<%#$this->DataItem['name'] %> /></td>
-  <td align="right"><com:TLiteral Text=<%#$this->DataItem['quantity'] %> /></td>
-  <td align="right">$<com:TLiteral Text=<%#$this->DataItem['price'] %> /></td>
+  <td align="right"><com:TLiteral Text=<%#$this->Data['id'] %> /></td>
+  <td align="right"><com:TLiteral Text=<%#$this->Data['name'] %> /></td>
+  <td align="right"><com:TLiteral Text=<%#$this->Data['quantity'] %> /></td>
+  <td align="right">$<com:TLiteral Text=<%#$this->Data['price'] %> /></td>
 </tr>
 </table>
 </prop:ItemTemplate>

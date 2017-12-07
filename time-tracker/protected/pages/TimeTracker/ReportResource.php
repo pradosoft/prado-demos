@@ -61,9 +61,9 @@ class ReportResource extends TPage
 		$item = $param->Item;
 		if($item->ItemType==='Item' || $item->ItemType==='AlternatingItem')
 		{
-			if(count($item->DataItem->Projects) > 0 &&
-				$item->DataItem->Projects[0]->ProjectName !== null)
-			$item->time_entries->DataSource = $item->DataItem->Projects;
+			if(count($item->Data->Projects) > 0 &&
+				$item->Data->Projects[0]->ProjectName !== null)
+			$item->time_entries->DataSource = $item->Data->Projects;
 		}
 	}
 }

@@ -14,11 +14,11 @@
 	<div class="searchItem">
 		<div class="searchItemLink">
 		<%# $this->ItemIndex + 1 %>.
-		<a href="<%# $this->DataItem->link %>">
-			<%# $this->DataItem->title %>
+		<a href="<%# $this->Data->link %>">
+			<%# $this->Data->title %>
 		</a>
 		</div>
-		<p class="searchItemBody"><%# $this->Page->HighlightSearch($this->DataItem->text) %></p>
+		<p class="searchItemBody"><%# $this->Page->HighlightSearch($this->Data->text) %></p>
 	</div>
 	</prop:ItemTemplate>
 	</com:TRepeater>

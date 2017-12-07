@@ -14,7 +14,7 @@ Enabling caching is very easy. Simply add the cache module in the application co
 </p>
 <com:TTextHighlighter Language="xml" CssClass="source block-content">
 &lt;modules&gt;
-    &lt;module id="cache" class="System.Caching.TSqliteCache" /&gt;
+    &lt;module id="cache" class="System.Caching.TDbCache" /&gt;
 &lt;/modules&gt;
 </com:TTextHighlighter>
 

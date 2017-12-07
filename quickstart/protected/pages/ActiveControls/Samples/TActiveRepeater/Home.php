@@ -47,7 +47,7 @@ class Home extends TPage
 			$item->ProductCategory->DataTextField='name';
 			$item->ProductCategory->DataValueField='id';
 			$item->ProductCategory->dataBind();
-			$item->ProductCategory->SelectedValue=$item->DataItem['category'];
+			$item->ProductCategory->SelectedValue=$item->Data['category'];
 		}
 	}
 

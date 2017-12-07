@@ -77,11 +77,11 @@ class TimeEntryList extends TTemplateControl
 
 	public function EntryItemCreated($sender, $param)
 	{
-		if($param->Item->ItemType == 'EditItem' && $param->Item->DataItem)
+		if($param->Item->ItemType == 'EditItem' && $param->Item->Data)
 		{
 			$param->Item->category->DataSource = $this->getCategories();	
 			$param->Item->category->dataBind();
-			$param->Item->category->SelectedValue = $param->Item->DataItem->Category->ID;
+			$param->Item->category->SelectedValue = $param->Item->Data->Category->ID;
 		}
 	}
 }

@@ -12,9 +12,20 @@
 	</tr>
   </prop:HeaderTemplate>
   <prop:ItemTemplate>
-	<tr class="row0">	<td><%# h($this->DataItem->Name) %></td>	<td><%# h($this->DataItem->EmailAddress) %></td>	</tr>  </prop:ItemTemplate>  <prop:AlternatingItemTemplate>	<tr class="row1">	<td><%# h($this->DataItem->Name) %></td>
-	<td><%# h($this->DataItem->EmailAddress) %></td>
-	</tr>  </prop:AlternatingItemTemplate>  <prop:FooterTemplate>	</table>  </prop:FooterTemplate>
+	<tr class="row0">
+	<td><%# h($this->Data->Name) %></td>
+	<td><%# h($this->Data->EmailAddress) %></td>
+	</tr>
+  </prop:ItemTemplate>
+  <prop:AlternatingItemTemplate>
+	<tr class="row1">
+	<td><%# h($this->Data->Name) %></td>
+	<td><%# h($this->Data->EmailAddress) %></td>
+	</tr>
+  </prop:AlternatingItemTemplate>
+  <prop:FooterTemplate>
+	</table>
+  </prop:FooterTemplate>
 </com:TRepeater>
 <div style="padding:1em">
 	<a href="?page=TimeTracker.UserCreate">Create New User</a>

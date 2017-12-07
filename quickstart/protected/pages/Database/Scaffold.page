@@ -142,7 +142,7 @@ and the <tt>SearchParameters</tt> property corresponds to
 <com:TTextHighlighter Language="prado" CssClass="source block-content">
 &lt;com:TScaffoldView RecordClass="UserRecord" &gt;
     &lt;prop:ListView.List.ItemTemplate&gt;
-        &lt;%# $this->DataItem->username %&gt;
+        &lt;%# $this->Data->username %&gt;
         &lt;com:TLinkButton Text="Edit" CommandName="edit" /&gt;
     &lt;/prop:ListView.List.ItemTemplate&gt;
 &lt;/com:TScaffoldView/&gt;

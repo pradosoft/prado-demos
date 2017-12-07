@@ -16,9 +16,9 @@
 
 	<prop:ItemTemplate>
 	  <tr>
-	  	<td class="categoryName"><%# h($this->DataItem->Name) %></td>
-	  	<td class="abbrev"><%# h($this->DataItem->Abbreviation) %></td>
-	  	<td class="duration"><%# h($this->DataItem->EstimateDuration) %></td>
+	  	<td class="categoryName"><%# h($this->Data->Name) %></td>
+	  	<td class="abbrev"><%# h($this->Data->Abbreviation) %></td>
+	  	<td class="duration"><%# h($this->Data->EstimateDuration) %></td>
 	  	<td class="edit">
 	  		<com:TButton Text="Edit" CommandName="edit"/>	  			
 	  		<com:TButton Text="Delete" CommandName="delete"
@@ -30,7 +30,7 @@
 	<prop:EditItemTemplate>
 	  <tr>
 	  	<td class="categoryName">
-	  	  <com:TTextBox ID="name" Text=<%# $this->DataItem->Name %> />
+	  	  <com:TTextBox ID="name" Text=<%# $this->Data->Name %> />
 	  	  <span class="required">*</span>
 	  	    	<com:TRequiredFieldValidator
 		  		ControlToValidate="name"
@@ -41,7 +41,7 @@
 		  		ErrorMessage="Please enter the category name." />
 	  	</td>
 	  	<td class="abbrev">
-	  		<com:TTextBox ID="abbrev" Text=<%# $this->DataItem->Abbreviation %> />
+	  		<com:TTextBox ID="abbrev" Text=<%# $this->Data->Abbreviation %> />
 	  		<span class="required">*</span>
 		  	<com:TRequiredFieldValidator
 		  		ControlToValidate="abbrev"
@@ -60,7 +60,7 @@
 		  		ErrorMessage="Abbreviation must be alphanumeric." />	  		
 	  	</td>
 	  	<td class="duration">
-	  		<com:TTextBox ID="duration" Text=<%# $this->DataItem->EstimateDuration %> />
+	  		<com:TTextBox ID="duration" Text=<%# $this->Data->EstimateDuration %> />
 	  		<span class="required">*</span>
 	  		<com:TRequiredFieldValidator
 		  		ControlToValidate="duration"

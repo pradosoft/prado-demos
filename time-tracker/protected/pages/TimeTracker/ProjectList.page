@@ -26,7 +26,7 @@
 		<prop:ItemTemplate>
 		<com:System.I18N.TDateFormat 
 			Pattern="dd/MM/yyyy"
-			Value=<%# $this->NamingContainer->DataItem->CompletionDate %> />
+			Value=<%# $this->NamingContainer->Data->CompletionDate %> />
 		</prop:ItemTemplate>
 	</com:TTemplateColumn>
 	<com:TBoundColumn

@@ -20,7 +20,7 @@ where content to be cached can be static text and/or template tags. If the latte
 </p>
 
 <div class="note"><b class="tip">Note:</b>
-<tt>TOutputCache</tt> stores cached content via PRADO cache modules (e.g. <tt>TSqliteCache</tt>) and thus requires at least one cache module loaded when the application runs.
+<tt>TOutputCache</tt> stores cached content via PRADO cache modules (e.g. <tt>TDbCache</tt>) and thus requires at least one cache module loaded when the application runs.
 </div>
 
 <p class="block-content">
