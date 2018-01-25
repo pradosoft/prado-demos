@@ -115,52 +115,17 @@
             "type": "library"
         },
         {
-            "name": "bower-asset/prototypejs-bower",
-            "version": "1.7.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/plynchnlm/prototypejs-bower.git",
-                "reference": "880a287e8cbdc08bd731ab3f013a1af486633f79"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/plynchnlm/prototypejs-bower/zipball/880a287e8cbdc08bd731ab3f013a1af486633f79",
-                "reference": "880a287e8cbdc08bd731ab3f013a1af486633f79",
-                "shasum": null
-            },
-            "type": "library"
-        },
-        {
-            "name": "bower-asset/scriptaculous-bower",
-            "version": "1.9.0.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:plynchnlm/scriptaculous-bower.git",
-                "reference": "cd5b0f19ef8c777e9dbf8a1f9389d1a5091ff34d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/plynchnlm/scriptaculous-bower/zipball/cd5b0f19ef8c777e9dbf8a1f9389d1a5091ff34d",
-                "reference": "cd5b0f19ef8c777e9dbf8a1f9389d1a5091ff34d",
-                "shasum": null
-            },
-            "require": {
-                "bower-asset/prototypejs-bower": "1.7.0"
-            },
-            "type": "library"
-        },
-        {
             "name": "bower-asset/tinymce",
-            "version": "4.7.2",
+            "version": "4.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tinymce/tinymce-dist.git",
-                "reference": "2639396a6d5eb8db7457ed4f6de6f5d15303ef52"
+                "reference": "a2392f870b4c85bd536e5cc77f640e035ce657af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tinymce/tinymce-dist/zipball/2639396a6d5eb8db7457ed4f6de6f5d15303ef52",
-                "reference": "2639396a6d5eb8db7457ed4f6de6f5d15303ef52",
+                "url": "https://api.github.com/repos/tinymce/tinymce-dist/zipball/a2392f870b4c85bd536e5cc77f640e035ce657af",
+                "reference": "a2392f870b4c85bd536e5cc77f640e035ce657af",
                 "shasum": null
             },
             "type": "bower-asset",
@@ -417,6 +382,58 @@
             "time": "2015-04-20T18:58:01+00:00"
         },
         {
+            "name": "mrclay/jsmin-php",
+            "version": "2.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrclay/jsmin-php.git",
+                "reference": "932c9633c35b390beb2cfdea69a41ea7dbc8d759"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrclay/jsmin-php/zipball/932c9633c35b390beb2cfdea69a41ea7dbc8d759",
+                "reference": "932c9633c35b390beb2cfdea69a41ea7dbc8d759",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JSMin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Clay",
+                    "email": "steve@mrclay.org",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ryan Grove",
+                    "email": "ryan@wonko.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides a modified port of Douglas Crockford's jsmin.c, which removes unnecessary whitespace from JavaScript files.",
+            "homepage": "https://github.com/mrclay/jsmin-php/",
+            "keywords": [
+                "compress",
+                "jsmin",
+                "minify"
+            ],
+            "time": "2015-03-30T15:04:42+00:00"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v3.1.2",
             "source": {
@@ -473,12 +490,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pradosoft/prado.git",
-                "reference": "f072cd5210e1c1f2ce581897a9cf8b4a1ac73c08"
+                "reference": "8c59598e0d2c107fc4589b5a3e3ffc9199fa9e96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pradosoft/prado/zipball/f072cd5210e1c1f2ce581897a9cf8b4a1ac73c08",
-                "reference": "f072cd5210e1c1f2ce581897a9cf8b4a1ac73c08",
+                "url": "https://api.github.com/repos/pradosoft/prado/zipball/8c59598e0d2c107fc4589b5a3e3ffc9199fa9e96",
+                "reference": "8c59598e0d2c107fc4589b5a3e3ffc9199fa9e96",
                 "shasum": ""
             },
             "require": {
@@ -488,8 +505,6 @@
                 "bower-asset/highlightjs-line-numbers.js": "*",
                 "bower-asset/jquery": "^3",
                 "bower-asset/jquery-ui": "^1",
-                "bower-asset/prototypejs-bower": "^1.7",
-                "bower-asset/scriptaculous-bower": "^1.9",
                 "bower-asset/tinymce": "^4",
                 "erusev/parsedown": "*",
                 "ext-ctype": "*",
@@ -499,6 +514,7 @@
                 "ext-spl": "*",
                 "ezyang/htmlpurifier": "*",
                 "firephp/firephp-core": "*",
+                "mrclay/jsmin-php": "*",
                 "php": ">=5.3.3",
                 "pradosoft/prado-tinymce3": "*",
                 "pradosoft/prado-wsdlgenerator": "*",
@@ -508,7 +524,6 @@
                 "pradosoft/prado": "4.0"
             },
             "require-dev": {
-                "ext-xdebug": "*",
                 "phpunit/dbunit": "*",
                 "phpunit/php-invoker": "*",
                 "phpunit/phpunit": "5.*",
@@ -527,6 +542,7 @@
                 "ext-pdo": "Used by all the Prado\\Data components, eg. TActiveRecord",
                 "ext-soap": "Used by TSoapService to provide a soap backend",
                 "ext-xcache": "Enables the use of TXCache as a cache handler",
+                "ext-xdebug": "Useful to get stack traces on Php fatal errors",
                 "ext-xsl": "Used by the TXmlTransform component",
                 "ext-zlib": "Enables compression to reduce page size",
                 "pradosoft/prado-demos": "Demo applications for Prado"
@@ -576,7 +592,7 @@
                 "component",
                 "framework"
             ],
-            "time": "2017-11-20T18:06:41+00:00"
+            "time": "2017-12-09T17:59:41+00:00"
         },
         {
             "name": "pradosoft/prado-tinymce3",
@@ -780,44 +796,45 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.3.13",
+            "version": "v3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "63cd7960a0a522c3537f6326706d7f3b8de65805"
+                "reference": "2cdef78de8f54f68ff16a857e710e7302b47d4c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/63cd7960a0a522c3537f6326706d7f3b8de65805",
-                "reference": "63cd7960a0a522c3537f6326706d7f3b8de65805",
+                "url": "https://api.github.com/repos/symfony/console/zipball/2cdef78de8f54f68ff16a857e710e7302b47d4c7",
+                "reference": "2cdef78de8f54f68ff16a857e710e7302b47d4c7",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
-                "symfony/debug": "~2.8|~3.0",
+                "symfony/debug": "~2.8|~3.0|~4.0",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
-                "symfony/dependency-injection": "<3.3"
+                "symfony/dependency-injection": "<3.4",
+                "symfony/process": "<3.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~3.3",
-                "symfony/dependency-injection": "~3.3",
-                "symfony/event-dispatcher": "~2.8|~3.0",
-                "symfony/filesystem": "~2.8|~3.0",
-                "symfony/process": "~2.8|~3.0"
+                "symfony/config": "~3.3|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
+                "symfony/lock": "~3.4|~4.0",
+                "symfony/process": "~3.3|~4.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
-                "symfony/filesystem": "",
+                "symfony/lock": "",
                 "symfony/process": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -844,36 +861,36 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-16T15:24:32+00:00"
+            "time": "2017-12-02T18:20:11+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.3.13",
+            "version": "v4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "74557880e2846b5c84029faa96b834da37e29810"
+                "reference": "26a15dab86c3820473716be4f846eac774ad4ad9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/74557880e2846b5c84029faa96b834da37e29810",
-                "reference": "74557880e2846b5c84029faa96b834da37e29810",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/26a15dab86c3820473716be4f846eac774ad4ad9",
+                "reference": "26a15dab86c3820473716be4f846eac774ad4ad9",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8",
+                "php": "^7.1.3",
                 "psr/log": "~1.0"
             },
             "conflict": {
-                "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
+                "symfony/http-kernel": "<3.4"
             },
             "require-dev": {
-                "symfony/http-kernel": "~2.8|~3.0"
+                "symfony/http-kernel": "~3.4|~4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -900,7 +917,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-10T16:38:39+00:00"
+            "time": "2017-11-21T09:27:49+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -963,16 +980,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v3.3.13",
+            "version": "v3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "805de6bd6869073e60610df1b14ab7d969c61b01"
+                "reference": "ec650a975a8e04e0c114d35eab732981243db3a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/805de6bd6869073e60610df1b14ab7d969c61b01",
-                "reference": "805de6bd6869073e60610df1b14ab7d969c61b01",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/ec650a975a8e04e0c114d35eab732981243db3a2",
+                "reference": "ec650a975a8e04e0c114d35eab732981243db3a2",
                 "shasum": ""
             },
             "require": {
@@ -988,12 +1005,13 @@
             },
             "suggest": {
                 "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
+                "ext-intl": "To show region name in time zone dump",
                 "ext-symfony_debug": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1027,7 +1045,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2017-11-07T14:16:22+00:00"
+            "time": "2017-11-30T14:59:23+00:00"
         },
         {
             "name": "zf1/zend-exception",

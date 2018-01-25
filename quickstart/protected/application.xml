@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<application id="QuickStart" Mode="Debug">
+<application id="QuickStart" Mode="Performance">
   <paths>
     <using namespace="Application.controls.*" />
     <using namespace="System.I18N.*" />
