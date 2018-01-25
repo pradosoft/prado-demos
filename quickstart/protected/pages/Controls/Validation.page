@@ -22,7 +22,7 @@ Validators share a common set of properties, which are defined in the base class
 <li><tt>Display</tt> specifies how error messages are displayed. It takes one of the following three values:
     <ul>
     <li><tt>None</tt> - the error message will not be displayed even if the validator fails.</li>
-    <li><tt>Static</tt> - the space for displaying the error message is reserved. Therefore, showing up the error message will not change your existing page layout.</li>
+    <li><tt>Fixed</tt> - the space for displaying the error message is reserved. Therefore, showing up the error message will not change your existing page layout.</li>
     <li><tt>Dynamic</tt> - the space for displaying the error message is NOT reserved. Therefore, showing up the error message will shift the layout of your page around (usually down).</li>
     </ul>
 </li>
