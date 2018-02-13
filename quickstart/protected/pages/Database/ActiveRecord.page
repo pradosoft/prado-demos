@@ -267,7 +267,7 @@ class MyDb2Record extends TActiveRecord
     The <tt>TActiveRecord</tt> class provides many convenient methods to find
     records from the database. The simplest is finding one record by matching a primary key or a
     composite key (primary keys that consists of multiple columns).
-    See the <com:DocLink ClassPath="System.Data.ActiveRecord.TActiveRecord" /> for
+    See the <com:DocLink ClassPath="Prado.Data.ActiveRecord.TActiveRecord" /> for
     more details.
 </p>
 
@@ -351,7 +351,7 @@ $criteria->Offset = 20;
 <div class="note"><b class="note">Note:</b>
 For MSSQL and when <tt>Limit</tt> and <tt>Offset</tt> are positive integer values. The
 actual query to be executed is modified by the
-<com:DocLink ClassPath="System.Data.ActiveRecord.Common.Mssql.TMssqlCommandBuilder"
+<com:DocLink ClassPath="Prado.Data.ActiveRecord.Common.Mssql.TMssqlCommandBuilder"
 Text="TMssqlCommandBuilder"
 />
 class according to

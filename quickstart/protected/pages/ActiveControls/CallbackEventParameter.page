@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TCallbackEventParameter</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TCallbackEventParameter" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TCallbackEventParameter" />
 
 <p class="block-content">
 <tt>TCallbackEventParameter</tt> provides the parameter passed during the callback

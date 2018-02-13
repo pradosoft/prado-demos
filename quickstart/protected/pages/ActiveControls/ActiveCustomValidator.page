@@ -1,6 +1,6 @@
 <com:TContent ID="body">
 <h1>TActiveCustomValidator</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveCustomValidator" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveCustomValidator" />
 
 <p class="block-content">Performs custom validation using only server-side <tt>OnServerValidate</tt>
  validation event. The client-side uses callbacks to raise

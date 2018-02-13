@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TCaptcha</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TCaptcha" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TCaptcha" />
 
 <p class="block-content">
 <tt>TCaptcha</tt> displays a <a href="http://en.wikipedia.org/wiki/Captcha">CAPTCHA</a> that can be used to determine if the input is entered by a real user instead of some program. <tt>TCaptcha</tt> displays a token (a string consisting of alphanumeric characters) as an image and the user is expected to repeat the token in a text box. The token image is generated in a way such that it can be recognized by a human being, but not a program.

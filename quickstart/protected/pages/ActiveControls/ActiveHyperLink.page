@@ -1,6 +1,6 @@
 <com:TContent ID="body">
 <h1 id="ActiveHyperLink">TActiveHyperLink</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveHyperLink" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveHyperLink" />
 
 <p class="block-content">
 The active control counterpart of <a href="?page=Controls.HyperLink">THyperLink</a>

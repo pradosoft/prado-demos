@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TLiteral</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TLiteral" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TLiteral" />
 
 <p class="block-content">
 <tt>TLiteral</tt> displays a static text on a Web page. <tt>TLiteral</tt> is similar to the <tt>TLabel</tt> control, except that the <tt>TLiteral</tt>

@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TMultiView</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TMultiView" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TMultiView" />
 
 <p class="block-content">
 <tt>TMultiView</tt> serves as a container for a group of <tt>TView</tt> controls, which can be retrieved by the <tt>Views</tt> property. Each view contains child controls. <tt>TMultiView</tt> determines which view and its child controls are visible. At any time, at most one view is visible (called <i>active</i>). To make a view active, set <tt>ActiveView</tt> or <tt>ActiveViewIndex</tt>. Note, by default there is no active view.

@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TImageMap</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TImageMap" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TImageMap" />
 
 <p class="block-content">
 <tt>TImageMap</tt> represents an image on a Web page with predefined hotspot regions that can respond differently to users' clicks on them. Depending on the <tt>HotSpotMode</tt> of the hotspot region, clicking on the hotspot may trigger a postback or navigate to a specified URL.

@@ -1,14 +1,14 @@
 <com:TContent ID="body" >
 
 <h1>TCallbackClientScript</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TCallbackClientScript" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TCallbackClientScript" />
 
 <p class="block-content">
 The <tt>TCallbackClientScript</tt> class provides corresponding methods that can be
 executed on the client-side (i.e. the browser client that is viewing
 the page) during a callback response.
 For a complete list of available client side methods, consult the
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TCallbackClientScript" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TCallbackClientScript" />
 </p>
 
 <p class="block-content">

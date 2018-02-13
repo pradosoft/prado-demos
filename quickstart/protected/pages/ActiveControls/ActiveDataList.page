@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TActiveDataList</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveDataList" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveDataList" />
 
 <p class="block-content">
 <tt>TActiveDataList</tt> represents a data bound and updatable list control which is the

@@ -2,7 +2,7 @@
 
 <h1>URL Mapping (Friendly URLs)</h1>
 
-<com:DocLink ClassPath="System.Web.TUrlMapping" />
+<com:DocLink ClassPath="Prado.Web.TUrlMapping" />
 
 <p class="block-content">
 The TUrlMapping module allows PRADO to construct and recognize friendly URLs

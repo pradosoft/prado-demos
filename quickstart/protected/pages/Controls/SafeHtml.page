@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TSafeHtml</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TSafeHtml" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TSafeHtml" />
 
 <p class="block-content">
 <tt>TSafeHtml</tt> is a control that strips down all potentially dangerous HTML content. It is mainly a wrapper of the <a href="http://htmlpurifier.org/">HTMLPurifier</a> project.

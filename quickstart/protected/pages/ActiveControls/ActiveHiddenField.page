@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TActiveHiddenField</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveHiddenField" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveHiddenField" />
 
 <p class="block-content">
 <tt>TActiveHiddenField</tt> is the active control counterpart of <tt>THiddenField</tt> component.

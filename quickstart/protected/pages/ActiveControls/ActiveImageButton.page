@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TActiveImageButton</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveImageButton" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveImageButton" />
 
 <p class="block-content">
 <tt>TActiveImageButton</tt> is the active counterpart of <tt>TImageButton</tt>.

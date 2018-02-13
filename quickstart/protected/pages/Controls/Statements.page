@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TStatements</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TStatements" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TStatements" />
 
 <p class="block-content">
 <tt>TStatements</tt> evaluates a sequence of PHP statements and displays the content rendered by the statements. To specify the PHP statements to be evaluated, set the <tt>Statements</tt> property. For example, the following component tag displays the current time on the Web page,

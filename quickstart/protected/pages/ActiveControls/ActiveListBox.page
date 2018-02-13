@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TActiveListBox</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveListBox" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveListBox" />
 
 <p class="block-content">
 <tt>TActiveListBox</tt> is the active counterpart to the original <tt>TListBox</tt> control.

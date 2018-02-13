@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>THtmlArea</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.THtmlArea" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.THtmlArea" />
 
 <p class="block-content">
 <tt>THtmlArea</tt> displays a WYSIWYG text input field on a Web page to collect input in HTML format. The text displayed in the <tt>THtmlArea</tt> control is specified or determined by using the <tt>Text</tt> property. To adjust the size of the input region, set <tt>Width</tt> and <tt>Height</tt> properties instead of <tt>Columns</tt> and <tt>Rows</tt> because the latter has no meaning under this situation.  To disable the WYSIWYG feature, set <tt>EnableVisualEdit</tt> to false.

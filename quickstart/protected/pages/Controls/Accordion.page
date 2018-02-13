@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TAccordion</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TAccordion" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TAccordion" />
 
 <p class="block-content">
 <tt>TAccordion</tt> displays an accordion control. Users can click on the view headers to switch among different accordion views. Each accordion view is an independent panel that can contain arbitrary content.

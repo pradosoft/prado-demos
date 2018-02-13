@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TActiveMultiView</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveMultiView" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveMultiView" />
 
 <p class="block-content">
 <tt>TActiveMultiView</tt> is the active counterpart to the original <tt>TMultiView</tt> control.

@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TMarkdown</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TMarkdown" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TMarkdown" />
 
 <p class="block-content">
 <tt>TMarkdown</tt> is a text formatter that produces html content from plain text. The formatter follows the <a href="http://www.wikipedia.org/wiki/Markdown">Markdown</a> syntax and the <a href="https://help.github.com/articles/github-flavored-markdown">GFM</a> (GitHub Flavored Markdown) extension.

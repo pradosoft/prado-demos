@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TActiveFileUpload</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveFileUpload" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveFileUpload" />
 
 <p class="block-content">
 <tt>TActiveFileUpload</tt> displays a file upload field on a page. Upon postback,

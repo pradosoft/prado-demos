@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TReCaptcha</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TReCaptcha" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TReCaptcha" />
 
 <p class="block-content">
 <tt>TReCaptcha</tt> displays a <a href="https://www.google.com/recaptcha">reCAPTCHA v1</a> that can be used to determine if the input is entered by a real user instead of some program. It can also prevent multiple submits of the same form either by accident, or on purpose (ie. spamming).

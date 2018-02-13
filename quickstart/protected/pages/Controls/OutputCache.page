@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TOutputCache</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TOutputCache" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TOutputCache" />
 
 <p class="block-content">
 <tt>TOutputCache</tt> enables caching a portion of a Web page, also known as partial caching. The content being cached are HTML page source coming from static texts on a PRADO template or rendered by one or several controls on the template. When the cached content is used, controls generating the content are no longer created for the page hierarchy and thus significant savings in page processing time can be achieved. The side-effect, as you might already find out, is that the content displayed may be stale if the cached version is shown to the users.
@@ -16,7 +16,7 @@ To use <tt>TOutputCache</tt>, simply enclose the content to be cached within the
 &lt;/com:TOutputCache&gt;
 </com:TTextHighlighter>
 <p class="block-content">
-where content to be cached can be static text and/or template tags. If the latter, the rendering results of the template tags will be cached. You can place one or several <tt>TOutputCache</tt> on a single template and they can be nested. 
+where content to be cached can be static text and/or template tags. If the latter, the rendering results of the template tags will be cached. You can place one or several <tt>TOutputCache</tt> on a single template and they can be nested.
 </p>
 
 <div class="note"><b class="tip">Note:</b>

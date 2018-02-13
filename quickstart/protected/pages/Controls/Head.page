@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>THead</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.THead" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.THead" />
 
 <p class="block-content">
 <tt>THead</tt> displays a head element on a page. It displays the content

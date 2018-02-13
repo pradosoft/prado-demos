@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TCheckBox</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TCheckBox" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TCheckBox" />
 
 <p class="block-content">
 <tt>TCheckBox</tt> displays a check box on a Web page. A caption can be specified via <tt>Text</tt> and displayed beside the check box. It can appear either on the right or left of the check box, which is determined by <tt>TextAlign</tt>. You may further specify attributes applied to the text by using <tt>LabelAttributes</tt>.

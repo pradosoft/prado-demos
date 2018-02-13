@@ -1,6 +1,6 @@
 <com:TContent ID="body">
 <h1>TActiveButton</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveButton" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveButton" />
 
 <p class="block-content"><tt>TActiveButton</tt> is the active control counter part to
 <a href="?page=Controls.Button">TButton</a>.

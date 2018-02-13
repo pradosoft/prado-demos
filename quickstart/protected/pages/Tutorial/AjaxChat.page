@@ -88,15 +88,15 @@ class Login extends TPage
 </html>
 </com:TTextHighlighter>
 	<p class="block-content">The login page contains
-	a <com:DocLink ClassPath="System.Web.UI.TForm" Text="TForm" />,
-	a <com:DocLink ClassPath="System.Web.UI.WebControls.TTextBox" Text="TTextBox" />,
-	a <com:DocLink ClassPath="System.Web.UI.WebControls.TRequiredFieldValidator" Text="TRequiredFieldValidator" />
-	and a <com:DocLink ClassPath="System.Web.UI.WebControls.TButton" Text="TButton" />. The resulting
+	a <com:DocLink ClassPath="Prado.Web.UI.TForm" Text="TForm" />,
+	a <com:DocLink ClassPath="Prado.Web.UI.WebControls.TTextBox" Text="TTextBox" />,
+	a <com:DocLink ClassPath="Prado.Web.UI.WebControls.TRequiredFieldValidator" Text="TRequiredFieldValidator" />
+	and a <com:DocLink ClassPath="Prado.Web.UI.WebControls.TButton" Text="TButton" />. The resulting
 	page looks like the following (after applying some a style sheet).
 	<img src=<%~ chat2.png %> class="figure" />
 	If you click on the <tt>Login</tt> button without entering any
 	text in the username textbox, an error message is displayed. This is
-	due to the <com:DocLink ClassPath="System.Web.UI.WebControls.TRequiredFieldValidator" Text="TRequiredFieldValidator" />
+	due to the <com:DocLink ClassPath="Prado.Web.UI.WebControls.TRequiredFieldValidator" Text="TRequiredFieldValidator" />
 	requiring the user to enter some text in the textbox before proceeding.
 	</p>
 <h2>Securing the <tt>Home</tt> page</h2>
@@ -146,7 +146,7 @@ to the <tt>index.php</tt> you will be redirected to the <tt>Login</tt> page.
 </p>
 
 <h1>Active Record for <tt>chat_users</tt> table</h1>
-<p class="block-content">The <com:DocLink ClassPath="System.Secutity.TUserManager" Text="TUserManager" />
+<p class="block-content">The <com:DocLink ClassPath="Prado.Secutity.TUserManager" Text="TUserManager" />
 class only provides a read-only list of users. We need to be able to add or
 login new users dynamically. So we need to create our own user manager class.
 First, we shall setup a database with a <tt>chat_users</tt> table and create an ActiveRecord
@@ -272,7 +272,7 @@ configuration with <tt>id="users"</tt>.</p>
 <h1>Authentication</h1>
 <p class="block-content">To perform authentication, we just want the user to enter a unique
 username. We add a
-<com:DocLink ClassPath="System.Web.UI.WebControls.TCustomValidator" Text="TCustomValidator" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TCustomValidator" Text="TCustomValidator" />
 for validate the uniqueness of the username and add an <tt>OnClick</tt> event handler
 for the login button.</p>
 <com:TTextHighlighter Language="prado" CssClass="source block-content">
@@ -434,11 +434,11 @@ and a button to send the message.
 </html>
 </com:TTextHighlighter>
 We added two Active Control components: a
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveTextBox" Text="TActiveTextBox" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveTextBox" Text="TActiveTextBox" />
 and a
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveButton" Text="TActiveButton" />.
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveButton" Text="TActiveButton" />.
 We also added a
-<com:DocLink ClassPath="System.Web.UI.WebControls.TJavascriptLogger" Text="TJavascriptLogger" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TJavascriptLogger" Text="TJavascriptLogger" />
 that will be very useful for understanding how the Active Controls work.
 </p>
 
@@ -468,7 +468,7 @@ you should see whatever you have typed echoed in the <tt>TJavascriptLogger</tt> 
 
 <p class="block-content">To append or add some content to the message list panel, we need to use
 some methods in the
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TCallbackClientScript" Text="TCallbackClientScript" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TCallbackClientScript" Text="TCallbackClientScript" />
 class which is available through the <tt>CallbackClient</tt> property of the
 current <tt>TPage</tt> object. For example, we do can do
 <com:TTextHighlighter Language="php" CssClass="source block-content">
@@ -710,7 +710,7 @@ public function onLoad($param)
 <h1>Improving User Experience</h1>
 <p class="block-content">The last few details are to periodically check for new messages and
 refresh the user list. We can accomplish this by polling the server using a
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TTimeTriggeredCallback" Text="TTimeTriggeredCallback" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TTimeTriggeredCallback" Text="TTimeTriggeredCallback" />
 control. We add a <tt>TTimeTriggeredCallback</tt> to the <tt>Home.page</tt>
 and call the <tt>refresh</tt> handler method defined in <tt>Home.php</tt>.
 We set the polling interval to 2 seconds.

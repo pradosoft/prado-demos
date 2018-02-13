@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TActiveRadioButtonList</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveRadioButtonList" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveRadioButtonList" />
 
 <p class="block-content">
 <tt>TActiveRadioButtonList</tt> is the active counterpart to the original <tt>TRadioButtonList</tt> control.

@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TFileUpload</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TFileUpload" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TFileUpload" />
 
 <p class="block-content">
 <tt>TFileUpload</tt> displays a file upload field on a Web page. Upon postback, the text entered into the field will be treated as the (local) name of the file that is uploaded to the server.

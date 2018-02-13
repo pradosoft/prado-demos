@@ -84,15 +84,15 @@ php prado/framework/prado-cli.php -c currency-converter
 
 	<p class="block-content">
 		The first component we add is a
-		<com:DocLink ClassPath="System.Web.UI.TForm" Text="TForm" />
+		<com:DocLink ClassPath="Prado.Web.UI.TForm" Text="TForm" />
 		that basically corresponds to the HTML <tt>&lt;form&gt;</tt> element.
 		In Prado, only <b>one</b> <tt>TForm</tt> element is allowed per page.
 	</p>
 
 	<p class="block-content">The next two pair of component we add is the
-		<com:DocLink ClassPath="System.Web.UI.WebControls.TLabel" Text="TLabel" />
+		<com:DocLink ClassPath="Prado.Web.UI.WebControls.TLabel" Text="TLabel" />
 		and
-		<com:DocLink ClassPath="System.Web.UI.WebControls.TTextBox" Text="TTextBox" />
+		<com:DocLink ClassPath="Prado.Web.UI.WebControls.TTextBox" Text="TTextBox" />
 		that basically defines a label and a textbox for the user of the application
 		to enter the currency exchange rate.
 		The <tt>ForControl</tt> property value determines which component
@@ -113,7 +113,7 @@ php prado/framework/prado-cli.php -c currency-converter
 	</p>
 
 	<p class="block-content">The final component is a
-		<com:DocLink ClassPath="System.Web.UI.WebControls.TButton" Text="TButton" />
+		<com:DocLink ClassPath="Prado.Web.UI.WebControls.TButton" Text="TButton" />
 		that the user will click to calculate the results. The <tt>Text</tt>
 		property sets the button label.
 	</p>
@@ -124,7 +124,7 @@ php prado/framework/prado-cli.php -c currency-converter
 		and does not do anything else. For the button to do some work, we need
 		to add a "Home.php" to where "Home.page" is. The <tt>Home</tt> class
 		should extends the
-		<com:DocLink ClassPath="System.Web.UI.TPage" Text="TPage" />, the default base
+		<com:DocLink ClassPath="Prado.Web.UI.TPage" Text="TPage" />, the default base
 		class for all Prado pages.
 	</p>
 <com:TTextHighlighter Language="php" CssClass="source block-content" id="code3">
@@ -235,8 +235,8 @@ $this->total->Text = $rate * $dollars;
 		</ol>
 	<p class="block-content">
 	 To ensure 1 we add one
-	<com:DocLink ClassPath="System.Web.UI.WebControls.TRequiredFieldValidator" Text="TRequiredFieldValidator" />. To ensure 2 and 3, we add one
-	<com:DocLink ClassPath="System.Web.UI.WebControls.TCompareValidator" Text="TCompareValidator" />. We may add these validators any where within
+	<com:DocLink ClassPath="Prado.Web.UI.WebControls.TRequiredFieldValidator" Text="TRequiredFieldValidator" />. To ensure 2 and 3, we add one
+	<com:DocLink ClassPath="Prado.Web.UI.WebControls.TCompareValidator" Text="TCompareValidator" />. We may add these validators any where within
 	the "Home.page" template. Further details regarding these validator and other
 	validators can be found in the
 	<a href="?page=Controls.Validation">Validation Controls</a> page.
@@ -261,7 +261,7 @@ $this->total->Text = $rate * $dollars;
 	<p class="block-content">
 	To ensure 1 we just add another <tt>TRequiredFieldValidator</tt>, for 2
 	we could use a
-	<com:DocLink ClassPath="System.Web.UI.WebControls.TDataTypeValidator" Text="TDataTypeValidator" />. For simplicity we only allow the user to enter
+	<com:DocLink ClassPath="Prado.Web.UI.WebControls.TDataTypeValidator" Text="TDataTypeValidator" />. For simplicity we only allow the user to enter
 	a number for the amount they wish to convert.
 	</p>
 <com:TTextHighlighter Language="prado" CssClass="source block-content" id="code9a">
@@ -307,11 +307,11 @@ public function convert_clicked($sender, $param)
 	</p>
 
 	<p class="block-content">We can replace the <tt>TButton</tt> with the Active Control counter part,
-		<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveButton" Text="TActiveButton" />,
+		<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveButton" Text="TActiveButton" />,
 		that can trigger a server side click event without reloading the page.
 		In addition, we can change the "totals" <tt>TLabel</tt> with the
 		Active Control counter part,
-		<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveLabel" Text="TActiveLabel" />, such that the server side can update the browser without
+		<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveLabel" Text="TActiveLabel" />, such that the server side can update the browser without
 		reloading the page.
 	</p>
 <com:TTextHighlighter Language="prado" CssClass="source block-content" id="code11">
@@ -355,7 +355,7 @@ Prado::using('System.Web.UI.ActiveControls.*');
 </com:TTextHighlighter>
 
 	<p class="block-content">The <tt>ClientSide.OnLoading</tt> and various
-	<com:DocLink ClassPath="System.Web.UI.ActiveControls.TCallbackClientSide" Text="other properties" /> accept a javascript block as their content or value.
+	<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TCallbackClientSide" Text="other properties" /> accept a javascript block as their content or value.
 	The javascript code <tt>$('...')</tt> is a javascript function that is
 	equivalent to <tt>document.getElementById('...')</tt> that takes a string
 	with the ID of an HTML element. Since Prado renders its components's IDs, we need
@@ -396,7 +396,7 @@ Prado::using('System.Web.UI.ActiveControls.*');
 	<p class="block-content">
 		The first line <tt>&lt;%@ Theme="Basic" %&gt;</tt> defines the
 		theme to be used for this page. The
-		<com:DocLink ClassPath="System.Web.UI.WebControls.THead" Text="THead" />
+		<com:DocLink ClassPath="Prado.Web.UI.WebControls.THead" Text="THead" />
 		corresponds to the HTML <tt>&lt;head&gt;</tt> element. In addition
 		to display the <tt>Title</tt> property by the <tt>THead</tt>, all CSS
 		files in the <tt>themes/Basic</tt> directory are also rendered/linked

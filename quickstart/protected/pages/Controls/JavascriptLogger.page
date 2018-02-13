@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TJavascriptLogger</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TJavascriptLogger" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TJavascriptLogger" />
 
 <p class="block-content">
 <tt>TJavascriptLogger</tt> provides logging for client-side javascript. It is mainly a wrapper of the Javascript developed at <a href="http://web.archive.org/web/20060512041505/gleepglop.com/javascripts/logger/">http://gleepglop.com/javascripts/logger/</a>.

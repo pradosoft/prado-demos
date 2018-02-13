@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TFlushOutput</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TFlushOutput" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TFlushOutput" />
 
 <p class="block-content">
 <tt>TFlushOutput</tt> enables forced flushing of the current output buffer
@@ -20,9 +20,9 @@ previous <tt>TFlushOutput</tt>) and the <tt>TFlushOutput</tt> will be sent to th
 </com:TTextHighlighter>
 
 <p class="block-content">
-You can specify whether you want to keep buffering of the output 
+You can specify whether you want to keep buffering of the output
 (if it was enabled) till the next occourence of a <tt><com: TFlushOutput /></tt>
-or the end of the page rendering, or stop buffering, by using the 
+or the end of the page rendering, or stop buffering, by using the
 <tt>ContinueBuffering</tt> property.
 </p>
 

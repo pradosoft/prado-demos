@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TTimeTriggeredCallback</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TTimeTriggeredCallback" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TTimeTriggeredCallback" />
 
 <p class="block-content">
 <tt>TTimeTriggeredCallback</tt> sends callback request every <tt>Interval</tt> seconds.

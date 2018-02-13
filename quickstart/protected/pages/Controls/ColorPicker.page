@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TColorPicker</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TColorPicker" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TColorPicker" />
 
 <p class="block-content">
 <tt>TColorPicker</tt> displays a text box for color input purpose.

@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TTextHighlighter</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TTextHighlighter" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TTextHighlighter" />
 
 <p class="block-content">
 <tt>TTextHighlighter</tt> does syntax highlighting for its body content, including both static text and the rendering results of its child controls. The text being highlighted follows the syntax of the specified <tt>Language</tt>, which can be 'php' (default), 'prado', 'css', 'html', etc. Here, 'prado' stands for the syntax of PRADO control templates.

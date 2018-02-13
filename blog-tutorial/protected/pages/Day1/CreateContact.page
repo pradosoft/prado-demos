@@ -117,10 +117,10 @@ Below we summarize the controls that are used in the page template:
 </p>
 
 <ul>
-<li><a href="http://pradosoft.github.io/docs/manual/class-TForm">TForm</a> displays an HTML form. Any input control must be enclosed within it. And most importantly, at most one <tt>TForm</tt> may appear in a page.</li>
-<li><a href="http://pradosoft.github.io/docs/manual/class-TTextBox">TTextBox</a> displays a text box to collect user text input.</li>
-<li><a href="http://pradosoft.github.io/docs/manual/class-TRequiredFieldValidator">TRequiredFieldValidator</a> ensures that the associated text box is not empty when the feedback is submitted.</li>
-<li><a href="http://pradosoft.github.io/docs/manual/class-TEmailAddressValidator">TEmailAddressValidator</a> ensures that the textbox contains a <i>valid</i> email address when the feedback is submitted.</li>
+<li><a href="http://pradosoft.github.io/docs/manual/class-Prado.Web.UI.TForm">TForm</a> displays an HTML form. Any input control must be enclosed within it. And most importantly, at most one <tt>TForm</tt> may appear in a page.</li>
+<li><a href="http://pradosoft.github.io/docs/manual/class-Prado.Web.UI.WebControls.TTextBox">TTextBox</a> displays a text box to collect user text input.</li>
+<li><a href="http://pradosoft.github.io/docs/manual/class-Prado.Web.UI.WebControls.TRequiredFieldValidator">TRequiredFieldValidator</a> ensures that the associated text box is not empty when the feedback is submitted.</li>
+<li><a href="http://pradosoft.github.io/docs/manual/class-Prado.Web.UI.WebControls.TEmailAddressValidator">TEmailAddressValidator</a> ensures that the textbox contains a <i>valid</i> email address when the feedback is submitted.</li>
 </ul>
 
 <com:TipBox>

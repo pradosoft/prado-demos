@@ -1,14 +1,14 @@
 <com:TContent ID="body" >
 
 <h1>TCallbackClientSide</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TCallbackClientSide" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TCallbackClientSide" />
 
 <p class="block-content">
 <tt>TCallbackClientSide</tt> is used to specify client-side callback request options and client-side event handlers.
 Each active control that inherits from <tt>TActiveBaseCallbackControl</tt> has a ClientSide property.
 The ClientSide property is an instance <tt>TCallbackClientSide</tt> containing the actual options and event handlers
 that are used by the client-side when that control is making a callback request.
-The following example demonstrates the toggling of a "loading" indicator when the client-side is making a callback request. 
+The following example demonstrates the toggling of a "loading" indicator when the client-side is making a callback request.
 </p>
 
 <com:TTextHighlighter Language="prado" CssClass="source block-content">
@@ -50,7 +50,7 @@ request and response are send and received successfuly.
 </p>
 
 <p class="block-content">
-In a general way, onUninitialized, onLoading, onLoaded and onInteractive events 
+In a general way, onUninitialized, onLoading, onLoaded and onInteractive events
 are not implemented consistently in all browsers. When cross browser compatibility is
 needed, it is best to avoid use them.
 <br/>The OnSuccess and OnFailure events are raised when the

@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TActiveRatingList</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveRatingList" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveRatingList" />
 
 <p class="block-content">
 <tt>TActiveRatingList</tt> is the active counterpart to the original <tt>TRatingList</tt> control.

@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TActiveRepeater</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveRepeater" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveRepeater" />
 
 <p class="block-content">
 <tt>TActiveRepeater</tt> represents a data bound and updatable repeater control which is the

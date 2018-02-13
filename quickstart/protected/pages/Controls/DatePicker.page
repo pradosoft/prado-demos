@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TDatePicker</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TDatePicker" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TDatePicker" />
 
 <p class="block-content"><tt>TDatePicker</tt> displays a text box for date input purpose.
 When the text box receives focus, a calendar will pop up and users can

@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TActiveCheckBoxList</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveCheckBoxList" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveCheckBoxList" />
 
 <p class="block-content">
 <tt>TActiveCheckBoxList</tt> is the active counterpart to the original <tt>TCheckBoxList</tt> control.

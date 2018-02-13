@@ -1,6 +1,6 @@
 <com:TContent ID="body">
 <h1>TActiveCheckBox</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveCheckBox" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveCheckBox" />
 
 <p class="block-content">
 <tt>TActiveCheckBox</tt> is the active control counter part to

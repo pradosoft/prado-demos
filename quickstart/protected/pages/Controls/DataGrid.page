@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TDataGrid</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TDataGrid" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TDataGrid" />
 
 <p class="block-content">
 TDatagrid is an important control in building complex Web applications. It displays data in a tabular format with rows (also called items) and columns. A row is composed by cells, while columns govern how cells should be displayed according to their association with the columns. Data specified via <tt>DataSource</tt> or <tt>DataSourceID</tt> are bound to the rows and feed contents to cells.

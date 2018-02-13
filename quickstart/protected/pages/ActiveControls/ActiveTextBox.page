@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TActiveTextBox</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveTextBox" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveTextBox" />
 
 <p class="block-content">
 <tt>TActiveTextBox</tt> is the active control counterpart of <tt>TTextBox</tt> component.

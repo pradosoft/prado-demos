@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TConditional</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TConditional" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TConditional" />
 
 <p class="block-content">
 <tt>TConditional</tt> displays appropriate content based on the evaluation result

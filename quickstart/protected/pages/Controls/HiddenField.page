@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>THiddenField</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.THiddenField" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.THiddenField" />
 
 <p class="block-content">
 <tt>THiddenField</tt> represents a hidden field on a Web page. The value of the hidden field can be accessed via its <tt>Value</tt> property.

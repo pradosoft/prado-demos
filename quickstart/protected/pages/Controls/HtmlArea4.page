@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>THtmlArea4</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.THtmlArea4" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.THtmlArea4" />
 
 <p class="block-content">
 <tt>THtmlArea4</tt> is a newer version of the <tt>THtmlArea</tt> component, based on TinyMCE version 4. Please refer to <tt>THtmlArea</tt> for basic usage.

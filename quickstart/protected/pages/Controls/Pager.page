@@ -1,10 +1,10 @@
 <com:TContent ID="body" >
 
 <h1>TPager</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TPager" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TPager" />
 
 <p class="block-content">
-<tt>TPager</tt> creates a pager that provides UI for end-users to interactively specify which page of data to be rendered in a <tt>TDataBoundControl</tt>-derived control, such as <tt>TDataList</tt>, <tt>TRepeater</tt>, <tt>TCheckBoxList</tt>, etc. The target data-bound control is specified by the <tt>ControlToPaginate</tt> property, which must be the ID path of the target control reaching from the pager's naming container. 
+<tt>TPager</tt> creates a pager that provides UI for end-users to interactively specify which page of data to be rendered in a <tt>TDataBoundControl</tt>-derived control, such as <tt>TDataList</tt>, <tt>TRepeater</tt>, <tt>TCheckBoxList</tt>, etc. The target data-bound control is specified by the <tt>ControlToPaginate</tt> property, which must be the ID path of the target control reaching from the pager's naming container.
 </p>
 
 <p class="block-content">

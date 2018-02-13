@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TCallback</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TCallback" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TCallback" />
 
 <p class="block-content">
 <tt>TCallback</tt> provides a basic callback handler that can be invoked from the

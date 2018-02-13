@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TKeyboard</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TKeyboard" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TKeyboard" />
 
 <p class="block-content">
 <tt>TKeyboard</tt> displays a virtual keyboard that users can click on to enter input in

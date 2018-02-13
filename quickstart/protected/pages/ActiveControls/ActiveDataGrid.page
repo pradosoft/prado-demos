@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TActiveDataGrid</h1>
-<com:DocLink ClassPath="System.Web.UI.ActiveControls.TActiveDataGrid" />
+<com:DocLink ClassPath="Prado.Web.UI.ActiveControls.TActiveDataGrid" />
 
 <p class="block-content">
 <tt>TActiveDataGrid</tt> represents a data bound and updatable grid control which is the

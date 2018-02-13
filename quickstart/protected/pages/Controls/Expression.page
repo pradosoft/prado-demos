@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TExpression</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TExpression" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TExpression" />
 
 <p class="block-content">
 <tt>TExpression</tt> evaluates a PHP expression and displays the evaluation result. To specify the expression to be evaluated, set the <tt>Expression</tt> property. Note, <tt>TExpression</tt> evaluates the expression during the rendering control lifecycle.

@@ -17,7 +17,7 @@ To create a theme named <tt>Basic</tt>, we create a subdirectory <tt>theme/Basic
 </p>
 
 <com:InfoBox>
-The <tt>themes</tt> directory must be Web-accessible, like the <tt>assets</tt> directory. Do not place sensitive data files under this directory. You can change the name or location of this directory by configuring the <a href="http://pradosoft.github.io/docs/manual/class-TThemeManager">TThemeManager</a> module in the application configuration.
+The <tt>themes</tt> directory must be Web-accessible, like the <tt>assets</tt> directory. Do not place sensitive data files under this directory. You can change the name or location of this directory by configuring the <a href="http://pradosoft.github.io/docs/manual/class-Prado.Web.UI.TThemeManager">TThemeManager</a> module in the application configuration.
 </com:InfoBox>
 
 

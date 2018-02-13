@@ -12,7 +12,7 @@ For informations of the specific options of each widget, follow jQuery-UI Widget
 
 <a name="TJuiProgressbar" />
 <h2>TJuiProgressbar</h2>
-<com:DocLink ClassPath="System.Web.UI.JuiControls.TJuiProgressbar" /> - <a href="http://api.jqueryui.com/progressbar/">jQuery UI API</a>
+<com:DocLink ClassPath="Prado.Web.UI.JuiControls.TJuiProgressbar" /> - <a href="http://api.jqueryui.com/progressbar/">jQuery UI API</a>
 
 <p class="block-content">
 <tt>TJuiProgressbar</tt> is an extension to <a href="?page=ActiveControls.ActivePanel">TActivePanel</a> based on jQuery-UI's <a href="http://jqueryui.com/progressbar/">Progressbar</a> widget.
@@ -27,7 +27,7 @@ The panel takes the aspect of a progressbar ranging from a value of 0 to the val
 
 <a name="TJuiAutoComplete" />
 <h2>TJuiAutoComplete</h2>
-<com:DocLink ClassPath="System.Web.UI.JuiControls.TJuiAutoComplete" /> - <a href="http://api.jqueryui.com/autocomplete/">jQuery UI API</a>
+<com:DocLink ClassPath="Prado.Web.UI.JuiControls.TJuiAutoComplete" /> - <a href="http://api.jqueryui.com/autocomplete/">jQuery UI API</a>
 
 <p class="block-content">
 <tt>TJuiAutoComplete</tt> is an extension to <a href="?page=ActiveControls.ActiveTextBox">TActiveTextBox</a> based on jQuery-UI's <a href="http://jqueryui.com/autocomplete/">autocomplete</a> widget.
@@ -51,7 +51,7 @@ When a suggestion is selected the <tt>OnSuggestionSelected</tt> event is raised,
 
 <a name="TJuiDialog" />
 <h2>TJuiDialog</h2>
-<com:DocLink ClassPath="System.Web.UI.JuiControls.TJuiDialog" /> - <a href="http://api.jqueryui.com/dialog/">jQuery UI API</a>
+<com:DocLink ClassPath="Prado.Web.UI.JuiControls.TJuiDialog" /> - <a href="http://api.jqueryui.com/dialog/">jQuery UI API</a>
 
 <p class="block-content">
 <tt>TJuiDialog</tt> is an extension to <a href="?page=ActiveControls.ActivePanel">TActivePanel</a> based on jQuery-UI's <a href="http://jqueryui.com/dialog/">dialog</a> widget.
@@ -73,7 +73,7 @@ The buttons may contain a callback that will be fired when they are clicked.
 
 <a name="TJuiDatePicker" />
 <h2>TJuiDatePicker</h2>
-<com:DocLink ClassPath="System.Web.UI.JuiControls.TJuiDatePicker" /> - <a href="http://api.jqueryui.com/datepicker/">jQuery UI API</a>
+<com:DocLink ClassPath="Prado.Web.UI.JuiControls.TJuiDatePicker" /> - <a href="http://api.jqueryui.com/datepicker/">jQuery UI API</a>
 
 <p class="block-content">
 <tt>TJuiDatePicker</tt> is an extension to <a href="?page=ActiveControls.ActiveTextBox">TActiveTextBox</a> based on jQuery-UI's <a href="http://jqueryui.com/datepicker/">datepicker</a> widget.

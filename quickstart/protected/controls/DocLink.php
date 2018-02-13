@@ -17,14 +17,10 @@ class DocLink extends THyperLink
 	public function onPreRender($param)
 	{
 		parent::onPreRender($param);
-		$paths=explode('.',$this->getClassPath());
-		if(count($paths)>1)
-		{
-			$classFile='class-'.array_pop($paths).'.html';
-			$this->setNavigateUrl(self::BASE_URL . '/' . $classFile);
-			if($this->getText() === '')
-				$this->setText('API Manual');
-		}
+		$classFile='class-'.$this->getClassPath();
+		$this->setNavigateUrl(self::BASE_URL . '/' . $classFile);
+		if($this->getText() === '')
+			$this->setText('API Manual');
 	}
 }
 

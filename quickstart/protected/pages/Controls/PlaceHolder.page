@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TPlaceHolder</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TPlaceHolder" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TPlaceHolder" />
 
 <p class="block-content">
 <tt>TPlaceHolder</tt> reserves a place on a template, where static texts or controls may be dynamically inserted.

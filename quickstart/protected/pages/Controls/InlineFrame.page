@@ -1,7 +1,7 @@
 <com:TContent ID="body" >
 
 <h1>TInlineFrame</h1>
-<com:DocLink ClassPath="System.Web.UI.WebControls.TInlineFrame" />
+<com:DocLink ClassPath="Prado.Web.UI.WebControls.TInlineFrame" />
 
 <p class="block-content">
 <tt>TInlineFrame</tt> displays an inline frame (&lt;iframe&gt;) on a Web page. The location of the frame content is specified by the <tt>FrameUrl</tt> property.
