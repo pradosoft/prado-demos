@@ -86,7 +86,10 @@ The following example shows how to use TRepeater to display tabular data.
 </p>
 <com:RunBar PagePath="Controls.Samples.TRepeater.Sample1" />
 <p class="block-content">
-TRepeater can be used in more complex situations. As an example, we show in the following how to use nested repeaters, i.e., repeater in repeater. This is commonly seen in presenting master-detail data. To use a repeater within another repeater, for an item for the outer repeater is created, we need to set the detail data source for the inner repeater. This can be achieved by responding to the <tt>OnItemDataBound</tt> event of the outer repeater. An <tt>OnItemDataBound</tt> event is raised each time an outer repeater item completes databinding. In the following example, we exploit another event of repeater called <tt>OnItemCreated</tt>, which is raised each time a repeater item (and its content) is newly created. We respond to this event by setting different background colors for repeater items to achieve alternating item background display. This saves us from writing an <tt>AlternatingItemTemplate</tt> for the repeaters.
+TRepeater can be used in more complex situations. As an example, we show in the following how to use nested repeaters, i.e., repeater in repeater. This is commonly seen in presenting master-detail data.
+<br/>To use a repeater within another repeater, for an item for the outer repeater is created, we need to set the detail data source for the inner repeater. This can be achieved by responding to the <tt>OnItemDataBound</tt> event of the outer repeater. An <tt>OnItemDataBound</tt> event is raised each time an outer repeater item completes databinding.
+<br/>In the following example, we exploit another event of repeater called <tt>OnItemCreated</tt>, which is raised each time a repeater item (and its content) is newly created. We respond to this event by setting different background colors for repeater items to achieve alternating item background display. This saves us from writing an <tt>AlternatingItemTemplate</tt> for the repeaters.
+<br/>The <tt>OnItemCreated</tt> event is good for modifying the item display, but being emitted before the item is added to the page hierarchy, at that moment controls inside the item can't refer to their's <tt>Page</tt> property yet. In the example the <tt>OnItemDataBound</tt> event (emitted after the item is added to the page) is used instead, so that the inner repeater will be able to bind its events to event handlers defined in the page.
 </p>
 <com:RunBar PagePath="Controls.Samples.TRepeater.Sample2" />
 <p class="block-content">
@@ -109,6 +112,5 @@ This sample shows how to use "drop-in" item renderers, available since v3.1.0. T
 More often, one needs to customize the layout of repeater items. The sample above relies on <tt>OnItemCreated</tt> to adjust the appearance of the renderer. Templated item renderers are perferred in this situation, as they allow us to put in more complex layout and content in a repeater item. The following sample reimplements the nested repeater sample using a templated item renderer called <tt>RegionDisplay</tt>. As we can see, the new code is much easier to understand and maintain.
 </p>
 <com:RunBar PagePath="Controls.Samples.TRepeater.Sample5" />
-
 
 </com:TContent>
