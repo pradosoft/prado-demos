@@ -58,7 +58,6 @@ The following example allows users to modify the existing tabular data using a <
 <com:TActiveButton Text="Save" OnClick="saveInput"/>
 </div>
 
-<com:TSafeHtml>
 <com:TActiveRepeater ID="Repeater2" EnableViewState="false">
 
 <prop:HeaderTemplate>
@@ -74,11 +73,11 @@ The following example allows users to modify the existing tabular data using a <
 
 <prop:ItemTemplate>
 <tr style="<%# 'background-color:' . ($this->ItemIndex%2 ? '#BFCFFF' : '#E6ECFF') %>">
-<td><%#$this->Data['id']%></td>
-<td><%#$this->Data['name']%></td>
-<td><%#$this->Data['category']%></td>
-<td><%#$this->Data['price']%></td>
-<td><%#$this->Data['imported']?'Yes':'No'%></td>
+<td><%# THttpUtility::htmlEncode($this->Data['id']) %></td>
+<td><%# THttpUtility::htmlEncode($this->Data['name']) %></td>
+<td><%# THttpUtility::htmlEncode($this->Data['category']) %></td>
+<td><%# THttpUtility::htmlEncode($this->Data['price']) %></td>
+<td><%# $this->Data['imported']?'Yes':'No' %></td>
 </tr>
 </prop:ItemTemplate>
 
@@ -90,7 +89,5 @@ The following example allows users to modify the existing tabular data using a <
 </prop:FooterTemplate>
 
 </com:TActiveRepeater>
-
-</com:TSafeHtml>
 
 </com:TContent>
