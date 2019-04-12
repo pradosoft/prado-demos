@@ -6,30 +6,58 @@
 <p>PRADO is an open source project hosted on <a href="http://github.com/pradosoft/prado">GitHub</a>. It is released under the terms of
 <com:THyperLink NavigateUrl="<%= $this->Service->constructUrl('License')%>" Text="the BSD License" />.</p>
 <p>The latest stable version of PRADO is <b><span id="lastVersion"><%= Prado::getVersion() %></span></b><span id="lastVersionDate"></span>.</p>
-<div style="text-align:center"><a id="downloadLink" style="font-size:150%" href="https://github.com/pradosoft/prado/releases/latest">Download</a></div>
+<p>
+The best way to install PRADO is through composer. If you don't use composer yet, first install it:
+</p>
+
+<com:TTextHighlighter CssClass="source" Language="sh">
+# download composer.phar
+curl -s http://getcomposer.org/installer | php
+# install it globally on the system
+mv composer.phar /usr/local/bin/composer
+</com:TTextHighlighter>
+
+<h3>New application</h3>
+<p>Create the application structure using composer:</p>
+
+<com:TTextHighlighter CssClass="source" Language="sh">
+composer create-project pradosoft/prado-app app
+</com:TTextHighlighter>
+
+<p>The application will be installed in the "app" directory.</p>
+
+<h3>Add PRADO to an existing application</h3>
+
+<p>Just create a composer.json file for your project:</p>
+<com:TTextHighlighter CssClass="source" Language="json">
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+    "require": {
+      "pradosoft/prado": "~4.0"
+  }
+}
+</com:TTextHighlighter>
+<p>The asset-packagist repository is used to install javascript dependencies. Assuming you already installed composer, run</p>
+<com:TTextHighlighter CssClass="source" Language="sh">
+composer install
+</com:TTextHighlighter>
+<p>Then you can include the autoloader, and you will have access to the library classes:</p>
+
+<com:TTextHighlighter CssClass="source" Language="php">
+<?php
+require 'vendor/autoload.php';
+</com:TTextHighlighter>
 
 <com:TClientScript PradoScripts="jquery" />
 <com:TClientScript>
 
 $(document).ready(function () {
-	$.getJSON("https://api.github.com/repos/pradosoft/prado/releases").done(function (json) {
-		var release = json[0];
-
-		var releaseVer = release.tag_name;
-		var releaseDate = new Date(release.published_at);
-		var downloadURL = release.assets[0].browser_download_url;
-
-		var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-		var day = releaseDate.getDate();
-		var monthIndex = releaseDate.getMonth();
-		var year = releaseDate.getFullYear();
-
-		$("#lastVersion").text(releaseVer);
-		$("#lastVersionDate").text(' (' + day + ' ' + monthNames[monthIndex] + ' ' + year + ')');
-		$("#downloadLink").attr("href", downloadURL);
-	});
-
-	$.get("https://raw.githubusercontent.com/pradosoft/prado/master/HISTORY", function(data) {
+	$.get("https://raw.githubusercontent.com/pradosoft/prado/master/HISTORY.md", function(data) {
   		$("#changeLog").text(data);
 	});
 });
@@ -40,39 +68,7 @@ $(document).ready(function () {
 <pre id="changeLog" class="changelog">loading...</pre>
 
 <br/>
-<h2>Previous PRADO releases</h2>
 
-<table width="100%" cellspacing="1" cellpadding="5" class="download">
-	<tr>
-		<th nowrap="nowrap">File</th>
-		<th nowrap="nowrap">Description</th>
-		<th nowrap="nowrap">Release date</th>
-	</tr>
-	<tr>
-		<td><a href="https://github.com/pradosoft/prado/archive/3.3.3.zip">Version 3.3.3</a></td>
-		<td>Latest release for the 3.3 branch</td>
-		<td nowrap="nowrap">Jan 25, 2018</td>
-	</tr>
-
-	<tr>
-		<td><a href="https://github.com/pradosoft/prado/releases/download/3.2.4/prado-3.2.4.re2e58b8.zip">Version 3.2.4</a></td>
-		<td>Last release for the 3.2 branch (unsupported)</td>
-		<td nowrap="nowrap">Aug 26, 2014</td>
-	</tr>
-	<tr>
-		<td><a href="https://github.com/pradosoft/prado/archive/3.1.10.zip">Version 3.1.10</a></td>
-		<td>Last release for the 3.1 branch (unsupported)</td>
-		<td nowrap="nowrap">Jul 16, 2011</td>
-	</tr>
-	<tr>
-		<td><a href="https://github.com/pradosoft/prado/archive/3.0.7.zip">Version 3.0.7</a></td>
-		<td>Last release for the 3.0 branch (unsupported)</td>
-		<td nowrap="nowrap">Apr 2, 2007</td>
-	</tr>
-</table>
-
-<br/>
-<br/>
 <h2>PRADO Tools</h2>
 <table width="100%" cellspacing="1" cellpadding="5" class="download">
 	<tr>
@@ -111,8 +107,42 @@ $(document).ready(function () {
 <h2>Git Access</h2>
 <p>You can obtain the latest development version of PRADO from our <a href="https://github.com/pradosoft/prado">Git repository</a>.</p>
 <blockquote><b>WARNING:</b> Unreleased Source code in Git may contain known bugs and are subject to changes without prior notice.</blockquote>
+
 <p>The Source code repository can be accessed anonymously using the following command,</p>
 <pre class="instructions">git clone https://github.com/pradosoft/prado.git</pre>
+
+<br/>
+<br/>
+<h2>PRADO 3 archives</h2>
+PRADO 3.x releases were relased as standalone packages:
+<table width="100%" cellspacing="1" cellpadding="5" class="download">
+	<tr>
+		<th nowrap="nowrap">File</th>
+		<th nowrap="nowrap">Description</th>
+		<th nowrap="nowrap">Release date</th>
+	</tr>
+	<tr>
+		<td><a href="https://github.com/pradosoft/prado/archive/3.3.3.zip">Version 3.3.3</a></td>
+		<td>Latest release for the 3.3 branch</td>
+		<td nowrap="nowrap">Jan 25, 2018</td>
+	</tr>
+
+	<tr>
+		<td><a href="https://github.com/pradosoft/prado/releases/download/3.2.4/prado-3.2.4.re2e58b8.zip">Version 3.2.4</a></td>
+		<td>Last release for the 3.2 branch (unsupported)</td>
+		<td nowrap="nowrap">Aug 26, 2014</td>
+	</tr>
+	<tr>
+		<td><a href="https://github.com/pradosoft/prado/archive/3.1.10.zip">Version 3.1.10</a></td>
+		<td>Last release for the 3.1 branch (unsupported)</td>
+		<td nowrap="nowrap">Jul 16, 2011</td>
+	</tr>
+	<tr>
+		<td><a href="https://github.com/pradosoft/prado/archive/3.0.7.zip">Version 3.0.7</a></td>
+		<td>Last release for the 3.0 branch (unsupported)</td>
+		<td nowrap="nowrap">Apr 2, 2007</td>
+	</tr>
+</table>
 
 <div style="clear: both;"></div>
 </div>
