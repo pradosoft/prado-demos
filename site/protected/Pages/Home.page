@@ -13,11 +13,11 @@
 <div class="statements">
   <div class="whatis">
     <h3>What is PRADO?</h3>
-    <p>PRADO<sup>TM</sup> is a component-based and event-driven programming framework for developing Web applications in PHP 5. PRADO stands for <b>P</b>HP <b>R</b>apid <b>A</b>pplication <b>D</b>evelopment <b>O</b>bject-oriented.</p>
+    <p>PRADO<sup>TM</sup> is a component-based and event-driven programming framework for developing Web applications in PHP 7. PRADO stands for <b>P</b>HP <b>R</b>apid <b>A</b>pplication <b>D</b>evelopment <b>O</b>bject-oriented.</p>
   </div>
   <div class="whatreq">
     <h3>What does PRADO require?</h3>
-    <p>The sole requirement to run PRADO-based applications is a Web server supporting PHP 5.4.0 or higher. <a href="<%= $this->Service->constructUrl('License') %>">PRADO is free</a>. You can use it to develop either open source or commercial applications.</p>
+    <p>The sole requirement to run PRADO-based applications is a Web server supporting PHP 7.1 or higher. <a href="<%= $this->Service->constructUrl('License') %>">PRADO is free</a>. You can use it to develop either open source or commercial applications.</p>
   </div>
   <div class="cani">
     <h3>Quick facts about PRADO</h3>
@@ -26,7 +26,7 @@
     <b>License:</b> <a href="<%= $this->Service->constructUrl('License') %>">revised BSD</a><br>
     <b>Lines of core code:</b> &gt; 125,000 lines<br>
     <b>Number of classes:</b> &gt; 665<br>
-    <b>Downloads:</b> &gt; 460,000 01/104/2018<br>
+    <b>Downloads:</b> &gt; 460,000 01/10/2018<br>
     </p>
   </div>
 </div>
@@ -35,6 +35,18 @@
 
   <h2>Latest News</h2>
   <div id="articles">
+
+    <div class="article">
+      <h3>Prado 4.1.0 is released</h3>
+      <span class="date">November 18, 2019</span>
+      <p>Prado 4.1.0 is available!
+      <br>This release is 100% compatible with existing code running on Prado 4.0.x, and a few minor fixes are included aswell.</p>
+      <p>The biggest change in this new version is that it requires at least Php 7.1 in order to run; later versions are supported and tested aswell.
+      <br>If you're still running applications based on Php 5, you should really consider upgrading. Php 5 is officially <a href="https://www.php.net/supported-versions.php">out of support</a> since an year ago, and Php 7 is a really solid upgrade in terms of speed and features.</p>
+      <p>As always, before upgrading you may want to have a read at the <a href="https://github.com/pradosoft/prado/blob/master/UPGRADE.md">UPGRADE.md</a> instructions to check what has changed in details.</p>
+      <br>Happy coding!<br><br>
+      The PRADO Group
+    </div>
 
     <div class="article">
       <h3>Prado 4.0.2 is released</h3>

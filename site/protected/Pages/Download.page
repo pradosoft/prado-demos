@@ -38,7 +38,7 @@ composer create-project pradosoft/prado-app app
     }
   ],
     "require": {
-      "pradosoft/prado": "~4.0"
+      "pradosoft/prado": "~4"
   }
 }
 </com:TTextHighlighter>
