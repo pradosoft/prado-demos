@@ -12,6 +12,15 @@ A click button with <tt>OnClick</tt> event handler:
 </td></tr>
 
 <tr><td class="samplenote">
+An html5 button with <tt>OnClick</tt> event handler:
+</td><td class="sampleaction">
+<com:TActiveButton
+	ButtonTag="Button"
+	Text="click me"
+	OnClick="buttonClicked" />
+</td></tr>
+
+<tr><td class="samplenote">
 A command button with <tt>OnCallback</tt>:
 </td><td class="sampleaction">
 <com:TActiveButton
