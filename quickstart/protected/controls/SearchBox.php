@@ -23,13 +23,15 @@ class SearchBox extends TTemplateControl
 	public function onInit($param)
 	{
 		parent::onInit($param);
-		if(strlen($q = $this->Page->Request['q']) > 0)
+		$q = $this->Page->Request['q'];
+		if($q !== null && strlen($q) > 0)
 			$this->search->setText($q);
 	}
 
 	public function doSearch($sender, $param)
 	{
-		if(strlen($query = $this->search->getText()) >0)
+		$query = $this->search->getText();
+		if($query !== null && strlen($query) >0)
 		{
 			$ps = $this->getApplication()->getService();
 			$page = $ps->constructUrl('Search', array('q' => $query), false);

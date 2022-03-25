@@ -25,7 +25,7 @@ class SiteMap extends TTemplateControl
 	{
 		parent::onPreRender($param);
 
-		$page = explode('.',$this->Request->ServiceParameter);
+		$page = explode('.',$this->Request->ServiceParameter ?? '');
 		$active = null;
 		switch($page[count($page)-1])
 		{
