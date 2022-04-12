@@ -7,7 +7,7 @@
     <li><a href="?page=GettingStarted.AboutPrado">What is PRADO?</a></li>
     <li><a href="?page=GettingStarted.Installation">Installation</a></li>
     <li><a href="?page=GettingStarted.NewFeatures">New Features</a></li>
-    <li><a href="?page=GettingStarted.Upgrading">Upgrading from v2.x and v1.x</a></li>
+    <li><a href="?page=GettingStarted.Upgrading40">Upgrading from a previous version</a></li>
     <li><a href="?page=GettingStarted.Upgrading32">Upgrading from v3.2</a></li>
     <li><a href="?page=GettingStarted.Upgrading33">Upgrading from v3.3</a></li>
     <li><a href="?page=GettingStarted.Wsat">Web Site Administration Tool</a></li>
@@ -28,8 +28,8 @@
 <div>Fundamentals</div>
 <ul>
     <li><a href="?page=Fundamentals.Architecture">Architecture</a></li>
-    <li><a href="?page=Fundamentals.Components1">Components: Part I</a></li>
-    <li><a href="?page=Fundamentals.Components2">Components: Part II</a></li>
+    <li><a href="?page=Fundamentals.Components1">Components: Introduction</a></li>
+    <li><a href="?page=Fundamentals.Components2">Components: Events</a></li>
     <li><a href="?page=Fundamentals.Controls">Controls</a></li>
     <li><a href="?page=Fundamentals.Pages">Pages</a></li>
     <li><a href="?page=Fundamentals.Modules">Modules</a></li>

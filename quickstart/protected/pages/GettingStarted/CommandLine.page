@@ -1,11 +1,6 @@
 <com:TContent ID="body" >
 <h1>Command Line Tool</h1>
 
-<div class="Note">
-<b class="tip">Note:</b> With Prado version 3.2.3 prado-cli.php location changed from framework 
-to bin directory. If you're using Prado 3.2.2 or earlier, replace bin with framework in examples below.
-</div>
-
 <p class="block-content">The optional <tt>prado-cli.php</tt> PHP script file in the <tt>bin</tt>
 directory provides command line tools to perform various tedious takes in Prado.
 The <tt>prado-cli.php</tt> can be used to create Prado project skeletons, create
@@ -20,40 +15,45 @@ the command line.
 
 <h2>Usage</h2>
 <p class="block-content">
-If you type <tt>php path/to/bin/prado-cli.php</tt>, you should see
-the following information. Alternatively, if you are not on Windows,
-you may try to change the <tt>prado-cli.php</tt> into an executable
-and execute it as a script</p>
+Inside you application's protected directory, If you type <tt>./vendor/bin/prado-cli</tt>,
+you should see the following information.</p>
 <com:TTextHighlighter Language="cli" CssClass="source block-content cli">
-Command line tools for Prado 3.0.5.
-usage: php prado-cli.php action <parameter> [optional]
-example: php prado-cli.php -c mysite
+  Command line tools for Prado 4.2.0.
+usage: php prado-cli.php command[/action] <parameter> [optional]
 
-actions:
-  -c <directory>
-    Creates a Prado project skeleton for the given <directory>.
+example: php prado-cli.php cache/flush-all
+example: prado-cli help
+example: prado-cli cron/tasks
 
-  -t <directory>
-    Create test fixtures in the given <directory>.
+The following options are available:
+  -d=<folder>       Loads the configuration.xml/php from <folder>
+  -q=<level>        Quiets the output to <level> [1..3]
 
-  shell [directory]
-    Runs a PHP interactive interpreter. Initializes the Prado
-    application in the given [directory].
+The following commands are available:
+ - cache                       Allows you to flush the cache(s).
+     cache/index               Displays the cache modules that can be flushed.
+     cache/flush               Flushes the specified ICache modules.
+     cache/flush-all           Flushes all application ICache modules.
+
+ - help                        Provides help information about shell commands.
+     help/index                Displays available commands or detailed command information.
+
+ - shell                       Provides PHP Interactive Shell Interpreter.
+     shell/index               Runs a PHP interactive interpreter after Initializing the Prado application.
+
+ - activerecord                Provides Active Record skeleton generation.
+     activerecord/generate     Generate Active Record skeleton for <table> to <output>. May also generate [soap] properties.
+     activerecord/generate-all Generate Active Record skeleton for all Tables to <output>. May also generate [soap] properties.
+                               Generated Classes are named like the Table with optional [Prefix] and/or [Suffix].
+                               [Overwrite] is used to overwrite existing Files.
+
+To see the help of each command, enter:
+
+  prado-cli help <command-name>
 </com:TTextHighlighter>
 
 <p class="block-content">The <b>&lt;parameter&gt;</b> are required parameters and <b>[optional]</b>
 are optional parameters. </p>
-
-<h2>Creating a new Prado project skeleton</h2>
-
-<p class="block-content">To create a Prado project skeleton, do the following:</p>
-<ol>
-	<li>Change to the directory where you want to create the project skeleton.</li>
-	<li>Type, <tt>php ../prado/bin/prado-cli.php -c helloworld</tt>, where
-	<tt>helloworld</tt> is the directory name that you want to create the project skeleton files.</li>
-	<li>Type, <tt>php ../prado/bin/prado-cli.php <b>-t</b> helloworld</tt> to create
-	the test fixtures for the <tt>helloworld</tt> project.</li>
-</ol>
 
 <h2>Interactive Shell</h2>
 <p class="block-content">
@@ -68,18 +68,12 @@ $: php bin/prado-cli.php shell demos/blog
 </com:TTextHighlighter>
 The output should be
 <com:TTextHighlighter Language="cli" CssClass="source block-content cli">
-Command line tools for Prado 3.0.5.
-** Loaded Prado application in directory "demos\blog\protected".
-PHP-Shell - Version 0.3.1
-(c) 2006, Jan Kneschke <jan@kneschke.de>
-
->> use '?' to open the inline help
-
->>
+  Command line tools for Prado 4.2.0.
+Psy Shell v0.11.2 (PHP 7.4.28 — cli) by Justin Hileman
+>>>
 </com:TTextHighlighter>
 Then we will get an instance of the Prado blog application, and from
-that instance we want an instance of the <tt>'data'</tt> module. Notice that
-a <b>semicolon</b> at the end of the line <b>suppresses the output</b>.
+that instance we want an instance of the <tt>'data'</tt> module.
 
 <com:TTextHighlighter Language="cli" CssClass="source block-content cli">
 >> $app = Prado::getApplication();

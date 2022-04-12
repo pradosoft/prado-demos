@@ -1,5 +1,5 @@
 <com:TContent ID="body" >
-<h1>Components: Part I</h1>
+<h1>Components: Introduction</h1>
 <p class="block-content">
 A component is an instance of <tt>TComponent</tt> or its child class. The base class <tt>TComponent</tt> implements the mechanism of component properties and events.
 </p>
@@ -75,45 +75,15 @@ In the second case, the property will be 'marked' as being a safe javascript sta
 This special handling makes use of the <tt>TJavaScriptLiteral</tt> class.
 </p>
 
-
-<h2>Component Events</h2>
-<p class="block-content">
-Component events are special properties that take method names as their values. Attaching (setting) a method to an event will hook up the method to the places at which the event is raised. Therefore, the behavior of a component can be modified in a way that may not be foreseen during the development of the component.
-</p>
-<p class="block-content">
-A component event is defined by the existence of a method whose name starts with the word <tt>on</tt>. The event name is the method name and is thus case-insensitve. For example, in <tt>TButton</tt>, we have
-<com:TTextHighlighter CssClass="source block-content">
-class TButton extends TWebControl {
-    public function onClick( $param ) {
-        ...
-    }
-}
-</com:TTextHighlighter>
-This defines an event named <tt>OnClick</tt>, and a handler can be attached to the event using one of the following ways,
-<com:TTextHighlighter CssClass="source block-content">
-$button->OnClick = $callback;
-$button->OnClick->add( $callback );
-$button->OnClick[] = $callback;
-$button->attachEventHandler( 'OnClick' , $callback );
-</com:TTextHighlighter>
-</p>
- The variable <tt>$callback</tt> contains the definition of the event handler that can be either a string referring to a global function name, or an array whose first element refers to an object and second element a method name/path that is reachable by the object, e.g.
- </p>
-<ul>
-<li>'buttonClicked' : buttonClicked($sender,$param);</li>
-<li>array($object,'buttonClicked') : $object->buttonClicked($sender,$param);</li>
-<li>array($object,'MainContent.SubmitButton.buttonClicked') : $object->MainContent->SubmitButton->buttonClicked($sender,$param);</li>
-</ul>
-
 <h2>Namespaces</h2>
 <p class="block-content">
-A namespace refers to a logical grouping of some class names so that they can be differentiated from other class names even if their names are the same. Since PHP does not support namespace intrinsically, you cannot create instances of two classes who have the same name but with different definitions. To differentiate from user defined classes, all PRADO classes are prefixed with a letter 'T' (meaning 'Type'). Users are advised not to name their classes like this. Instead, they may prefix their class names with any other letter(s).
+A namespace refers to a logical grouping of some class names so that they can be differentiated from other class names even if their names are the same. Historically PHP did not support namespaces, so all PRADO classes are prefixed with a letter 'T' (meaning 'Type') to differentiate from user defined classes. Nowadays that PHP has native support for namespaces, users are advised to use it when possible.
 </p>
 <p class="block-content">
-A namespace in PRADO is considered as a directory containing one or several class files. A class may be specified without ambiguity using such a namespace followed by the class name. Each namespace in PRADO is specified in the following format,
-<div class="source">
+PRADO has an internal support for namespaces that predates PHP namespac support. A namespace in PRADO is considered as a directory containing one or several class files. A class may be specified without ambiguity using such a namespace followed by the class name. Each namespace in PRADO is specified in the following format,
+<com:TTextHighlighter CssClass="source block-content">
 PathAlias.Dir1.Dir2
-</div>
+</com:TTextHighlighter>
 where <tt>PathAlias</tt> is an alias of some directory, while <tt>Dir1</tt> and <tt>Dir2</tt> are subdirectories under that directory. A class named <tt>MyClass</tt> defined under <tt>Dir2</tt> may now be fully qualified as <tt>PathAlias.Dir1.Dir2.MyClass</tt>.
 </p>
 <p class="block-content">
@@ -143,7 +113,7 @@ Dynamic component instantiation means creating component instances in PHP code. 
 $component = new ComponentClassName;
 $component = Prado::createComponent('ComponentType');
 </com:TTextHighlighter>
-where <tt>ComponentType</tt> refers to a class name or a type name in namespace format (e.g. <tt>System.Web.UI.TControl</tt>). The second approach is introduced to compensate for the lack of namespace support in PHP.
+where <tt>ComponentType</tt> refers to a class name or a type name in namespace format (e.g. <tt>System.Web.UI.TControl</tt>). The second approach is introduced to permit the creation of classes using Prado's namespace format and ther automatic configuration of new classes via configuration directives.
 </p>
 
 <h3>Static Component Instantiation</h3>

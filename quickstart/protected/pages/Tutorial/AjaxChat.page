@@ -30,13 +30,27 @@
 	<h1>Download, Install and Create a New Application</h1>
 	<p class="block-content">The download and installation steps are similar to those in
 	the <a href="?page=Tutorial.CurrencyConverter#download">Currency converter tutorial</a>.
-	To create the application, we run from the command line the following.
-	See the <a href="?page=GettingStarted.CommandLine">Command Line Tool</a>
-		for more details.
-<com:TTextHighlighter Language="text" CssClass="source block-content">
-php prado/framework/prado-cli.php -c chat
-</com:TTextHighlighter>
-	</p>
+
+    <p class="block-content">
+    The best way to install PRADO is <a href="http://getcomposer.org/">through composer</a>
+    <br/>If you don't use composer yet, first install it:
+    </p>
+    <com:TTextHighlighter CssClass="source block-content">
+    curl -s http://getcomposer.org/installer | php
+    php composer.phar install
+    </com:TTextHighlighter>
+    <p class="block-content">
+    Then, create the application structure using composer:
+    </p>
+    <com:TTextHighlighter CssClass="source block-content">
+    composer create-project pradosoft/prado-app chat
+    </com:TTextHighlighter>
+    <p>
+    The command creates a new directory named
+    <tt>chat</tt> in your current working directory.
+    You may need to change to the appropriate directory
+    first.
+    </p>
 
 	<p class="block-content">The above command creates the necessary directory structure and minimal
 		files (including "index.php" and "Home.page") to run a Prado  web application.

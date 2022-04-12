@@ -17,29 +17,28 @@
 	</p>
 
 	<h1 id="download">Downloading and Installing Prado</h1>
-	<p class="block-content">To install Prado, simply download the latest version of Prado from the
-		<a href="https://github.com/pradosoft/prado">Prado project website</a>
-		and unzip the file to a directory <b>not</b> accessible by your web server
-		(you may unzip it to a directory accessible by the web server if you wish
-		to see the demos and test). For further detailed installation, see the
-		<a href="?page=GettingStarted.Installation">Quickstart Installation</a> guide.
+	<p class="block-content">
+	The best way to install PRADO is <a href="http://getcomposer.org/">through composer</a>
+	<br/>If you don't use composer yet, first install it:
 	</p>
+	<com:TTextHighlighter CssClass="source block-content">
+	curl -s http://getcomposer.org/installer | php
+	php composer.phar install
+	</com:TTextHighlighter>
 
 	<h1>Creating a new Prado web Application</h1>
-	<p class="block-content">The quickest and simplest way to create a new Prado web application is
-		to use the command tool <tt>prado-cli.php</tt> found in the <tt>framework</tt>
-		directory of the Prado distribution.  We create a new application by running
-		the  following command in your
-		command prompt or console. The command creates a new directory named
-		<tt>currency-converter</tt> in your current working directory.
-		You may need to change to the appropriate directory
-		first.
-		See the <a href="?page=GettingStarted.CommandLine">Command Line Tool</a>
-		for more details.
+	<p class="block-content">
+	Then, create the application structure using composer:
 	</p>
-<com:TTextHighlighter Language="text" CssClass="source block-content" id="code111">
-php prado/framework/prado-cli.php -c currency-converter
-</com:TTextHighlighter>
+	<com:TTextHighlighter CssClass="source block-content">
+	composer create-project pradosoft/prado-app currency-converter
+	</com:TTextHighlighter>
+	<p>
+	The command creates a new directory named
+	<tt>currency-converter</tt> in your current working directory.
+	You may need to change to the appropriate directory
+	first.
+	</p>
 
 	<p class="block-content">The above command creates the necessary directory structure and minimal
 		files (including "index.php" and "Home.page") to run a Prado  web application.

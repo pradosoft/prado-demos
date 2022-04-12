@@ -14,8 +14,13 @@
 
     <h2>Requirements</h2>
     <p class="block-content">
-        To use WSAT, you need to add in your project configuration file: <tt>application.xml</tt>, 
-        in the services section the wsat service like follows:
+        To use WSAT, you need to install it using composer:
+
+    <com:TTextHighlighter CssClass="source block-content">
+    composer require pradosoft/prado-wsat
+    </com:TTextHighlighter>
+    Then add in your project configuration file: <tt>application.xml</tt>,
+    in the services section the wsat service like follows:
 
 <com:TTextHighlighter CssClass="source block-content" Language="xml">
 <services> 

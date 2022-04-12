@@ -5,58 +5,59 @@
 If you are viewing this page from your own Web server, you are already done with the installation.
 </p>
 <p>
-The minimum requirement by PRADO is that the Web server support PHP 5.3.3. PRADO has been tested with Apache Web server on Windows, MacOSX and various Linux distro. Highly possibly it may also run on other platforms with other Web servers, as long as PHP 5.3.3 is supported.
+The minimum requirement by PRADO is that the Web server support PHP 7. PRADO has been tested with Apache Web server on Windows, MacOSX and various Linux distro. Highly possibly it may also run on other platforms with other Web servers, as long as PHP 7 is supported.
 </p>
 </div>
 
+<h3>Installing a new app based on PRADO</h3>
 <p>
-PRADO can be installed as a standalone package or using <a href="http://getcomposer.org/">composer</a>
+The best way to install PRADO is <a href="http://getcomposer.org/">through composer</a>
+<br/>If you don't use composer yet, first install it:
 </p>
-<div id="install-steps" class="block-content">
-<h3>Standalone package</h3>
-<ol>
-<li>Go to the <a href="https://github.com/pradosoft/prado">Prado framework project page</a> to grab the latest version of PRADO.</li>
-<li>Unpack the PRADO release file to a Web-accessible directory.
-</ol>
-</div>
-<div id="install-after" class="block-content">
-<p>
-Your installation of PRADO is done and you can start to play with the demo applications included in the PRADO release via URL <tt>http://web-server-address/prado/demos/</tt>. Here we assume PRADO is unpacked to the <tt>prado</tt> subdirectory under the <tt>DocumentRoot</tt> of the Web server.
-</p>
-<p>
-If you encounter any problems with the demo applications, please use the PRADO requirement checker script, accessible via <tt>http://web-server-address/prado/requirements/index.php</tt>, to check first if your server configuration fulfills the conditions required by PRADO.
-</p>
-
-<div id="install-steps" class="block-content">
-<h3>Composer install</h3>
-<ol>
-<li>If you don't have installed composer already, install it globally:
 <com:TTextHighlighter CssClass="source block-content">
-$ curl -s http://getcomposer.org/installer | php
-$ php composer.phar install
+curl -s http://getcomposer.org/installer | php
+php composer.phar install
 </com:TTextHighlighter>
-</li>
-<li>Create a composer.json file for your project:
+<p>
+Then, create the application structure using composer:
+</p>
 <com:TTextHighlighter CssClass="source block-content">
+composer create-project pradosoft/prado-app app
+</com:TTextHighlighter>
+<p>
+The application will be installed in the "app" directory.
+</p>
+
+<h3>Add PRADO to an existing application</h3>
+
+<p>
+Create a composer.json file for your project:
+</p>
+<com:TTextHighlighter CssClass="source json block-content">
 {
-    "require": {
-        "pradosoft/prado": "~3.2"
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
     }
+  ],
+    "require": {
+      "pradosoft/prado": "^4"
+  }
 }
 </com:TTextHighlighter>
-</li>
-<li>Now run the actual installation:
+<p>
+The <a href="https://asset-packagist.org">asset-packagist</a> repository is used to install javascript dependencies.
+<br/>Assuming you already installed composer, run
+<p>
 <com:TTextHighlighter CssClass="source block-content">
-$ composer install
+composer install
 </com:TTextHighlighter>
-</li>
-<li>In your project include the autoloader, and you will have access to the library classes:
-<com:TTextHighlighter CssClass="source block-content">
+<p>Then you can include the autoloader, and you will have access to the library classes:</p>
+<com:TTextHighlighter CssClass="source php block-content">
 <?php
 require_once('vendor/autoload.php');
 </com:TTextHighlighter>
-</li>
-</ol>
 </div>
 
 </com:TContent>
