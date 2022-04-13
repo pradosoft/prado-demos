@@ -37,7 +37,7 @@ The available packaged libraries included in Prado are
     <li><tt>accordion</tt> : TAccordion control</li>
     <li><tt>ratings</tt> : TRatingList control</li>
     <li><tt>htmlarea</tt> : <a href="http://www.tinymce.com/">tinyMCE</a> version 3 editor</li>
-    <li><tt>htmlarea4</tt> : <a href="http://www.tinymce.com/">tinyMCE</a> version 4 editor</li>
+    <li><tt>htmlarea5</tt> : <a href="http://www.tinymce.com/">tinyMCE</a> version 5 editor</li>
     <li><tt>texthighlight</tt> : TTextHighlighter javascript helpers for row numbering and clipboard access</li>
 </ul>
 

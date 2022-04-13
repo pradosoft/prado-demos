@@ -1,37 +1,37 @@
 <com:TContent ID="body">
 
-<h1>THtmlArea4 Samples</h1>
+<h1>THtmlArea5 Samples</h1>
 
 <table class="sampletable">
 
 <tr><td class="samplenote">
-THtmlArea4 with default settings:
+THtmlArea5 with default settings:
 </td><td class="sampleaction">
-<com:THtmlArea4 ID="HtmlArea1" />
+<com:THtmlArea5 ID="HtmlArea1" />
 <com:TButton Text="Submit" OnClick="button1Clicked" />
 <br/>
 <com:TLiteral Encode="true" ID="Result1" />
 </td></tr>
 
 <tr><td class="samplenote">
-THtmlArea4 with manually set options
+THtmlArea5 with manually set options
 </td><td class="sampleaction">
-<com:THtmlArea4 ID="HtmlArea2" Width="670px" Height="300px">
+<com:THtmlArea5 ID="HtmlArea2" Width="670px" Height="300px">
   <prop:Options>
   	resize: false
     plugins: "charmap code wordcount"
     toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | code charmap | ",
   </prop:Options>
-</com:THtmlArea4>
+</com:THtmlArea5>
 <com:TButton Text="Submit" OnClick="button2Clicked" />
 <br/>
 <com:TLiteral Encode="true" ID="Result2" />
 </td></tr>
 
 <tr><td class="samplenote">
-THtmlArea4 with visual editing disabled:
+THtmlArea5 with visual editing disabled:
 </td><td class="sampleaction">
-<com:THtmlArea4 ID="HtmlArea3" EnableVisualEdit="false" />
+<com:THtmlArea5 ID="HtmlArea3" EnableVisualEdit="false" />
 <br/>
 <com:TButton Text="Submit" OnClick="button3Clicked" />
 <br/>
@@ -41,7 +41,25 @@ THtmlArea4 with visual editing disabled:
 <tr><td class="samplenote">
 Read-only THtmlArea:
 </td><td class="sampleaction">
-<com:THtmlArea4 ID="HtmlArea4" ReadOnly="true" Text="Sample html text: <b>bold</b> <i>italic</i>" />
+<com:THtmlArea5 ID="HtmlArea4" ReadOnly="true" Text="Sample html text: <b>bold</b> <i>italic</i>" />
+</td></tr>
+
+<tr><td class="samplenote">
+Available languages:
+</td><td class="sampleaction">
+<com:TLiteral ID="labLanguages" Encode="true" />
+</td></tr>
+
+<tr><td class="samplenote">
+Available plugins:
+</td><td class="sampleaction">
+<com:TLiteral ID="labPlugins" Encode="true" />
+</td></tr>
+
+<tr><td class="samplenote">
+Available themes:
+</td><td class="sampleaction">
+<com:TLiteral ID="labThemes" Encode="true" />
 </td></tr>
 
 </table>

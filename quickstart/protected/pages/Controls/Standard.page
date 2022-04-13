@@ -58,11 +58,11 @@
   </li>
 
   <li>
-  <a href="?page=Controls.HtmlArea">THtmlArea</a> represents a WYSIWYG text input field taking user input that are in HTML format.
+  <a href="?page=Controls.HtmlArea">THtmlArea</a> represents a WYSIWYG text input field taking user input that are in HTML format, based on TinyMCE version 3.
   </li>
 
   <li>
-  <a href="?page=Controls.HtmlArea4">THtmlArea4</a> is the counterpart of THtmlArea based on TinyMCE4.
+  <a href="?page=Controls.HtmlArea5">THtmlArea5</a> is the counterpart of THtmlArea based on TinyMCE version 5.
   </li>
 
   <li>
