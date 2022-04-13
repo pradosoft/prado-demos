@@ -7,27 +7,6 @@
     "content-hash": "7d7cbf88ed6d920c43826dc09f78289f",
     "packages": [
         {
-            "name": "bower-asset/bootstrap",
-            "version": "v3.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/68b0d231a13201eb14acd3dc84e51543d16e5f7e",
-                "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.9.1,<4.0"
-            },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
             "name": "bower-asset/clipboard",
             "version": "v2.0.10",
             "source": {
@@ -405,16 +384,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pradosoft/prado.git",
-                "reference": "a978004cf06c3f0e11f391529b44dffd3aad3678"
+                "reference": "54cf5c232289169290c97fe44e02e8736e4f60a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pradosoft/prado/zipball/a978004cf06c3f0e11f391529b44dffd3aad3678",
-                "reference": "a978004cf06c3f0e11f391529b44dffd3aad3678",
+                "url": "https://api.github.com/repos/pradosoft/prado/zipball/54cf5c232289169290c97fe44e02e8736e4f60a8",
+                "reference": "54cf5c232289169290c97fe44e02e8736e4f60a8",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/bootstrap": "^3.3",
                 "bower-asset/clipboard": "^2",
                 "bower-asset/highlightjs": "^9",
                 "bower-asset/highlightjs-line-numbers.js": "^2",
@@ -504,7 +482,7 @@
                 "issues": "https://github.com/pradosoft/prado/issues",
                 "source": "https://github.com/pradosoft/prado"
             },
-            "time": "2022-04-13T15:25:59+00:00"
+            "time": "2022-04-13T16:02:28+00:00"
         },
         {
             "name": "pradosoft/prado-tinymce3",

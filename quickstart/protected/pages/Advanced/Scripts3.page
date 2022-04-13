@@ -21,7 +21,6 @@ The available packaged libraries included in Prado are
     <li><tt>jquery</tt> : <a href="https://jquery.com/">jQuery</a> javascript framework</li>
     <li><tt>jqueryui</tt> : <a href="https://jqueryui.com/">jQueryUI</a> user interface javascript framework</li>
     <li><tt>prado</tt> : basic PRADO javascript framework based on jQuery</li>
-    <li><tt>bootstrap</tt> : <a href="http://getbootstrap.com/">Bootstrap</a> front-end framework</li>
     <li><tt>effects</tt> : visual effects based on <a href="https://jqueryui.com/">jQueryUI</a></li>
     <li><tt>ajax</tt> : ajax and callback related based on jQuery</li>
     <li><tt>validator</tt> : widgets validation</li>
