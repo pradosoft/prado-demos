@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d7cbf88ed6d920c43826dc09f78289f",
+    "content-hash": "2fafd76d1cd68325195d0f854c7a0959",
     "packages": [
         {
             "name": "bower-asset/clipboard",
@@ -380,16 +380,16 @@
         },
         {
             "name": "pradosoft/prado",
-            "version": "dev-master",
+            "version": "4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pradosoft/prado.git",
-                "reference": "54cf5c232289169290c97fe44e02e8736e4f60a8"
+                "reference": "1de96ebdbc34882286a9e2b5a3e51897e245b97c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pradosoft/prado/zipball/54cf5c232289169290c97fe44e02e8736e4f60a8",
-                "reference": "54cf5c232289169290c97fe44e02e8736e4f60a8",
+                "url": "https://api.github.com/repos/pradosoft/prado/zipball/1de96ebdbc34882286a9e2b5a3e51897e245b97c",
+                "reference": "1de96ebdbc34882286a9e2b5a3e51897e245b97c",
                 "shasum": ""
             },
             "require": {
@@ -435,7 +435,6 @@
                 "ext-zlib": "Enables compression to reduce page size",
                 "pradosoft/prado-demos": "Demo applications for Prado"
             },
-            "default-branch": true,
             "bin": [
                 "bin/prado-cli"
             ],
@@ -482,7 +481,7 @@
                 "issues": "https://github.com/pradosoft/prado/issues",
                 "source": "https://github.com/pradosoft/prado"
             },
-            "time": "2022-04-13T16:02:28+00:00"
+            "time": "2022-04-19T20:36:29+00:00"
         },
         {
             "name": "pradosoft/prado-tinymce3",
@@ -1822,9 +1821,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "pradosoft/prado": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -37,6 +37,31 @@
   <div id="articles">
 
     <div class="article">
+      <h3>Prado 4.2.0 has been released!</h3>
+      <span class="date">April 19, 2022</span>
+      <p>
+      This new release introduces a lot of new features and compatibility changes baked during the last year.
+      <br>The required minimum Php version has been raised to 7.3, and supports Php up to version 8.1.
+      <br>A big thank to @belisoful that reworked some of the core code to introduce most of the new features, just to name a few:
+      </p>
+      <ul>
+       <li>TPermissionsManager, implements Role Based Access Control and Authorization Rules for each permission <a href="https://github.com/pradosoft/prado/issues/790">#790</a></li>
+       <li>TCronModule and TDbCronModule, scheduler like linux cron schedule expression <a href="https://github.com/pradosoft/prado/issues/761">#761</a></li>
+       <li>TPluginModule/TDbPluginModule, Integrate Composer extensions for PRADO <a href="https://github.com/pradosoft/prado/issues/743">#743</a></li>
+       <li>TDbParameterModule for reading and setting application parameters with a database-table <a href="https://github.com/pradosoft/prado/issues/771">#771</a></li>
+       <li>Complete rewrite of Prado-CLI <a href="https://github.com/pradosoft/prado/issues/765">#765</a>, <a href="https://github.com/pradosoft/prado/issues/783">#783</a></li>
+      </ul>
+      <p>
+      Also, the behavior / event system got a big overhaul, with the addition of new classes to manage behaviors (TBehaviorsModule, TBehaviorParameterLoader <a href="https://github.com/pradosoft/prado/issues/741">#741</a>), the creation of a set of builtin behaviors and more fixes and enhancements all around.
+      </p>
+      <p>
+      As always, before upgrading you may want to have a read at <a href="https://github.com/pradosoft/prado/blob/master/HISTORY.md">HISTORY.md</a> to see what has changed in details and <a href="https://github.com/pradosoft/prado/blob/master/UPGRADE.md">UPGRADE.md</a> to check if your application needs any modification to run on this new Prado version.
+      </p>
+      <p>Happy coding!</p>
+      <p>The PRADO Group</p>
+    </div>
+
+    <div class="article">
       <h3>Prado 4.1.2 is released</h3>
       <span class="date">August 24, 2021</span>
       <p>Prado 4.1.2 is available!
