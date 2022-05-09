@@ -25,8 +25,8 @@
     <b>First release:</b> August 2004<br>
     <b>License:</b> <a href="<%= $this->Service->constructUrl('License') %>">revised BSD</a><br>
     <b>Lines of core code:</b> &gt; 125,000 lines<br>
-    <b>Number of classes:</b> &gt; 665<br>
-    <b>Downloads:</b> &gt; 460,000 01/10/2018<br>
+    <b>Number of classes:</b> &gt; 697<br>
+    <b>Downloads:</b> &gt; 494,000 09/05/2022<br>
     </p>
   </div>
 </div>
@@ -35,6 +35,20 @@
 
   <h2>Latest News</h2>
   <div id="articles">
+
+    <div class="article">
+      <h3>Prado 4.2.1 is available!</h3>
+      <span class="date">May 9, 2022</span>
+      <p>This is mainly a bug-fix and compatibility release.</p>
+      <p>
+        Support for using active controls on PHP 7.3  has been restored, even if you should probably consider upgrading to a more recent PHP version.
+        <br/>
+        A severe bug was found when using custom authorization rules, and this one has been corrected, too.
+      </p>
+      <p>Users are advised to update from 4.2.0, as it should require no code changes.</p>
+      <p>Happy coding!</p>
+      <p>The PRADO Group</p>
+    </div>
 
     <div class="article">
       <h3>Prado 4.2.0 has been released!</h3>
