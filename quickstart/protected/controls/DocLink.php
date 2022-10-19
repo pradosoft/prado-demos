@@ -17,8 +17,8 @@ class DocLink extends THyperLink
 	public function onPreRender($param)
 	{
 		parent::onPreRender($param);
-		$classFile='class-'.$this->getClassPath();
-		$this->setNavigateUrl(self::BASE_URL . '/' . $classFile);
+		$classFile = str_replace('.', '-', $this->getClassPath());
+		$this->setNavigateUrl(self::BASE_URL . '/classes/' . $classFile . '.html');
 		if($this->getText() === '')
 			$this->setText('API Manual');
 	}
