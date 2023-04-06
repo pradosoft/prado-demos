@@ -13,11 +13,11 @@
 <div class="statements">
   <div class="whatis">
     <h3>What is PRADO?</h3>
-    <p>PRADO<sup>TM</sup> is a component-based and event-driven programming framework for developing Web applications in PHP 7. PRADO stands for <b>P</b>HP <b>R</b>apid <b>A</b>pplication <b>D</b>evelopment <b>O</b>bject-oriented.</p>
+    <p>PRADO<sup>TM</sup> is a component-based and event-driven programming framework for developing Web applications in PHP. PRADO stands for <b>P</b>HP <b>R</b>apid <b>A</b>pplication <b>D</b>evelopment <b>O</b>bject-oriented.</p>
   </div>
   <div class="whatreq">
     <h3>What does PRADO require?</h3>
-    <p>The sole requirement to run PRADO-based applications is a Web server supporting PHP 7.1 or higher. <a href="<%= $this->Service->constructUrl('License') %>">PRADO is free</a>. You can use it to develop either open source or commercial applications.</p>
+    <p>The sole requirement to run PRADO-based applications is a Web server supporting PHP 7.4 or higher. <a href="<%= $this->Service->constructUrl('License') %>">PRADO is free</a>. You can use it to develop either open source or commercial applications.</p>
   </div>
   <div class="cani">
     <h3>Quick facts about PRADO</h3>
@@ -25,7 +25,7 @@
     <b>First release:</b> August 2004<br>
     <b>License:</b> <a href="<%= $this->Service->constructUrl('License') %>">revised BSD</a><br>
     <b>Lines of core code:</b> &gt; 125,000 lines<br>
-    <b>Number of classes:</b> &gt; 697<br>
+    <b>Number of classes:</b> &gt; 702<br>
     <b>Downloads:</b> &gt; 494,000 09/05/2022<br>
     </p>
   </div>
@@ -35,6 +35,24 @@
 
   <h2>Latest News</h2>
   <div id="articles">
+
+    <div class="article">
+      <h3>Prado 4.2.2 is available!</h3>
+      <span class="date">April 6, 2023</span>
+      <p>This is mainly a bug-fix and compatibility release.</p>
+      <p>
+        The minimum required PHP version has been raised from 7.3 to 7.4. While this should be a simple update, please remember that PHP 7 is EOL (end of life), so you should consider upgrading to PHP 8.x as soon as possible.
+      </p>
+      <p>
+        For this reason this would probably be the last Prado version supporting PHP 7, as new development will only target PHP 8 from now on.
+      </p>
+      <p>
+        Many thanks to all the developers who contributed to this release, in particular we'd like to thank <a href="https://github.com/belisoful">@belisoful</a> for his continuous effort in implementing new features and keeping them updated.
+      </p>
+      <p>Users are advised to update from 4.2.1, as it should require no code changes.</p>
+      <p>Happy coding!</p>
+      <p>The PRADO Group</p>
+    </div>
 
     <div class="article">
       <h3>Prado 4.2.1 is available!</h3>
