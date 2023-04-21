@@ -26,10 +26,10 @@ Text box with customized color, font, columns, maximum length:
 </td></tr>
 
 <tr><td class="samplenote">
-Text box with vCard support:
+Text box with AutoCompleteType:
 </td><td class="sampleaction">
-First Name: <com:TTextBox AutoCompleteType="FirstName" />
-Last Name: <com:TTextBox AutoCompleteType="LastName" />
+Disabled: <com:TTextBox AutoCompleteType="Disabled" />
+Enabled: <com:TTextBox AutoCompleteType="Enabled" />
 </td></tr>
 
 <tr><td class="samplenote">

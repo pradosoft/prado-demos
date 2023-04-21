@@ -45,7 +45,7 @@ class Sample2 extends TPage
 	public function dataBindRepeater2($sender,$param)
 	{
 		$item=$param->Item;
-		if($item->ItemType==='Item' || $item->ItemType==='AlternatingItem')
+		if($item->ItemType===TListItemType::Item || $item->ItemType===TListItemType::AlternatingItem)
 		{
 			$item->Repeater2->DataSource=$this->getDetailData($item->Data);
 			$item->Repeater2->dataBind();
@@ -56,7 +56,7 @@ class Sample2 extends TPage
 	{
 		static $itemIndex=0;
 		$item=$param->Item;
-		if($item->ItemType==='Item' || $item->ItemType==='AlternatingItem')
+		if($item->ItemType===TListItemType::Item || $item->ItemType===TListItemType::AlternatingItem)
 		{
 			$item->Cell->BackColor=$itemIndex%2 ? "#6078BF" : "#809FFF";
 			$item->Cell->ForeColor='white';
@@ -68,7 +68,7 @@ class Sample2 extends TPage
 	{
 		static $itemIndex=0;
 		$item=$param->Item;
-		if($item->ItemType==='Item' || $item->ItemType==='AlternatingItem')
+		if($item->ItemType===TListItemType::Item || $item->ItemType===TListItemType::AlternatingItem)
 		{
 			$item->Row->BackColor=$itemIndex%2 ? "#BFCFFF" : "#E6ECFF";
 			$itemIndex++;
