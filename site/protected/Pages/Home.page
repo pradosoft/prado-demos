@@ -17,7 +17,7 @@
   </div>
   <div class="whatreq">
     <h3>What does PRADO require?</h3>
-    <p>The sole requirement to run PRADO-based applications is a Web server supporting PHP 7.4 or higher. <a href="<%= $this->Service->constructUrl('License') %>">PRADO is free</a>. You can use it to develop either open source or commercial applications.</p>
+    <p>The sole requirement to run PRADO-based applications is a Web server supporting PHP 8.1 or higher. <a href="<%= $this->Service->constructUrl('License') %>">PRADO is free</a>. You can use it to develop either open source or commercial applications.</p>
   </div>
   <div class="cani">
     <h3>Quick facts about PRADO</h3>
@@ -35,6 +35,17 @@
 
   <h2>Latest News</h2>
   <div id="articles">
+
+    <div class="article">
+      <h3>Prado 4.3.0 has been released!</h3>
+      <span class="date">October 26, 2023</span>
+      <p>This new release introduces a lot of new features and compatibility changes baked during the last year.</p>
+      <p>The required minimum Php version has been raised to 8.1; if you're still running php 7.x you should really consider upgrading, but in the meanwhile Prado 4.2.x will keep serving you well.</p>
+      <p>A big thank to <a href="https://github.com/belisoful">@belisoful</a> that worked hard to consolidate two basic aspects of prado: data type classes (TList/TMap/...) and behaviors, and also found the time to add some new goodies like an integrated PHP Web Server Action for built-in app development.</p>
+      <p>As always, before upgrading you may want to have a read at HISTORY.md to see what has changed in details and UPGRADE.md to check if your application needs any modification to run on this new Prado version.</p>
+      <p>Happy coding!</p>
+      <p>The PRADO Group</p>
+    </div>
 
     <div class="article">
       <h3>Prado 4.2.2 is available!</h3>
@@ -126,34 +137,6 @@
       <p>As always, before upgrading you may want to have a read at the <a href="https://github.com/pradosoft/prado/blob/master/UPGRADE.md">UPGRADE.md</a> instructions to check what has changed in details.</p>
       <br>Happy coding!<br><br>
       The PRADO Group
-    </div>
-
-    <div class="article">
-      <h3>Prado 4.0.2 is released</h3>
-      <span class="date">April 12, 2019</span>
-      <p>Prado 4.0.2 is available! This is release includes some important fixes and introduces the usage of php's <a href="https://www.php.net/manual/intro.intl.php">intl</a> extension for a better handling of international formatting of localized assets like numbers, dates and currencies.<br/>
-        As always, before upgrading you may want to have a read at the <a href="https://github.com/pradosoft/prado/blob/master/UPGRADE.md">UPGRADE.md</a> instructions to check what has changed in details.<br/>
-        With PHP 5 not being <a href="https://www.php.net/supported-versions.php">officially supported</a> anymore and the fast development schedule of PHP bringing in awesome new features at each release, the future development will focus on supporting PHP versions from 7.1.<br><br>
-      <br>Happy coding!<br><br>
-      The PRADO Group
-    </div>
-
-    <div class="article">
-      <h3>Prado 4.0.1 is available</h3>
-      <span class="date">April 1, 2018</span>
-      <p>This is not an April Fools joke! This is mostly a bugfix release, and it contains an important fix for active controls when running under the recently released php version 7.2 (see issue <a href="https://github.com/pradosoft/prado/issues/663">#663</a> for further details).<br/>
-        The minimum required php version is now 5.4, in order to support some useful features like the short array syntax. Anyway, you may want to stick with a supported php version like 5.6 or preferably at least 7.1.<br/>
-        If you are still using one of the Prototypejs based controls (eg. TAutoComplete, TDraggable) or any other deprecated feature, you may want to have a read at the <a href="https://github.com/pradosoft/prado/blob/master/UPGRADE.md">UPGRADE.md</a> instructions before updating in order to find a replacement.<br/>
-        Last but not least, a big overhaul took place on the code an the documentation blocks to make them more consistent.<br><br>
-        We hope you'll enjoy coding with this new version as usual!
-      <br>Happy coding!<br><br>
-      The PRADO Group
-    </div>
-
-    <div class="article">
-      <h3>Prado 3.3.3 is released</h3>
-      <span class="date">January 25, 2018</span>
-      <p>The PRADO Group is proud to announce the formal release of <span style="font-weight:bold">PRADO 3.3.3</span>.<br><br>Release 3.3.3 is a bugfix release, and doesn't introduce any backward incompatible change.<br>Most notable changes are:<ol><li>two fixes to run under IIS <a href="https://github.com/pradosoft/prado/issues/610">#610</a> <a href="https://github.com/pradosoft/prado/issues/625">#625</a></li><li>an important fix when running in fpm mode <a href="https://github.com/pradosoft/prado/issues/648">#648</a></li></ol><br>As usual, if you find a problem, please <a href="https://github.com/pradosoft/prado/issues/new">report it</a> so that we can fix it.<br><br>Happy coding!<br><br>The PRADO Group
     </div>
   </div>
 
