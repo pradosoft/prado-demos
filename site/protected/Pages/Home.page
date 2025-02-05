@@ -37,6 +37,17 @@
   <div id="articles">
 
     <div class="article">
+      <h3>Prado Matrix room</h3>
+      <span class="date">February 5, 2025</span>
+      <p>After some silence, here's a status update on Prado</p>
+      <p>Last year saw no new releases: development has slowed down a bit since version 4.3.0, which still works fine on recent PHP versions, and no critical bugs have been found in it.</p>
+      <p>Now things have started moving again, so expect a new release sometime later this year.</p>
+      <p>In the meantime, a new chat room has been created on the <a href="https://matrix.org/try-matrix/" target="_blank">Matrix network</a> to connect Prado developers. You can join the room at <a href="https://matrix.to/#/#prado:matrix.org" target="_blank">#prado:matrix.org</a>. You are welcome to join and chat with us.</p>
+      <p>Happy chatting!</p>
+      <p>The PRADO Group</p>
+    </div>
+
+    <div class="article">
       <h3>Prado 4.3.0 has been released!</h3>
       <span class="date">October 26, 2023</span>
       <p>This new release introduces a lot of new features and compatibility changes baked during the last year.</p>
