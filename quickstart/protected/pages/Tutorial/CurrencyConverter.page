@@ -11,7 +11,7 @@
 		relative to the dollar. The completed application is shown bellow.
 		<img src=<%~ example2.png %> class="figure" />
 		You can try the application <a href="../currency-converter/index.php">locally</a> or at the
-		<a href="http://www.pradoframework.net/site/demos/currency-converter/">Prado website</a>.
+		<a href="http://www.pradoframework.net/demos/currency-converter/">Prado website</a>.
 		Notice that the application still functions exactly the same if javascript
 		is not available on the user's browser.
 	</p>

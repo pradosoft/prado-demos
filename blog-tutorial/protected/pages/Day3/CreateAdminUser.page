@@ -22,7 +22,7 @@ We create two files <tt>protected/pages/users/AdminUser.page</tt> and <tt>protec
 
 <h2>Creating Page Template</h2>
 <p>
-We use <a href="http://www.pradoframework.net/site/demos/quickstart/?page=Controls.DataGrid">TDataGrid</a> to display the user accounts. Based on the above analysis, we configure the following four columns:
+We use <a href="http://www.pradoframework.net/demos/quickstart/?page=Controls.DataGrid">TDataGrid</a> to display the user accounts. Based on the above analysis, we configure the following four columns:
 </p>
 <ul>
 <li><a href="http://pradosoft.github.io/docs/manual/class-Prado.Web.UI.WebControls.THyperLinkColumn">THyperLinkColumn</a> displays the username column. The URL is constructed according to the PHP expression specified in the <tt>DataNavigateUrlFormatString</tt> property.</li>

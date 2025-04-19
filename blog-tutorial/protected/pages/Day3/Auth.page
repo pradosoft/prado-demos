@@ -3,7 +3,7 @@
 <h1>Authentication and Authorization</h1>
 
 <p>
-Before we set off to implement the user pages, we need to do some work to enable <a href="http://www.pradoframework.net/site/demos/quickstart/index.php?page=Advanced.Auth">authentication and authorization</a>.
+Before we set off to implement the user pages, we need to do some work to enable <a href="http://www.pradoframework.net/demos/quickstart/index.php?page=Advanced.Auth">authentication and authorization</a>.
 </p>
 
 <p>
@@ -38,7 +38,7 @@ As we will see in later sections, in controls and pages, we can use <tt>$this->U
 </p>
 
 <p>
-Below is the implementation detail of <tt>BlogUser</tt>. Notice <a href="http://www.pradoframework.net/site/demos/quickstart/index.php?page=Database.ActiveRecord">Active Record</a> is used to perform DB query. For example, we use <tt>UserRecord::finder()->findByPk($username)</tt> to look for the primary key specified by <tt>$username</tt> in the <tt>users</tt> table.
+Below is the implementation detail of <tt>BlogUser</tt>. Notice <a href="http://www.pradoframework.net/demos/quickstart/index.php?page=Database.ActiveRecord">Active Record</a> is used to perform DB query. For example, we use <tt>UserRecord::finder()->findByPk($username)</tt> to look for the primary key specified by <tt>$username</tt> in the <tt>users</tt> table.
 </p>
 
 <com:TTextHighlighter CssClass="source" Language="php">
