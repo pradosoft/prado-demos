@@ -17,8 +17,15 @@ To better organize our directories, we create a new directory <tt>protected/data
 </com:TTextHighlighter>
 
 <p>
-Instead of writing the classes manually, we will use the <a href="?page=GettingStarted.Wsat">PRADO Web Site Administration Tool</a> to generate the classes for us.
-So we need to modify again our application configuration in the services section like follows:
+Instead of writing the classes manually, we will use the <a href="https://github.com/pradosoft/prado-wsat">PRADO Web Site Administration Tool</a> to generate the classes for us.
+<br/>
+First, let's ask composer to add this tool to our application:
+</p>
+<com:TTextHighlighter CssClass="source block-content">
+composer require --dev pradosoft/prado-wsat
+</com:TTextHighlighter>
+<p>
+Now we need to modify again our application configuration in the services section like follows:
 </p>
 
  <p class="block-content">
@@ -47,7 +54,7 @@ So we need to modify again our application configuration in the services section
 <img src="<%~blog_wsat_generate_ar.png%>" style="width: 700px;" />
 
 <p>
-    In the <tt>Output Folder</tt> field we used the <a href="http://www.pradoframework.net/demos/quickstart/?page=Fundamentals.Components">namespace format</a> again, the path <tt>Application.database</tt> indicates that we want to put our class's files in the <tt>protected/database/</tt> folder.
+    In the <tt>Output Folder</tt> field we used the <a href="http://www.pradoframework.net/demos/quickstart/?page=Fundamentals.Components1">namespace format</a> again, the path <tt>Application.database</tt> indicates that we want to put our class's files in the <tt>protected/database/</tt> folder.
     The <tt>*</tt> in the <tt>Table Name</tt> field means that we want to generate all AR classes, you can specify a table name instead if you want to generate just a specific AR class.
 </p>
 

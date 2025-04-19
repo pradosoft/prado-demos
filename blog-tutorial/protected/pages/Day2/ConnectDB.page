@@ -11,10 +11,10 @@ We are going to use <a href="http://www.pradoframework.net/demos/quickstart/?pag
 </p>
 
 <com:NoteBox>
-To use DAO, you have to install and enable the <a href="http://www.php.net/manual/en/ref.pdo.php">PHP PDO extension</a> <i>and</i> a database-specific PDO driver (in our case, it is the SQLite PDO driver). This can be achieved easily on Windows by modifying the <tt>php.ini</tt> file with the following lines:
+To use DAO, you have to install and enable the <a href="https://www.php.net/manual/en/book.pdo.php">PHP PDO extension</a> <i>and</i> a database-specific PDO driver (in our case, it is the SQLite PDO driver). This can be achieved easily on Windows by modifying the <tt>php.ini</tt> file with the following lines:
 <com:TTextHighlighter CssClass="source">
-extension=php_pdo.dll
-extension=php_pdo_sqlite.dll
+extension=pdo.dll
+extension=pdo_sqlite.dll
 </com:TTextHighlighter>
 </com:NoteBox>
 
