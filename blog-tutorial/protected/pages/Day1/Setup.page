@@ -3,19 +3,27 @@
 <h1>Initial Setup</h1>
 
 <p>
-We start by setting up the directories and the files that are required by most PRADO applications. We use the <a href="http://www.pradoframework.net/demos/quickstart/?page=GettingStarted.CommandLine">PRADO command line tool</a> to achieve this goal.
+We start by setting up the directories and the files that are required by most PRADO applications. We use <a href="http://getcomposer.org/">composer</a> to achieve this goal.
+<br/>If you don't use composer yet, first install it:
 </p>
+<com:TTextHighlighter CssClass="source block-content">
+curl -s http://getcomposer.org/installer | php
+php composer.phar install
+</com:TTextHighlighter>
 
 <p>
 Assume <tt>blog</tt> is the name of the directory to hold the whole blog system, and the URL to access this folder is <tt>http://hostname/blog/</tt> (replace <tt>hostname</tt> with the actual host name).
 </p>
 
 <p>
-Under the <tt>blog</tt> directory, we run the <a href="http://www.pradoframework.net/demos/quickstart/?page=GettingStarted.CommandLine">PRADO command line tool</a> with the following command (replace <tt>path/to</tt> with the actual path to the PRADO framework installation):
+Under the webserver root directory, we run <a href="http://getcomposer.org/">composer</a> with the following command to create the application structure:
 </p>
-<com:TTextHighlighter CssClass="source cli">
-php path/to/prado-cli.php -c .
+<com:TTextHighlighter CssClass="source block-content">
+composer create-project pradosoft/prado-minapp blog
 </com:TTextHighlighter>
+<p>
+This command will download the <a href="https://github.com/pradosoft/prado-minapp">Prado minimal application</a> template and install it inside the "blog" directory.
+</p>
 
 <p>
 Running the above command creates the following directories and files:
@@ -46,17 +54,13 @@ The main purpose of the entry script is to initialize the PRADO application and 
 
 <com:TTextHighlighter CssClass="source">
 <?php
-// include prado.php which contains basic PRADO classes
-require_once('path/to/prado.php');
+// include composer autoloader
+require 'protected/vendor/autoload.php';
 // create a PRADO application instance
-$application = new TApplication;
+$application = new \Prado\TApplication;
 // run the application and handle user requests
 $application->run();
 </com:TTextHighlighter>
-
-<com:InfoBox>
-The name of the entry script does not need to be <tt>index.php</tt>. It can be any name as long as the Web server can tell that the script is a PHP 5 script. For example, on some shared hosting environments, one may need to name the script as <tt>index.php5</tt> so that it can be properly handled by the Web server.
-</com:InfoBox>
 
 <h3>Application Configuration</h3>
 <p>
@@ -136,7 +140,7 @@ For example, to improve security, one may want to move the whole <tt>protected</
 </p>
 
 <com:TTextHighlighter CssClass="source">
-$application = new TApplication( 'path/to/protected' );
+$application = new \Prado\TApplication('path/to/protected');
 </com:TTextHighlighter>
 
 <p>

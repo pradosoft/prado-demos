@@ -3,7 +3,7 @@
 <h1>Creating Contact Page</h1>
 
 <p>
-We have created a default page <tt>Home.page</tt> using the <a href="http://www.pradoframework.net/demos/quickstart/?page=GettingStarted.CommandLine">PRADO command line tool</a>. The page is relatively static because it does not containt dynamic content. In this section, we will create an interactive page named <tt>Contact</tt>.
+We have created a default page <tt>Home.page</tt> using <a href="http://getcomposer.org/">composer</a>. The page is relatively static because it does not containt dynamic content. In this section, we will create an interactive page named <tt>Contact</tt>.
 </p>
 
 <p>
