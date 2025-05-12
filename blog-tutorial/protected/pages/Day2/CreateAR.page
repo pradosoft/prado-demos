@@ -80,6 +80,8 @@ class PostRecord extends TActiveRecord
     public $content;
     public $status;
 
+    public $author;
+
     public static function finder($className=__CLASS__)
     {
         return parent::finder($className);
@@ -109,6 +111,11 @@ Recall that there was a foreign key relationship between the <tt>users</tt> and 
 
 <p>
 From the entity-relationship diagram above, we see that the <tt>posts</tt> table contains a field named <tt>author_id</tt>. This <tt>author_id</tt> field is a foreign key to the reference table <tt>users</tt>. In particular, the values in the  <tt>author_id</tt> field should be of that from the <tt>users</tt> table's <tt>username</tt> field. One of the consequence of this relationship, thinking in terms of objects, is that each "post" belongs to an "author" and one "author" may have many "posts".
+</p>
+
+<p>
+Please note that by default the relation and its associated variable are created with the name of the related table, in this case <tt>users</tt>.
+<br/>In this example we renamed both the variable and the relation between a post and its creator <tt>author</tt> instead of <tt>users</tt>.
 </p>
 
 <p>
