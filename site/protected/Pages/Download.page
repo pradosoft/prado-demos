@@ -98,8 +98,13 @@ $(document).ready(function () {
 	</tr>
 	<tr>
 		<td><a href="https://github.com/pradosoft/editor-plugins/tree/master/SublimeText">SublimeText package</a></td>
-		<td>PRADO Sublime Text 3 package</td>
-		<td nowrap="nowrap">Apr 21, 2017</td>
+		<td>PRADO Sublime Text package</td>
+		<td nowrap="nowrap">Jan 22, 2025</td>
+	</tr>
+	<tr>
+		<td><a href="https://github.com/sicutdeux/prado-vscode">VSCode extension</a></td>
+		<td>Prado VSCode Support Extension</td>
+		<td nowrap="nowrap">Nov 20, 2023</td>
 	</tr>
 </table>
 <br/>
@@ -110,39 +115,6 @@ $(document).ready(function () {
 
 <p>The Source code repository can be accessed anonymously using the following command,</p>
 <pre class="instructions">git clone https://github.com/pradosoft/prado.git</pre>
-
-<br/>
-<br/>
-<h2>PRADO 3 archives</h2>
-PRADO 3.x releases were relased as standalone packages:
-<table width="100%" cellspacing="1" cellpadding="5" class="download">
-	<tr>
-		<th nowrap="nowrap">File</th>
-		<th nowrap="nowrap">Description</th>
-		<th nowrap="nowrap">Release date</th>
-	</tr>
-	<tr>
-		<td><a href="https://github.com/pradosoft/prado/archive/3.3.3.zip">Version 3.3.3</a></td>
-		<td>Latest release for the 3.3 branch</td>
-		<td nowrap="nowrap">Jan 25, 2018</td>
-	</tr>
-
-	<tr>
-		<td><a href="https://github.com/pradosoft/prado/releases/download/3.2.4/prado-3.2.4.re2e58b8.zip">Version 3.2.4</a></td>
-		<td>Last release for the 3.2 branch (unsupported)</td>
-		<td nowrap="nowrap">Aug 26, 2014</td>
-	</tr>
-	<tr>
-		<td><a href="https://github.com/pradosoft/prado/archive/3.1.10.zip">Version 3.1.10</a></td>
-		<td>Last release for the 3.1 branch (unsupported)</td>
-		<td nowrap="nowrap">Jul 16, 2011</td>
-	</tr>
-	<tr>
-		<td><a href="https://github.com/pradosoft/prado/archive/3.0.7.zip">Version 3.0.7</a></td>
-		<td>Last release for the 3.0 branch (unsupported)</td>
-		<td nowrap="nowrap">Apr 2, 2007</td>
-	</tr>
-</table>
 
 <div style="clear: both;"></div>
 </div>

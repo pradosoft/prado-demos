@@ -37,6 +37,15 @@
   <div id="articles">
 
     <div class="article">
+      <h3>Prado 4.3.1 is available!</h3>
+      <span class="date">May 21, 2025</span>
+      <p>This is mainly a bug-fix and compatibility release.</p>
+      <p>Users are advised to update from 4.3.0, as it should require no code changes.</p>
+      <p>Happy coding!</p>
+      <p>The PRADO Group</p>
+    </div>
+
+    <div class="article">
       <h3>Prado Matrix room</h3>
       <span class="date">February 5, 2025</span>
       <p>After some silence, here's a status update on Prado</p>
