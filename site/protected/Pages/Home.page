@@ -37,6 +37,17 @@
   <div id="articles">
 
     <div class="article">
+      <h3>Prado 4.3.2 is available!</h3>
+      <span class="date">Jan 28, 2026</span>
+      <p>A vulnerability has been found in phpunit/phpunit, a library used for unit testing during Prado development:</p>
+      <p><a href="https://github.com/pradosoft/prado/security/dependabot/4">https://github.com/pradosoft/prado/security/dependabot/4</a></p>
+      <p>This release contains an updated dependency for phpunit, fixing this issue.</p>
+      <p>Users are advised to update from 4.3.1, as it should require no code changes.</p>
+      <p>Happy coding!</p>
+      <p>The PRADO Group</p>
+    </div>
+
+    <div class="article">
       <h3>Prado 4.3.1 is available!</h3>
       <span class="date">May 21, 2025</span>
       <p>This is mainly a bug-fix and compatibility release.</p>
