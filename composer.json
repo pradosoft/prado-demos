@@ -40,6 +40,9 @@
         "zf1/zend-search-lucene": "~1.12"
     },
 	"scripts": {
+		"webserver": "php -S 127.0.0.1:8080 -t ./",
+		"webserver:start": "php -S 127.0.0.1:8080 -t ./",
+		"webserver:stop": "pkill -f \"php.*8080\"",
 		"post-install-cmd": [
 			"chmod 777 */assets",
 			"chmod 777 */protected/runtime",
