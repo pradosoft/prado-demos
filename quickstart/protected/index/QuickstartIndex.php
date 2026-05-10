@@ -83,7 +83,7 @@ class QuickstartIndex
 	}
 }
 
-require '../../../vendor/autoload.php';
+require '../../../autoload.php';
 
 $destdir = realpath(__DIR__.'/quickstart/');
 array_map('unlink', glob($destdir . "/*"));

@@ -23,6 +23,6 @@ function h($text)
 	return htmlentities($text, ENT_QUOTES, $charset);
 }
 
-require '../vendor/autoload.php';
+require '../autoload.php';
 $application = new \Prado\TApplication;
 $application->run();

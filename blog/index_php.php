@@ -12,6 +12,6 @@ if(!is_writable($runtimePath))
 if(!is_writable($dataPath))
 	die("Please make sure that the directory $dataPath is writable by Web server process.");
 
-require '../vendor/autoload.php';
+require '../autoload.php';
 $application = new \Prado\TApplication('protected', false, \Prado\TApplication::CONFIG_TYPE_PHP);
 $application->run();
