@@ -17,6 +17,6 @@ if(!is_writable($sqliteDbDir))
 if(!is_writable($sqliteDb))
 	die("Please make sure that the sqlite file $sqliteDb is writable by Web server process.");
 
-require '../vendor/autoload.php';
+require '../autoload.php';
 $application = new \Prado\TApplication;
 $application->run();
