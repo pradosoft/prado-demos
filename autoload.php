@@ -13,7 +13,7 @@
  *                          project's autoloader three levels up.
  */
 $standalone  = __DIR__ . '/vendor/autoload.php';
-$asDependency = __DIR__ . '/../../../autoload.php';
+$asDependency = __DIR__ . '/../../autoload.php';
 
 if (file_exists($standalone)) {
 	require $standalone;
