@@ -87,4 +87,31 @@ TJuiDatePicker is an extended TActiveTextBox that shows a date picker dialog on 
 <com:RunBar PagePath="JuiControls.Samples.TJuiDatePicker.Home" />
 <br/>
 
+
+<a name="TJuiSlider" />
+<h2>TJuiSlider</h2>
+<com:DocLink ClassPath="Prado.Web.UI.JuiControls.TJuiSlider" /> - <a href="http://api.jqueryui.com/slider/">jQuery UI API</a>
+
+<p class="block-content">
+<tt>TJuiSlider</tt> is an extension to <a href="?page=ActiveControls.ActivePanel">TActivePanel</a> based on jQuery-UI's <a href="http://jqueryui.com/slider/">Slider</a> widget.
+</p>
+
+<p class="block-content">
+TJuiSlider renders a draggable handle that lets the user select a numeric value within a defined range.
+The range is controlled via the <tt>Options.Min</tt>, <tt>Options.Max</tt>, and <tt>Options.Step</tt> properties.
+Setting <tt>Options.Orientation</tt> to <tt>"vertical"</tt> renders the slider vertically.
+Setting <tt>Options.Range</tt> to <tt>true</tt> and providing an <tt>Options.Values</tt> array produces a two-handle range slider.
+</p>
+
+<p class="block-content">
+The <tt>OnStart</tt> and <tt>OnStop</tt> events fire when the user begins and finishes dragging.
+The <tt>OnChange</tt> event fires whenever the value changes (including programmatic changes).
+The <tt>OnSlide</tt> event fires continuously while dragging.
+All event handlers receive a <tt>TJuiEventParameter</tt> whose <tt>CallbackParameter->value</tt> (or <tt>->values</tt> for range sliders) contains the current slider value.
+</p>
+
+
+<com:RunBar PagePath="JuiControls.Samples.TJuiSlider.Home" />
+<br/>
+
 </com:TContent>
