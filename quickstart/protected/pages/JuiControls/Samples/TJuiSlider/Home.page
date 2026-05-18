@@ -1,0 +1,98 @@
+<com:TContent ID="body">
+<h1>TJuiSlider Samples</h1>
+
+<style>
+	.slider-wrap { padding: 1em 1em 1em 0; }
+	.slider-vertical-wrap { padding: 1em; height: 180px; }
+</style>
+
+<table class="sampletable">
+
+<tr><td class="samplenote">
+Horizontal slider, Min=0, Max=100, Value=50.
+OnStart and OnStop callbacks report position:
+</td><td class="sampleaction">
+<div class="slider-wrap">
+	<com:TJuiSlider
+		ID="slider1"
+		Options.Min="0"
+		Options.Max="100"
+		Options.Value="50"
+		OnStart="slider1_start"
+		OnStop="slider1_stop"
+	/>
+</div>
+<com:TActiveLabel ID="label1" Text="Waiting..." />
+</td></tr>
+
+<tr><td class="samplenote">
+Horizontal slider, Min=0, Max=100, Step=10.
+OnChange callback fires on every keyboard/programmatic value change:
+</td><td class="sampleaction">
+<div class="slider-wrap">
+	<com:TJuiSlider
+		ID="slider2"
+		Options.Min="0"
+		Options.Max="100"
+		Options.Step="10"
+		Options.Value="30"
+		Options.Animate="true"
+		OnChange="slider2_change"
+	/>
+</div>
+<com:TActiveLabel ID="label2" Text="Value: 30" />
+</td></tr>
+
+<tr><td class="samplenote">
+Vertical slider, Min=0, Max=10, Step=1, Value=5.
+OnStop callback reports new value:
+</td><td class="sampleaction">
+<div class="slider-vertical-wrap">
+	<com:TJuiSlider
+		ID="slider3"
+		Options.Orientation="vertical"
+		Options.Min="0"
+		Options.Max="10"
+		Options.Step="1"
+		Options.Value="5"
+		OnStop="slider3_stop"
+	/>
+</div>
+<com:TActiveLabel ID="label3" Text="Value: 5" />
+</td></tr>
+
+<tr><td class="samplenote">
+Range slider (two handles), Min=0, Max=100.
+OnStop callback reports selected range:
+</td><td class="sampleaction">
+<div class="slider-wrap">
+	<com:TJuiSlider
+		ID="slider4"
+		Options.Min="0"
+		Options.Max="100"
+		Options.Range="true"
+		OnStop="slider4_stop"
+	/>
+</div>
+<com:TActiveLabel ID="label4" Text="Range: ..." />
+</td></tr>
+
+<tr><td class="samplenote">
+Change options during callback:
+</td><td class="sampleaction">
+<com:TActiveCheckBox ID="chkDisable" Text="Disable slider1" OnCheckedChanged="toggle_disable" />
+<br/>
+<com:TActiveCheckBox ID="chkAnimate" Text="Animate slider1 on click" OnCheckedChanged="toggle_animate" />
+<br/>
+Step for slider1:
+<com:TActiveDropDownList ID="ddlStep" OnSelectedIndexChanged="change_step">
+	<com:TListItem Text="1" Value="1" Selected="true" />
+	<com:TListItem Text="5" Value="5" />
+	<com:TListItem Text="10" Value="10" />
+	<com:TListItem Text="25" Value="25" />
+</com:TActiveDropDownList>
+</td></tr>
+
+</table>
+
+</com:TContent>
