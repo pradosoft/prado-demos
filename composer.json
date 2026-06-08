@@ -37,7 +37,11 @@
 	],
     "require": {
     	"pradosoft/prado": "^4",
-        "zf1/zend-search-lucene": "~1.12"
+        "zf1/zend-search-lucene": "~1.12",
+		"psr/clock": "^1.0",
+		"psr/http-message": "^2.0",
+		"psr/http-factory": "^1.1",
+		"laravel/serializable-closure": "^2.0"
     },
 	"scripts": {
 		"webserver": "php -S 127.0.0.1:8080 -t ./",
