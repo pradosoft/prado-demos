@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c5e87cbf6bcba74eb308c82529a686e",
+    "content-hash": "36e1e9eb81fc5cfd1148ac9e129707d7",
     "packages": [
         {
             "name": "bower-asset/clipboard",
@@ -1914,7 +1914,12 @@
     "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
+    "platform": {
+        "php": ">=8.1.0"
+    },
     "platform-dev": {},
+    "platform-overrides": {
+        "php": "8.1.0"
+    },
     "plugin-api-version": "2.9.0"
 }
