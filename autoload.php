@@ -9,7 +9,10 @@
  *
  *   Composer dependency — this package is installed inside another project's
  *     (copied)             vendor/ tree (e.g. vendor/pradosoft/prado-demos/);
- *                          delegate to the parent project's autoloader.
+ *                          delegate to the parent project's autoloader, which
+ *                          lives at vendor/autoload.php — two levels up from
+ *                          here. A project-root autoload shim (three levels up)
+ *                          is tried only as a last-resort fallback.
  *
  *   Composer dependency — this package is symlinked into another project's
  *     (symlinked)          vendor/ tree (a composer "path" repository).
@@ -40,8 +43,9 @@ if ($vendorPos !== false) {
 	$candidates[] = substr($script, 0, $vendorPos) . '/vendor/autoload.php';
 }
 
-$candidates[] = __DIR__ . '/vendor/autoload.php';   // standalone checkout
-$candidates[] = __DIR__ . '/../../autoload.php';    // copied into vendor/pradosoft/prado-demos, no SCRIPT_FILENAME (CLI)
+$candidates[] = __DIR__ . '/vendor/autoload.php';    // standalone checkout
+$candidates[] = __DIR__ . '/../../autoload.php';     // copied into vendor/pradosoft/prado-demos: parent's vendor/autoload.php (two levels up), no SCRIPT_FILENAME (CLI)
+$candidates[] = __DIR__ . '/../../../autoload.php';  // fallback for layouts exposing a project-root autoload shim (three levels up)
 
 foreach ($candidates as $autoload) {
 	if (file_exists($autoload)) {
