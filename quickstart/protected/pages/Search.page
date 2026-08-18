@@ -25,5 +25,8 @@
 	<com:TPanel id="emptyResult" CssClass="empty_search_result" Visible="false">
 	No results available for "<%= htmlentities($this->Page->search->Text) %>".
 	</com:TPanel>
+	<com:TPanel id="searchUnavailable" CssClass="empty_search_result" Visible="false">
+	Search is currently unavailable because the optional <tt>zf1/zend-search-lucene</tt> package is not installed.
+	</com:TPanel>
 </div>
 </com:TContent>
