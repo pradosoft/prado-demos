@@ -7,9 +7,19 @@ class Search extends TPage
 {
 	public function onLoad($param)
 	{
+		$quickstart = $this->getApplication()->getModule("quickstart_search");
+
+		// The optional zf1/zend-search-lucene backend may be absent (e.g. when
+		// prado-demos is installed as a Composer dependency without pulling in
+		// the transitive zf1 package). Degrade gracefully rather than fataling.
+		if(!$quickstart->getIsAvailable())
+		{
+			$this->searchUnavailable->setVisible(true);
+			return;
+		}
+
 		if(!$this->IsPostBack && strlen($text = $this->search->getText()) > 0)
 		{
-			$quickstart = $this->getApplication()->getModule("quickstart_search");
 			$hits_1 =  $quickstart->find($text);
 			$this->quickstart_results->setDataSource($hits_1);
 			$this->quickstart_results->dataBind();
